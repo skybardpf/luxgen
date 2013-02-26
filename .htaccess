@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteRule ^favicon.ico - [L]
+
+#**********************************************************
+#Rewriting everything to index.php                        *
+#Be free to add any rewrite rules what you need above it. *
+#                                                         *
+RewriteRule .* index.php                                  
+#**********************************************************
