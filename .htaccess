@@ -1,6 +1,15 @@
 RewriteEngine On
 RewriteRule ^favicon.ico - [L]
 
+
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !(.*)/$
+RewriteCond %{REQUEST_URI} !(cart/.*(notification|confirmation))$
+RewriteCond %{REQUEST_METHOD} !(POST)
+RewriteRule ^(.*[^/])$ $1/ [L,R=301]
+
+
 #**********************************************************
 #Rewriting everything to index.php                        *
 #Be free to add any rewrite rules what you need above it. *

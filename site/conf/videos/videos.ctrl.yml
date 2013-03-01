@@ -1,0 +1,19 @@
+title: Видео
+ 
+actions: 
+  show: [Просмотреть видео, Просмотр видео] 
+  list: [Просмотреть видео, Просмотр видео, [delete]] 
+  add: [Добавить видео, Добавление видео, Видео успешно добавлено, Видео добавить не удалось, '[root_url]videos/list/'] 
+  modify: [Редактировать видео, Редактирование видео, Видео успешно отредактировано, Видео отредактировать не удалось, '[root_url]videos/list/'] 
+  delete: [Удалить видео, Удаление видео, Видео успешно удалено, Видео удалить не удалось, '[root_url]videos/list/', 'Вы уверены, что хотите удалить это видео?'] 
+ 
+list_actions: 
+  inline: 
+    show: {link: 'videos/show/id/[id]', put: {title: before}, icon: show} 
+    title: {title: modify, link: 'videos/modify/id/[id]'} 
+    delete: {link: 'videos/delete/id/[id]', icon: delete} 
+ 
+  after: 
+    add: 'videos/add' 
+ 
+noContent: Видео не найдено

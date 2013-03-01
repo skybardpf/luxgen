@@ -135,6 +135,16 @@ cms_menu:
         link: content/list
       - title: Редактировать главную
         link: content/modify/id/1/pid/1
+  - title: Новости
+    link: news
+  - title: Хроники
+    link: chronicle
+  - title: Модели автомобилей
+    link: models
+  - title: Изображения
+    link: imgs
+  - title: Видео
+    link: videos
 cms_smenu:
   - title: Администраторы
     link: users

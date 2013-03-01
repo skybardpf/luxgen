@@ -1,0 +1,21 @@
+title: Хроники
+ 
+actions: 
+  show: [Просмотреть хронику, Просмотр хроники] 
+  change: [Изменить отображение, Измение отображения] 
+  list: [Просмотреть хроники, Просмотр хроник, [delete]] 
+  add: [Добавить хронику, Добавление хроники, Хроника успешно добавлена, Хронику добавить не удалось, '[root_url]chronicle/list/'] 
+  modify: [Редактировать хронику, Редактирование хроники, Хроника успешно отредактирована, Хронику отредактировать не удалось, '[root_url]chronicle/list/'] 
+  delete: [Удалить хронику, Удаление хроники, Хроника успешно удалена, Хронику удалить не удалось, '[root_url]chronicle/list/', 'Вы уверены, что хотите удалить эту хронику?'] 
+ 
+list_actions: 
+  inline: 
+    show: {title: show, link: 'chronicle/show/id/[id]', put: {title: before}, icon: show} 
+    active: {title: change, link: 'chronicle/change/id/[id]/field/active/ret_action/list'} 
+    title: {title: modify, link: 'chronicle/modify/id/[id]'} 
+    delete: {title: delete, link: 'chronicle/delete/id/[id]', icon: delete} 
+ 
+  after: 
+    add: 'chronicle/add' 
+ 
+noContent: Хроник не найдено

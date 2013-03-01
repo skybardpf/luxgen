@@ -1,0 +1,19 @@
+title: Модели автомобилей
+ 
+actions: 
+  show: [Просмотреть модель, Просмотр модели] 
+  list: [Просмотреть модели, Просмотр моделей, [delete]] 
+  add: [Добавить модель, Добавление модели, Модель успешно добавлена, Модель добавить не удалось, '[root_url]models/list/'] 
+  modify: [Редактировать модель, Редактирование модели, Модель успешно отредактирована, Модель отредактировать не удалось, '[root_url]models/list/'] 
+  delete: [Удалить модель, Удаление модели, Модель успешно удалена, Модель удалить не удалось, '[root_url]models/list/', 'Вы уверены, что хотите удалить эту модель?'] 
+ 
+list_actions: 
+  inline: 
+    show: {title: show, link: 'models/show/id/[id]', put: {title: before}, icon: show} 
+    title: {title: modify, link: 'models/modify/id/[id]'} 
+    delete: {title: delete, link: 'models/delete/id/[id]', icon: delete} 
+ 
+  after: 
+    add: 'models/add' 
+ 
+noContent: Моделей не найдено

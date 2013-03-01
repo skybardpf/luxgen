@@ -1,0 +1,12 @@
+tables:
+  models:
+    fields:
+      id: {type: int, length: 10, unsigned: 1, auto_increment: 1, notnull: 1, am: {type: integer}}
+      title: {type: tinytext, notnull: 1, am: {type: string, req: 1, title: Заголовок}}
+    table:
+      PRIMARY KEY: id
+    actions:
+      list: [id, title]
+      show: [id, title]
+      modify: [title]
+      add: [title]

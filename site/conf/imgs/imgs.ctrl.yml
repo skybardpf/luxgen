@@ -1,0 +1,19 @@
+title: Картинки
+ 
+actions: 
+  show: [Просмотреть картинку, Просмотр картинки] 
+  list: [Просмотреть картинки, Просмотр картинок, [delete]] 
+  add: [Добавить картинку, Добавление картинки, Картинка успешно добавлена, Картинку добавить не удалось, '[root_url]imgs/list/'] 
+  modify: [Редактировать картинку, Редактирование картинки, Картинка успешно отредактирована, Картинку отредактировать не удалось, '[root_url]imgs/list/'] 
+  delete: [Удалить картинку, Удаление картинки, Картинка успешно удалена, Картинку удалить не удалось, '[root_url]imgs/list/', 'Вы уверены, что хотите удалить эту картинку?'] 
+ 
+list_actions: 
+  inline: 
+    show: {title: show, link: 'imgs/show/id/[id]', put: {title: before}, icon: show} 
+    title: {title: modify, link: 'imgs/modify/id/[id]'} 
+    delete: {title: delete, link: 'imgs/delete/id/[id]', icon: delete} 
+ 
+  after: 
+    add: 'imgs/add' 
+ 
+noContent: Картинок не найдено
