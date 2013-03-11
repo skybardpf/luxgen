@@ -22,8 +22,18 @@
 </head>    
 
 <body>
-		{$page_content.content}
-		{$content}
-    <!--zf::debug:body-->
+<div class="Wrap">
+    {loadview name=header}
+    <div class="midWrap">
+        {if $page_content.id == 1}
+            {loadview name=main_page}
+        {else}
+            {$page_content.content}
+            {$content}
+        {/if}
+    </div>
+    {loadview name=footer}
+</div>
+<!--zf::debug:body-->
 </body>
 </html>

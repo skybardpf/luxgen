@@ -1,0 +1,145 @@
+@charset "utf-8";
+/* CSS Document */
+html, body {
+    font        : normal 12px "Myriad Pro", sans-serif;
+    line-height : 20px;
+    /*background  : none url(about:blank) fixed;*/
+    max-height  : 100%;
+    height      : 100%;
+    overflow    : hidden;
+}
+
+a, a:hover {
+    text-decoration : none;
+}
+
+.both {
+    height   : auto;
+    clear    : both;
+    overflow : hidden;
+    position : relative;
+    zoom     : 1;
+}
+
+span.ENFont {
+    top         : -6px;
+    padding     : 0 2px;
+    font-size   : 12px;
+    line-height : 12px;
+    position    : relative;
+}
+
+.Wrap  {
+    height   : 100%;
+    position : relative;
+}
+
+.Wrap .Header {
+    /*_top        : expression(eval(document.documentElement.scrollTop));*/
+    /*_top        : expression(documentElement.scrollTop+documentElement.clientHeight-this.clientHeight);*/
+    /*top         : 0;*/
+    /*position    : fixed;*/
+    /*_position   : absolute;*/
+    /*background  : url(../img/BoxMask.png) 0 0;*/
+    /*width       : 100%;*/
+    height      : 75px;
+    overflow    : hidden;
+    line-height : 75px;
+    zoom        : 1;
+    color       : #FFF;
+}
+
+.Wrap .Header ul {
+    margin   : 0 50px;
+    display  : block;
+    position : relative;
+    list-style: none;
+}
+
+.Wrap .Header li.title {
+    top      : 0;
+    left     : 0;
+    position : absolute;
+}
+
+.Wrap .Header li.title h1 {
+    background  : url(../img/luxgenLogo.png) no-repeat center center;
+    width       : 168px;
+    height      : 75px;
+    text-indent : -99999px;
+}
+
+.Wrap .Header li.info {
+    padding    : 0 70px;
+    /*float    : right;*/
+    position   : relative;
+    text-align : center;
+}
+
+.Wrap .Header li.info .Article {
+    margin      : 12px 0;
+    padding     : 5px 0;
+    line-height : 1.6em;
+    text-align  : center;
+    display     : block;
+    clear       : both;
+    height      : 48px;
+    overflow    : hidden;
+    zoom        : 1;
+}
+
+.Wrap .Header li.info .Article h3 {
+    margin    : 0;
+    padding   : 0;
+    font-size : 17px;
+    /*display   : inline-block;*/
+    color     : #00a5f1;
+}
+
+.Wrap .Header li.info .Article p {
+    margin    : 0;
+    padding   : 0;
+    font-size : 13px;
+    display   : inline-block;
+}
+
+.Wrap .Header li.info a.download {
+    top         : 0;
+    right       : 0;
+    padding     : 0 0 0 12px;
+    position    : absolute;
+    display     : block;
+    height      : 48px;
+    line-height : 48px;
+    font-size   : 13px;
+    color       : #FFF;
+    border-left : 1px solid #CCC;
+}
+
+.Wrap .midWrap {
+    margin     : 0 auto;
+    text-align : center;
+    position   : relative;
+    height     : 85%;
+    zoom       : 1;
+}
+
+.Wrap .midWrap .mainContent {
+    height : 100%;
+    zoom   : 1;
+}
+
+.Wrap .midWrap .mainContent span.spanPhoto {
+    display : inline-block;
+    height  : 100%;
+}
+
+.Wrap .midWrap .mainContent * {
+    vertical-align : middle;
+}
+
+.Wrap .midWrap .mainContent img {
+    max-width  : 100%;
+    max-height : 100%;
+    zoom       : 1;
+}

@@ -1,0 +1,77 @@
+
+.ContTimeline {
+    background: url("/public/site/img/about/line.gif") repeat-y scroll center 0 transparent;
+    margin: 0 auto;
+    width: 880px;
+}
+.ContTimeline .ContTimelineList {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    display: block;
+    margin: 30px 0 0;
+    padding: 9px 4px 4px;
+    position: relative;
+    width: 400px;
+}
+.ContTimeline .ContTimelineMonth {
+}
+.ContTimeline .ContTimelineLeft:after, .ContTimeline .ContTimelineLeft .after {
+    background: url("/public/site/img/about/arrow.gif") no-repeat scroll -9px 0 transparent;
+    content: " ";
+    display: block;
+    height: 15px;
+    position: absolute;
+    right: -9px;
+    top: 25px;
+    width: 9px;
+}
+.ContTimeline .ContTimelineRight:after, .ContTimeline .ContTimelineRight .after {
+    background: url("/public/site/img/about/arrow.gif") no-repeat scroll 0 0 transparent;
+    content: " ";
+    display: block;
+    height: 15px;
+    left: -9px;
+    position: absolute;
+    top: 25px;
+    width: 9px;
+}
+.ContTimeline .ContTimelineMargin {
+    margin-top: 110px;
+}
+.ContTimeline .ContTimelineLeft {
+    float: left;
+}
+.ContTimeline .ContTimelineRight {
+    float: right;
+}
+.ContTimeline .TimelineYear {
+    background: none repeat scroll 0 0 #0083C9;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    display: block;
+    font-size: 12px;
+    position: absolute;
+    text-align: center;
+    top: 20px;
+    width: 35px;
+}
+.ContTimelineLeft .TimelineYear {
+    right: -50px;
+}
+.ContTimelineRight .TimelineYear {
+    left: -50px;
+}
+.ContTimeline .ContTimelineTop {
+    border-left: 5px solid #0083C9;
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+.ContTimeline .ContTimelineTop .TimelineDate {
+    color: #0083C9;
+}
+.TimelineTitle {
+    overflow: hidden;
+    color: #000;
+}

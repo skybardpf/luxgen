@@ -16,13 +16,15 @@ tables:
 
     images:
       image:
-        small: {w: 400,  h: 260,  ratio: 'equal', cut: 5}
+        small: {w: 480,  h: 280,  ratio: 'equal', cut: 5}
+        nano: {w: 265,  h: 155,  ratio: 'equal', cut: 5}
 
     actions:
       list: [id, title, model_id, image, where_show, pos]
       show: [id, title, model_id, image, where_show] 
       modify: [title, model_id, image, where_show]
       add: [title, model_id, image, where_show, pos]
+      site: [id, title, image]
 
   models:
     dont_install: 1

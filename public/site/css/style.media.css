@@ -1,0 +1,57 @@
+
+@charset "utf-8";
+.Wrap .midWrap .mainContent {
+    margin: 0 1.5%;
+    min-width: 1000px;
+    width: auto;
+}
+.Wrap .midWrap .mainContent .media ul {
+    overflow: hidden;
+}
+.Wrap .midWrap .mainContent .media li.mediaList {
+    cursor: pointer;
+    float: left;
+    margin: 0.3%;
+    overflow: hidden;
+    position: relative;
+    width: 19.4%;
+}
+.Wrap .midWrap .mainContent .media li.mediaList a {
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+.Wrap .midWrap .mainContent .media li.mediaList img {
+    max-width: 100%;
+}
+.Wrap .midWrap .mainContent .media li.mediaList .active {
+    background: url("/public/site/img/BgMask.png") repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    display: none;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.Wrap .midWrap .mainContent .media li.mediaList .active .Article {
+    bottom: 0;
+    display: block;
+    left: 0;
+    letter-spacing: 0.1em;
+    position: absolute;
+    width: 100%;
+}
+.Wrap .midWrap .mainContent .media li.mediaList .active .Article li.title {
+    font-size: 17px;
+    font-weight: normal;
+    margin: 0 10px;
+}
+.Wrap .midWrap .mainContent .media li.mediaList .active .Article li.text {
+    background: url("/public/site/img/media.dowmload.icon.gif") no-repeat scroll right bottom transparent;
+    margin: 0 10px 5px;
+    padding: 0 20px 0 0;
+}

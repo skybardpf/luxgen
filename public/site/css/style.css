@@ -1,0 +1,627 @@
+@charset "utf-8";
+html, body {
+    background: none repeat scroll 0 0 #E4E4E4;
+    font: 12px/20px "Lucida Sans Unicode","Lucida Grande",Arial,sans-serif;
+    padding: 0 0 42px;
+}
+a, a:hover {
+    text-decoration: none;
+}
+.ENFont {
+    font-size: 10px;
+    line-height: 10px;
+    padding: 0 2px;
+    position: relative;
+    top: -6px;
+}
+.both {
+    clear: both;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+.youtubeMediaList img {
+    max-width: 100%;
+}
+.Wrap .youtubeMediaList span.playMask {
+    background: url("/public/site/img/play.png") no-repeat scroll center center transparent;
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+.Wrap .youtubeMediaList span.playMask:hover, .Wrap .youtubeMediaList span.playMaskHover {
+    background: url("/public/site/img/play_hover.png") no-repeat scroll center center transparent;
+}
+.Wrap .youtubeMediaList .youtubeMedia {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+#contentFont.fontSmall {
+    font-size: 12px;
+}
+#contentFont.fontNormal {
+    font-size: 13px;
+}
+#contentFont.fontLarge {
+    font-size: 15px;
+}
+#contentFont.fontSmall p {
+    font-size: 12px;
+}
+#contentFont.fontNormal p {
+    font-size: 13px;
+}
+#contentFont.fontLarge p {
+    font-size: 15px;
+}
+#contentFont.fontSmall h4 {
+    font-size: 13px;
+}
+#contentFont.fontNormal h4 {
+    font-size: 15px;
+}
+#contentFont.fontLarge h4 {
+    font-size: 17px;
+}
+#contentFont.fontSmall h3 {
+    font-size: 15px;
+}
+#contentFont.fontNormal h3 {
+    font-size: 17px;
+}
+#contentFont.fontLarge h3 {
+    font-size: 19px;
+}
+header {
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+header .topbar {
+    background: url("/public/site/img/headerBG.png") repeat-x scroll 0 0 transparent;
+    font-size: 15px;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 5px;
+    text-align: right;
+}
+header .topbar li {
+    display: inline-block;
+    margin: 0 6px 0 9px;
+}
+header .topbar li a {
+    color: #707070;
+    display: block;
+}
+header nav {
+    background: url("/public/site/img/headerBG.png") repeat-x scroll 0 -25px transparent;
+    display: block;
+    height: 52px;
+    line-height: 52px;
+    overflow: hidden;
+    padding: 0 5px;
+    position: relative;
+    z-index: 10;
+}
+header nav h1 {
+    float: left;
+    margin: 0 0 0 25px;
+}
+header nav h1 a {
+    background: url("/public/site/img/luxgenLogo.png") no-repeat scroll center center transparent;
+    display: block;
+    text-indent: -99999px;
+    width: 168px;
+}
+header nav .kindsNav {
+    float: right;
+    font-size: 15px;
+    font-weight: bold;
+}
+header nav .kindsNav li {
+    display: inline-block;
+    margin: 0 13px 0 16px;
+}
+header nav .kindsNav li a {
+    color: #3C3C3C;
+    display: block;
+}
+header nav .kindsNav li.active a, header nav .kindsNav li a:hover {
+    color: #0083C9;
+}
+.midWrap {
+    line-height: 20px;
+    position: relative;
+}
+.mainContent .topBtn {
+    border-left: 1px solid #A2A2A2;
+    height: 130px;
+    position: fixed;
+    right: 0;
+    text-indent: -99999px;
+    top: 50%;
+    margin-top: -65px;
+    width: 28px;
+}
+.mainContent .topBtn span {
+    background: url("/public/site/img/btnTop.png") no-repeat scroll center center transparent;
+    cursor: pointer;
+    display: block;
+    height: 51px;
+    left: 0;
+    margin: -25px 0 0;
+    position: absolute;
+    top: 50%;
+    width: 28px;
+}
+.IndexContent {
+    background: none repeat scroll 0 0 #FFFFFF;
+    margin: 0;
+    text-align: center;
+}
+#tv_bg {
+    background-color: #E4E4E4;
+    position: relative;
+    margin-top: 77px;
+}
+#tv_bg ._bg {
+    min-height: 392px;
+    overflow: hidden;
+    position: relative;
+}
+#tv_bg ._bg_grid_mask {
+    background: url("/public/site/img/bg_grid.png") repeat scroll 0 0 transparent;
+    display: none;
+    left: 0;
+    min-height: 392px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+#tv_bg ._bg ._bg_warp {
+    display: none;
+    height: 392px;
+    position: absolute;
+    width: 100%;
+    background-image: url("/public/site/img/20120927181146752.jpg");
+    left: 0;
+    top: 0;
+}
+#tv_bg > ._car > img {
+    left: 10%;
+    position: absolute;
+    top: 31%;
+    z-index: 1;
+}
+#floor {
+    display: none;
+    min-height: 190px;
+    min-width: 935px;
+    background: url("/public/site/img/floor.png") no-repeat scroll center 0 #fff;
+    height: 244px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.HeaderSlide {
+    background: none repeat scroll 0 0 #FFFFFF;
+    margin: 77px 0 0;
+    text-align: center;
+}
+.subNav .subNavUL {
+    float: right;
+    position: relative;
+    z-index: 10;
+}
+.subNav li {
+    background: url("/public/site/img/subnavLine.jpg") no-repeat scroll left center transparent;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: left;
+    font-size: 13px;
+    line-height: 30px;
+    padding: 2px 10px;
+}
+.subNav li a {
+    color: #fff
+}
+.subNav li.selected {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #3C3C3C;
+    cursor: default;
+}
+.subNav li.selected a {
+    color: #3C3C3C;
+    cursor: default;
+}
+.subNav .subNavMask {
+    background: none repeat scroll 0 0 #FFFFFF;
+    display: block;
+    left: 0;
+    margin: 0 0 0 1px;
+    padding: 0 10px;
+    position: absolute;
+    top: 0;
+}
+.mainContent {
+    font-size: 13px;
+    line-height: 1.8em;
+    margin: 0 auto;
+    position: relative;
+    top: 35px;
+    width: 980px;
+}
+.mainContent .cont {
+    font-family: "Lucida Sans Unicode","Lucida Grande",Arial,sans-serif;
+    margin: 0 0 15px;
+    padding: 10px 0 0;
+}
+.mainContent .cont .titleFrame {
+    border-bottom: 1px solid #A2A2A2;
+    line-height: 2em;
+    margin: 0 0 10px;
+    position: relative;
+}
+.mainContent .cont .titleFrame h3 {
+    color: #666666;
+    float: left;
+    font-size: 18px;
+    margin: 0 0 5px;
+}
+.mainContent .cont .titleFrame .tools {
+    float: right;
+    margin: 5px 5px 0 0;
+}
+.mainContent .cont .titleFrame .tools a {
+    background: url("/public/site/img/title-icon.png") no-repeat scroll 0 center transparent;
+    display: inline-block;
+    height: 15px;
+    margin: 0 2px 0 5px;
+    text-indent: -99999px;
+    width: 15px;
+}
+.mainContent .cont .titleFrame .tools a.fontDecrease {
+    background-position: -30px center;
+}
+.mainContent .cont .titleFrame .tools a.fontReset {
+    background-position: -45px center;
+}
+.mainContent .cont .titleFrame .tools a.fontIncrease {
+    background-position: -60px center;
+}
+.mainContent .cont .ContData h3 {
+    color: #00A5F1;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: 5px 0 0;
+}
+.mainContent .cont .ContData h4 {
+    color: #00A5F1;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 5px 0 0;
+}
+.mainContent .cont .ContData p {
+    letter-spacing: 1px;
+    padding: 0 0 15px;
+}
+.ContPrivacy {
+    color: #3C3C3C;
+    padding: 0;
+    position: relative;
+}
+.ContPrivacy .info {
+    float: left;
+    letter-spacing: 0.1em;
+    line-height: 2em;
+}
+.ContPrivacy .info section h5 {
+    color: #3C3C3C;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin: 15px 0 0;
+}
+.ContAbout {
+    background: url("/public/site/img/about-bg.jpg") no-repeat scroll center top #000000;
+    padding: 220px 20px 0;
+    position: relative;
+}
+.ContAbout .info {
+    color: #FFFFFF;
+    float: left;
+    letter-spacing: 0.1em;
+    line-height: 2em;
+    width: 320px;
+}
+.ContAbout .info h4.slogan span {
+    color: #FFFFFF;
+    display: block;
+    font-family: Arial,sans-serif;
+    font-weight: bold;
+    letter-spacing: -0.03em;
+    line-height: 58px;
+}
+.ContAbout .info h4.slogan .sloganInfo {
+    font-size: 62px;
+}
+.ContAbout .info h4.slogan .sloganInfoKeyWord {
+    font-size: 78px;
+}
+.ContAbout .info section h5 {
+    color: #0582C4;
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin: 15px 0 0;
+}
+.ContAbout .media {
+    float: right;
+    margin: 150px 0 0;
+    width: 610px;
+}
+.ContAbout .media .youtube {
+    border: 1px solid #FFFFFF;
+    margin: 0 auto;
+    text-align: center;
+    width: 450px;
+}
+.Technology .ContData {
+    position: relative;
+}
+.Technology .technologyUL .technologyListCenter {
+    margin: 10px;
+}
+.Technology .technologyUL .technologyList .media {
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.Technology .technologyTHINKUL {
+    background: url("/public/site/img/technology.think.image.jpg") no-repeat scroll center center transparent;
+    height: 550px;
+    overflow: hidden;
+    position: relative;
+    width: 980px;
+}
+.Technology .technologyTHINKUL li.link {
+    cursor: pointer;
+    height: 85px;
+    position: absolute;
+    text-indent: -99999px;
+    width: 160px;
+}
+.Technology .technologyTHINKUL li.link01 {
+    left: 195px;
+    top: 70px;
+}
+.Technology .technologyTHINKUL li.link02 {
+    right: 190px;
+    top: 70px;
+}
+.Technology .technologyTHINKUL li.link03 {
+    left: 185px;
+    top: 175px;
+    width: 115px;
+}
+.Technology .technologyTHINKUL li.link04 {
+    right: 180px;
+    top: 175px;
+    width: 115px;
+}
+.Technology .technologyTHINKUL li.link05 {
+    left: 195px;
+    top: 280px;
+}
+.Technology .technologyTHINKUL li.link06 {
+    right: 190px;
+    top: 280px;
+}
+.Technology .technologyDataUL li.data {
+    background: url("/public/site/img/BgMask.png") repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    display: none;
+    height: 200px;
+    left: 0;
+    padding: 300px 50px 50px;
+    position: absolute;
+    top: 0;
+    width: 880px;
+}
+.Technology .technologyDataUL li.data .Section {
+    bottom: 50px;
+    left: 50px;
+    position: absolute;
+    width: 880px;
+}
+.Technology .technologyDataUL li.dateBoth .Section {
+    bottom: 15px;
+    position: absolute;
+    width: 880px;
+}
+.Technology .technologyDataUL li.data .media {
+    height: 200px;
+    left: 50px;
+    position: absolute;
+    top: 50px;
+    width: 880px;
+}
+.Technology .technologyDataUL li.dateBoth .media {
+    left: 175px;
+    top: 15px;
+    width: 630px;
+}
+.Technology .technologyDataUL li.dateBoth .media li {
+    margin: 5px 0;
+}
+.Technology .technologyDataUL li.data .media li.left {
+    float: left;
+}
+.Technology .technologyDataUL li.data .media li.right {
+    float: right;
+}
+.Technology .technologyDataUL li.data .media li img {
+    border: 1px solid #4E84A2;
+}
+.Technology .technologyDataUL li.btn {
+    background: url("/public/site/img/colorbox/btnClose.jpg") no-repeat scroll center center transparent;
+    cursor: pointer;
+    display: none;
+    height: 23px;
+    position: absolute;
+    right: 0;
+    text-indent: -99999px;
+    top: 0;
+    width: 23px;
+}
+.ContMonth .month {
+    float: left;
+    text-indent: -99999px;
+}
+.ContMonth .month span {
+    background: url("/public/site/img/news/newsline.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 60px;
+    text-indent: -99999px;
+    width: 83px;
+}
+.ContMonth .month span.month01 {
+    background-position: 0 0;
+    width: 76px;
+}
+.ContMonth .month span.month02 {
+    background-position: -76px 0;
+}
+.ContMonth .month span.month03 {
+    background-position: -159px 0;
+}
+.ContMonth .month span.month04 {
+    background-position: -242px 0;
+}
+.ContMonth .month span.month05 {
+    background-position: -325px 0;
+}
+.ContMonth .month span.month06 {
+    background-position: -408px 0;
+}
+.ContMonth .month span.month07 {
+    background-position: -491px 0;
+}
+.ContMonth .month span.month08 {
+    background-position: -574px 0;
+}
+.ContMonth .month span.month09 {
+    background-position: -657px 0;
+}
+.ContMonth .month span.month10 {
+    background-position: -740px 0;
+}
+.ContMonth .month span.month11 {
+    background-position: -823px 0;
+}
+.ContMonth .month span.month12 {
+    background-position: -906px 0;
+    width: 74px;
+}
+ul.ContMonth li.MonthBtn {
+    cursor: pointer;
+}
+ul.ContMonth li.active span.month01 {
+    background-position: 0 -60px;
+    width: 76px;
+}
+ul.ContMonth li.active span.month02 {
+    background-position: -76px -60px;
+}
+ul.ContMonth li.active span.month03 {
+    background-position: -159px -60px;
+}
+ul.ContMonth li.active span.month04 {
+    background-position: -242px -60px;
+}
+ul.ContMonth li.active span.month05 {
+    background-position: -325px -60px;
+}
+ul.ContMonth li.active span.month06 {
+    background-position: -408px -60px;
+}
+ul.ContMonth li.active span.month07 {
+    background-position: -491px -60px;
+}
+ul.ContMonth li.active span.month08 {
+    background-position: -574px -60px;
+}
+ul.ContMonth li.active span.month09 {
+    background-position: -657px -60px;
+}
+ul.ContMonth li.active span.month10 {
+    background-position: -740px -60px;
+}
+ul.ContMonth li.active span.month11 {
+    background-position: -823px -60px;
+}
+ul.ContMonth li.active span.month12 {
+    background-position: -906px -60px;
+    width: 74px;
+}
+.newsTitle {
+    margin-bottom: 20px;
+}
+footer {
+    background: url("/public/site/img/headerBG.png") repeat-x scroll left -111px transparent;
+    color: #FFFFFF;
+    height: 35px;
+    line-height: 35px;
+    padding: 2px 0 0;
+    width: 100%;
+    z-index: 10;
+    bottom: 0;
+    position: fixed;
+}
+footer li {
+    float: left;
+}
+footer ul.FootNav {
+    float: left;
+    padding: 0 0 0 5px;
+    position: relative;
+    z-index: 5;
+}
+footer ul.FootNav li {
+    margin: 0 10px;
+}
+footer ul.FootNav li a {
+    color: #707070;
+    font-size: 15px;
+    background: url("/public/site/img/footerNav.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    float: left;
+    height: 35px;
+    padding-left: 25px;
+}
+footer ul.FootNav li.FootNavLi02 a {
+    background-position: 0 -35px;
+}
+footer ul.siteMap {
+    float: right;
+    padding: 0 5px 0 0;
+}
+footer ul.siteMap li {
+    margin: 0 9px;
+}
+footer ul.siteMap li a {
+    color: #707070;
+    display: block;
+    font-size: 15px;
+}

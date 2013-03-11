@@ -1,0 +1,197 @@
+.ContentFlow {
+    margin   : -85px 0 0 0;
+    position : relative;
+}
+
+.ContentFlow .flow .item canvas.content {
+    width  : 100%;
+    height : 100%;
+}
+
+/*.ContentFlow .flow .active canvas.content {
+	margin  : -15% 0 0 -10%;
+	width   : 120%;
+	height  : 120%;
+	display : block;
+	zoom    : 1;
+}*/
+
+.ContentFlow .flow .item.active {
+    cursor : pointer;
+}
+
+.ContentFlow .flow .item .caption {
+    bottom      : 10%;
+    font-size   : 20px;
+    font-weight : normal;
+    text-align  : center;
+    color       : #3C3C3C;
+    background  : url(/public/site/img/ContentFlow/1x1_0.5_black.png);
+    width       : 100%;
+    max-height  : 30%;
+    position    : absolute;
+    display     : none;
+}
+
+* html .ContentFlow .flow .item .caption {
+    background-image : none;
+    filter           : progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='img/ContentFlow/1x1_0.5_black.png');
+}
+
+.ContentFlow .scrollbar {
+    margin     : 0 auto;
+    width      : 50%;
+    height     : 16px;
+    background : url(/public/site/img/ContentFlow/scrollbar_white.png) left center repeat-x;
+    overflow   : visible;
+    position   : relative;
+    z-index    : 1;
+    visibility : hidden;
+}
+
+.ContentFlow .scrollbar .slider {
+    width      : 36px;
+    height     : 16px;
+    background : url(/public/site/img/ContentFlow/slider_fancy_handle.png) center center no-repeat;
+    cursor     : move;
+    position   : absolute;
+}
+
+* html .ContentFlow .scrollbar .slider {
+    background-image : none;
+}
+
+* html .ContentFlow .scrollbar .slider .virtualSlider {
+    filter : progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=crop, src='img/ContentFlow/slider_fancy_handle.png');
+    height : 100%;
+}
+
+.ContentFlow .scrollbar .slider .position {
+    top         : 120%;
+    font-size   : 0;
+    line-height : 0;
+    font-weight : normal;
+    /*color       : silver;*/
+    position    : absolute;
+    text-align  : center;
+}
+
+.ContentFlow .globalCaption {
+    margin      : 2em auto;
+    text-align  : center;
+    font-weight : normal;
+    color       : #3C3C3C;
+    font-size   : 15px;
+    /*height      : 20px;*/
+    position    : relative;
+    z-index     : 1;
+}
+
+.ContentFlow .loadIndicator {
+    top      : 0;
+    left     : 0;
+    width    : 100%;
+    height   : 100%;
+    /*background : #000;*/
+    position : absolute;
+    z-index  : 65000;
+}
+
+.ContentFlow .loadIndicator .indicator {
+    background : url(/public/site/img/ContentFlow/loader.gif) center center no-repeat;
+    width      : 100%;
+    height     : 100%;
+}
+
+* html .ContentFlow .loadIndicator .indicator {
+    height : 100px;
+}
+
+.ContentFlow {
+    position : relative;
+    overflow : hidden;
+}
+
+.ContentFlow * {
+    margin  : 0;
+    padding : 0;
+}
+
+.ContentFlow img {
+    -ms-interpolation-mode : bicubic;
+}
+
+.ContentFlow .mouseoverCheckElement {
+    left       : 0;
+    position   : absolute;
+    width      : 0;
+    height     : 0;
+    visibility : hidden;
+}
+
+.ContentFlow:hover .mouseoverCheckElement {
+    left : 1px;
+}
+
+.ContentFlow .flow {
+    margin     : 0 auto;
+    position   : relative;
+    z-index    : 0;
+    visibility : hidden;
+    width      : 100%;
+}
+
+.ContentFlow .flow.hidden {
+    visibility : hidden
+}
+
+.ContentFlow .flow .item {
+    top        : 0;
+    left       : 0;
+    position   : absolute;
+    visibility : hidden;
+}
+
+.ContentFlow .flow .item div.content {
+    width  : 100%;
+    height : 100%;
+}
+
+.ContentFlow .flow .item .label {
+    display : none;
+}
+
+.ContentFlow .flow .item canvas.reflection {
+    margin-top : -1px;
+}
+
+.ContentFlow .flow .item img.content,
+.ContentFlow .flow .item img.reflection,
+.ContentFlow .flow .item canvas.reflection {
+    width : 100%;
+}
+
+.ContentFlow .flow .item .caption a,
+.ContentFlow .flow .item .caption a:link,
+.ContentFlow .flow .item .caption a:visited,
+.ContentFlow .flow .item .caption a:active,
+.ContentFlow .flow .item .caption a:hover,
+.ContentFlow .globalCaption .caption a,
+.ContentFlow .globalCaption .caption a:link,
+.ContentFlow .globalCaption .caption a:visited,
+.ContentFlow .globalCaption .caption a:active,
+.ContentFlow .globalCaption .caption a:hover {
+    color           : #3C3C3C;
+    font-size       : 15px;
+    /*font-style      : italic;*/
+    text-decoration : none;
+}
+
+.ContentFlow .flow .item .caption a:hover,
+.ContentFlow .globalCaption .caption a:hover {
+    text-decoration : underline;
+}
+.ContentFlow .flow .item .content,
+.ContentFlow .flow .item .reflection {
+    display : block;
+}

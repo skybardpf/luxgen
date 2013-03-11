@@ -3,10 +3,10 @@ tables:
     fields:
       id: {type: int, length: 10, unsigned: 1, auto_increment: 1, notnull: 1, am: {type: integer}}
       title: {type: tinytext, notnull: 1, am: {type: string, req: 1, title: Заголовок}}
-      anonce: {type: text, am: {type: text, req: 1, title: Анонс}}
+      #anonce: {type: text, am: {type: text, req: 1, title: Анонс}}
       #text: {type: text, am: {type: ckhtml, htmltype: ckhtml, req: 1, title: Текст}}
       image: {type: tinytext, notnull: 0, am: {type: image, req: 1, title: "Картинка<br>должна быть размером 400*260px"}}
-      created: {type: datetime, notnull: 1, am: {type: date, title: Дата публикации}}
+      created: {type: datetime, notnull: 1, am: {type: date, req: 1, title: Дата публикации}}
       #active: {type: enum('yes','no'), default: 'yes', notnull: 1, am: {type: string, title: Отображать на сайте, htmltype: checkbox, default: 'yes', checked: 'yes', unchecked: 'no', values: {no: нет, yes: да}}}
     table:
       PRIMARY KEY: id
@@ -19,7 +19,8 @@ tables:
         small: {w: 400,  h: 260,  ratio: 'equal', cut: 5}
 
     actions:
-      list: [id, title, created, anonce, image]
-      show: [id, title, anonce, image, created]
-      modify: [title, anonce, created, image]
-      add: [title, anonce, created, image]
+      list: [id, title, created, image]
+      show: [id, title, image, created]
+      site: [id, title, image, created]
+      modify: [title, created, image]
+      add: [title, created, image]
