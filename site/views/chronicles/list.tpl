@@ -43,6 +43,6 @@
             </div>
         </div>
         <div id="topBtn" class="topBtn" style="display: none;">
-            <span>top</span>
+            <span> </span>
         </div>
     </div>

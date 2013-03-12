@@ -1,42 +1,16 @@
 <link href="/public/site/css/style.suv.css" rel="stylesheet" type="text/css" /> 
 <link href="/public/site/css/colorbox.css" rel="stylesheet" type="text/css" /> 
 <link media="screen" href="/public/site/css/style.contentflow.css" rel="stylesheet" type="text/css" /> 
-<script type="text/javascript" src="/public/site/js/jquery.colorbox.js">
-//<![CDATA[
-//]]>
-</script> 
-<script type="text/javascript" src="/public/site/js/jquery.headerNav.js">
-//<![CDATA[
-//]]>
-</script> 
-<script type="text/javascript" src="/public/site/js/jquery.headerSlide.js">
-//<![CDATA[
-//]]>
-</script> 
-<script type="text/javascript" src="/public/site/js/jquery.quickpaginate.js">
-//<![CDATA[
-//]]>
-</script> 
-<script type="text/javascript" src="/public/site/js/jquery.slides.js">
-//<![CDATA[
-//]]>
-</script> 
-<script type="text/javascript" src="/public/site/js/jquery.contentflow.js">
-//<![CDATA[
-//]]>
-</script> 
-<script type="text/javascript" src="/public/site/js/jquery.suv.js">
-//<![CDATA[
-//]]>
-</script> 
-<script type="text/javascript" src="/public/site/js/jquery.youtube.js">
-//<![CDATA[
-//]]>
-</script> 
-<script type="text/javascript" src="/public/site/js/CarModelMedia.js">
-//<![CDATA[
-//]]>
-</script> 
+<script type="text/javascript" src="/public/site/js/jquery.colorbox.js"></script>
+<script type="text/javascript" src="/public/site/js/jquery.headerNav.js"></script>
+<script type="text/javascript" src="/public/site/js/jquery.headerSlide.js"></script>
+<script type="text/javascript" src="/public/site/js/jquery.quickpaginate.js"></script>
+<script type="text/javascript" src="/public/site/js/jquery.slides.js"></script>
+<script type="text/javascript" src="/public/site/js/jquery.contentflow.js"></script>
+<script type="text/javascript" src="/public/site/js/jquery.suv.js"></script>
+<script type="text/javascript" src="/public/site/js/jquery.youtube.js"></script>
+<script type="text/javascript" src="/public/site/js/CarModelMedia.js"></script>
+<script type="text/javascript" src="/public/site/js/jquery.jget.js"></script>
 <div class="HeaderSlide"> 
   <div class="SlideFrame"> 
     <ul class="Slide"> 
@@ -568,5 +542,5 @@ ConSlidesList 04
     </ul></div>
 
   <div id="topBtn" class="topBtn" style="display: none;">
-      <span>top</span>
+      <span> </span>
   </div>
