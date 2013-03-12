@@ -127,14 +127,14 @@
                     <li class="title">LUXGEN7 SUV</li> 
                   </ul></div></li> 
             </ul> *}
-            <div class="JQpaper">&nbsp;</div></li>
+            <div class="JQpaper"></div></li>
 <!--
 線上影片
 -->
 
           <li class="SlideTabContentList" style="left: -980px;"> 
             <ul class="SlideTabUL SlideTabMediaUL both" id="ulMedia"> 
-              <div class="JQpaper">&nbsp;</div> 
+              <div class="JQpaper"></div>
             </ul></li> 
         </ul></li> 
     </ul></div></div> 
@@ -565,5 +565,8 @@ ConSlidesList 04
 
             </ul></li> 
         </ul></li> 
-    </ul></div> 
-  <div class="topBtn" id="topBtn" style="left: 1451.5px; display: none;">top</div></div>
+    </ul></div>
+
+  <div id="topBtn" class="topBtn" style="display: none;">
+      <span>top</span>
+  </div>
