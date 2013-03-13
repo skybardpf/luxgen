@@ -16,7 +16,8 @@
     {if $videos}
         <ul>
             {foreach from=$videos item=video}
-                <li class="mediaList" rel="prettyPhoto[iframe]" href="/videos/id/{$video.id}?iframe=true&width=100%25&height=100%25">
+                {*<li class="mediaList" rel="prettyPhoto[iframe]" href="/videos/id/{$video.id}?iframe=true&width=100%25&height=100%25">*}
+                <li class="mediaList" rel="prettyPhoto[iframe]" href="{$video.link}?iframe=true&width=100%25&height=100%25">
                     <img src="{$video.image|replace:'[dir]':'small'}" alt="{$video.title}">
                     <div class="active png" style="display: none;">
                         <ul class="Article">

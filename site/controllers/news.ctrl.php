@@ -45,6 +45,15 @@ class NewsController extends Site_Controller
                 $years[$year] = $year;
             }
         }
+
+        if(count($this->page->meta) < 2) {
+            $title = (!empty($_GET['year'])) ? " - {$_GET['year']}" : " - Последние";
+            $meta_tags['title'] = 'Новости'.$title;
+            $meta_tags['keywords'] = 'Новости'.$title;
+            $meta_tags['description'] = 'Новости'.$title;
+            $this->page->meta = $meta_tags;
+        }
+        
         $this->page->years = $years;
         
         $this->page->news = $news;
@@ -75,6 +84,14 @@ class NewsController extends Site_Controller
             }
         }
         $this->page->years = $years;
+        
+            if(count($this->page->meta) < 2) {
+                $meta_tags['title'] = $new['title'];
+                $meta_tags['keywords'] = $new['title'];
+                $meta_tags['description'] = $new['title'];
+                $this->page->meta = $meta_tags;
+            }
+        
         $this->page->content = $this->renderView('list');
         //debug::dump($imgs);
         $this->loadView('main',null);

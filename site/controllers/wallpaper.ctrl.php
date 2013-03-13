@@ -19,6 +19,14 @@ class WallpaperController extends Site_Controller
                 )
             )
         );
+        
+        if(count($this->page->meta) < 2) {
+            $meta_tags['title'] = 'Галерея — обои';
+            $meta_tags['keywords'] = 'Галерея — обои';
+            $meta_tags['description'] = 'Галерея — обои';
+            $this->page->meta = $meta_tags;
+        }
+        
         $this->page->content = $this->renderView('list');
 //        debug::dump($imgs);
         $this->loadView('main',null);

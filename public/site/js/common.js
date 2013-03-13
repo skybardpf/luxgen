@@ -7,10 +7,10 @@ $(document).ready(function(){
 
     var winH = window.innerHeight;
     var winW = window.innerWidth;
-    $("._bg, ._bg_grid_mask").height(winH/2).css({
+    $("._bg, ._bg_grid_mask, ._bg_warp").height((winH/2)-77).css({
         display: 'block'
     });
-    $("#floor").height(winH/2-30).css({
+    $("#floor").height(winH/2).css({
         display: 'block'
     });
     $("._bg_warp").css({

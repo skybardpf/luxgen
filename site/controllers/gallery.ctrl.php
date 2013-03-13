@@ -19,6 +19,14 @@ class GalleryController extends Site_Controller
                 )
             )
         );
+        
+        if(count($this->page->meta) < 2) {
+            $meta_tags['title'] = 'Галерея — Изображения';
+            $meta_tags['keywords'] = 'Галерея — Изображения';
+            $meta_tags['description'] = 'Галерея — Изображения';
+            $this->page->meta = $meta_tags;
+        }
+        
         $this->page->content = $this->renderView('list');
 //        debug::dump($imgs);
         $this->loadView('main',null);

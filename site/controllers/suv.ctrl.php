@@ -14,46 +14,16 @@ class SuvController extends Site_Controller
                 )
             )
         );
+        
+        if(count($this->page->meta) < 2) {
+            $meta_tags['title'] = 'LUXGEN 7 SUV';
+            $meta_tags['keywords'] = 'LUXGEN 7 SUV';
+            $meta_tags['description'] = 'LUXGEN 7 SUV';
+            $this->page->meta = $meta_tags;
+        }
+        
         $this->page->content = $this->renderView('list');
 //        debug::dump($imgs);
         $this->loadView('main',null);
-    }
-    
-    public function Show(){ 
-        $this->page->img = $imgs = $this->model('imgs')->GetByCond(
-            'imgs', 
-            'site', 
-            array(
-                'where' => array(
-                    'where_show' => 'imgs',
-                    'id' => $this->app->request->id,
-                ),
-            )
-        );
-        $this->loadView('show');
-        //debug::dump($imgs);
-        //$this->loadView('main',null);
-    }
-    public function actionDownload(){ 
-        $id = $this->app->request->id;
-        $img = $this->model('imgs')->GetByCond(
-            'imgs', 
-            'site', 
-            array(
-                'where' => array(
-                    'where_show' => 'imgs',
-                    'id' => $this->app->request->id,
-                ),
-            )
-        );
-        if (!empty($img)) {
-            $file = str_replace('[dir]', 'original', $img['image']);
-            $image = pathinfo($file);
-            $image = md5(time().rand(5, 100) . $image['filename']) . "." . $image['extension'];
-            header("Content-type: image/jpeg");
-            header("Content-Disposition: attachment; filename='{$image}'");
-            readfile($_SERVER['DOCUMENT_ROOT'].$file);
-        }
-        
     }
 }

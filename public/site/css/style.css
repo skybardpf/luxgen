@@ -176,7 +176,7 @@ header nav .kindsNav li.active a, header nav .kindsNav li a:hover {
     margin-top: 77px;
 }
 #tv_bg ._bg {
-    min-height: 392px;
+    /*min-height: 392px;*/
     overflow: hidden;
     position: relative;
 }
@@ -184,7 +184,7 @@ header nav .kindsNav li.active a, header nav .kindsNav li a:hover {
     background: url("/public/site/img/bg_grid.png") repeat scroll 0 0 transparent;
     display: none;
     left: 0;
-    min-height: 392px;
+    /*min-height: 392px;*/
     overflow: hidden;
     position: absolute;
     top: 0;
@@ -207,7 +207,7 @@ header nav .kindsNav li.active a, header nav .kindsNav li a:hover {
 }
 #floor {
     display: none;
-    min-height: 190px;
+    /*min-height: 190px;*/
     min-width: 935px;
     background: url("/public/site/img/floor.png") no-repeat scroll center 0 #fff;
     height: 244px;

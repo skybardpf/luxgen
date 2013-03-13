@@ -23,6 +23,13 @@ class ChroniclesController extends Site_Controller
         
         $this->page->chronicles = $chronicles;
         
+        if(count($this->page->meta) < 2) {
+            $meta_tags['title'] = 'О компании LUXGEN — Хроники';
+            $meta_tags['keywords'] = 'О компании LUXGEN — Хроники';
+            $meta_tags['description'] = 'О компании LUXGEN — Хроники';
+            $this->page->meta = $meta_tags;
+        }
+        
         $this->page->content = $this->renderView('list');
 //        debug::dump($years);
         $this->loadView('main',null);

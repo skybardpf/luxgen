@@ -17,6 +17,14 @@ class VideosController extends Site_Controller
                 )
             )
         );
+        
+        if(count($this->page->meta) < 2) {
+            $meta_tags['title'] = 'Галерея — Видео';
+            $meta_tags['keywords'] = 'Галерея — Видео';
+            $meta_tags['description'] = 'Галерея — Видео';
+            $this->page->meta = $meta_tags;
+        }
+        
         $this->page->content = $this->renderView('list');
 //        debug::dump($imgs);
         $this->loadView('main',null);
