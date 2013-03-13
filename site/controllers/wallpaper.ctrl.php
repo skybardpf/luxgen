@@ -21,9 +21,9 @@ class WallpaperController extends Site_Controller
         );
         
         if(count($this->page->meta) < 2) {
-            $meta_tags['title'] = 'Галерея — обои';
-            $meta_tags['keywords'] = 'Галерея — обои';
-            $meta_tags['description'] = 'Галерея — обои';
+            $meta_tags['title'] = 'Галерея — Обои';
+            $meta_tags['keywords'] = 'Галерея — Обои';
+            $meta_tags['description'] = 'Галерея — Обои';
             $this->page->meta = $meta_tags;
         }
         
