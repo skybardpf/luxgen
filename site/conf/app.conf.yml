@@ -76,6 +76,16 @@ run_at:
     db_user: root
     db_pass: zK1dQp1988
     db_sql_mode: ''
+  demo:
+    cond: {host: [luxgen-motor.artektiv.ru]}
+    mode: production
+    db_engine: mysql
+    db_charset: utf-8
+    db_use_pconnection: 0
+    db_host: localhost
+    db_name: luxgen
+    db_user: acdbuser
+    db_pass: ZCHGiwj7
   remote: &remote
     cond: {}
     mode: production
@@ -83,7 +93,7 @@ run_at:
     db_charset: utf-8
     db_use_pconnection: 0
     db_host: localhost
-    db_name: luxgen
+    db_name: luxgen_prod
     db_user: acdbuser
     db_pass: ZCHGiwj7
   default: *remote
