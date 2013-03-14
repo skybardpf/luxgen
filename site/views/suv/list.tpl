@@ -136,19 +136,19 @@
             <section class="Section"> 
               <h3 class="title title02">Side View<span class="ENFont">+</span></h3> 
               <p>При включении указателя поворота система контроля слепых зон Side View+ автоматически выводит на дисплей видеоизображение соответствующей зоны для повышения безопасности при смене полосы движения.</p></section> 
-            <div youtube="2BIXQxtmjZo" class="media youtubeMediaList"> 
+            <div youtube="hQ-N5_zjRlM" class="media youtubeMediaList">
               <img src="/public/site/img/technology.01.jpg" /><span class="playMask"></span></div></li> 
           <li class="technologyList technologyCenter"> 
             <section class="Section"> 
               <h3 class="title title02">Eagle View<span class="ENFont">+</span></h3> 
               <p>При движении со скоростью менее 20 км/ч система кругового обзора Eagle View+ выводит на экран изображения объектов, находящихся в радиусе 2 метров от автомобиля. Используя панель контроля THINK+, водитель может вывести полноразмерное изображение, подаваемое одной из четырех камер наблюдения. Помимо этого образы с камер заднего вида могут демонстрироваться с динамическим наложением вспомогательной парковочной разметки.</p></section> 
-            <div youtube="p9vY_wtCYoc" class="media youtubeMediaList"> 
+            <div youtube="DAG4MK76XBU" class="media youtubeMediaList">
               <img src="/public/site/img/technology.02.jpg" /><span class="playMask"></span></div></li> 
           <li class="technologyList"> 
             <section class="Section"> 
               <h3 class="title title03">Night Vision<span class="ENFont">+</span></h3> 
               <p>Система ночного видения Night Vision+ со встроенной высокочувствительной CCD-камерой увеличивает видимость при движении в темноте на 100 метров впереди и 40 метров в поперечной зоне охвата, фиксируя дорожную ситуацию на мониторе в салоне автомобиля.</p></section> 
-            <div youtube="WK23B6mlK5U" class="media youtubeMediaList"> 
+            <div youtube="eeVKR0Zkp-I" class="media youtubeMediaList">
               <img src="/public/site/img/technology.03.jpg" /><span class="playMask"></span></div></li> 
         </ul> 
         <ul class="technologyUL both"> 
@@ -156,7 +156,7 @@
             <section class="Section"> 
               <h3 class="title title04">LDWS<span class="ENFont">+</span></h3> 
               <p>Система распознавания дорожной разметки LDWS+ автоматически активизируется на скорости выше 60 км/ч и сканирует дорогу перед автомобилем, определяя местонахождение разделительных полос. Системы визуального и аудио оповещения включаются в случае значительного приближения к разделительным полосам без включения поворотных сигналов. </p></section> 
-            <div youtube="CYlioM9GOcM" class="media youtubeMediaList"> 
+            <div youtube="AIoWX1cQEZg" class="media youtubeMediaList">
               <img src="/public/site/img/technology.04.jpg" /><span class="playMask"></span></div></li>
 <!--
 <li class="technologyList"><section class="Section"><h4>EPB</h4><p>LUXGEN7 SUV is equipped with the four-mode EPB system developed by KÜSTER in Germany, which in turn significantly improves safety as compared to traditional parking brakes. The EPB system is capable of inserting a maximum braking force of 1,320N with just a push of a button. </p></section><section class="Section"><h4>Auto Park</h4><p>The EPB will automatically engage after the ignition has been switched off.</p></section><section class="Section"><h4>Take Off Assistant</h4><p>The EPB automatically disengages when the driver steps on the throttle to prevent the vehicle from rolling backwards when driving up a slope from standstill.</p></section><section class="Section"><h4>Dynamic Braking</h4><p>The EPB will automatically insert the maximum braking force possible without locking up the wheels to safety stop a vehicle in an emergency.</p></section><section class="Section"><h4>Child Protection Function</h4><p>The EPB will only disengage when the brake pedal has been depressed to prevent accidental release of the parking brakes.</p></section><div class="media youtubeMediaList"><img src="/public/site/img/technology.05.jpg" /><div class="youtubeMedia"></div></div></li>
@@ -167,7 +167,7 @@
     <ul> 
       <li class="titleFrame both"> 
         <h3 class="title">Внешний вид</h3></li> 
-      <li youtube="EYYws2ii17M" class="videoFrame youtubeMediaList"> 
+      <li youtube="IMrR0ArWuyc" class="videoFrame youtubeMediaList">
         <img src="/public/site/img/exterior.image.jpg" /><span class="playMask"></span></li> 
       <li class="ContData"> 
         <ul class="both"> 
@@ -386,7 +386,7 @@ ConSlidesList 06
     <ul> 
       <li class="titleFrame both"> 
         <h3 class="title">Качество</h3><span class="tools"><a class="FB" href="javascript:;">FB</a><a class="print" href="javascript:print();">print</a></span></li> 
-      <li youtube="8qP_Cz-X3tA" class="videoFrame youtubeMediaList"> 
+      <li youtube="KcRAJk7aT_s" class="videoFrame youtubeMediaList">
         <img src="/public/site/img/quality.image.jpg" /><span class="playMask"></span></li> 
       <li class="ContData both"> 
         <ul class="qualityUL both"> 
@@ -489,57 +489,58 @@ ConSlidesList 04
             <li class="next">след</li> 
           </ul></div></li> 
     </ul></div> 
-  <div class="cont CarStyle"> 
-    <ul> 
-      <li class="titleFrame both"> 
-        <h3 class="title">Цвета и комплектации</h3><span class="tools"><a class="FB" href="javascript:;">FB</a><a class="print" href="javascript:print();">print</a></span></li> 
-      <li class="ContData"> 
-        <ul> 
-          <li class="media"> 
-            
-<object width="980" height="551" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
+  {*<div class="cont CarStyle">
+        <ul>
+          <li class="titleFrame both">
+            <h3 class="title">Цвета и комплектации</h3><span class="tools"><a class="FB" href="javascript:;">FB</a><a class="print" href="javascript:print();">print</a></span></li>
+          <li class="ContData">
+            <ul>
+              <li class="media">
 
-<param name="movie" value="/public/site/swf/colors.swf" />
+                <object width="980" height="551" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
 
-<param name="quality" value="high" />
+                <param name="movie" value="/public/site/swf/colors.swf" />
 
-<param name="menu" value="false" />
+                <param name="quality" value="high" />
 
-<param name="wmode" value="transparent" />
+                <param name="menu" value="false" />
 
-<param name="play" value="true" />
+                <param name="wmode" value="transparent" />
 
-<param name="loop" value="true" />
+                <param name="play" value="true" />
 
-<param name="scale" value="noborder" />
+                <param name="loop" value="true" />
 
-<param name="devicefont" value="false" />
+                <param name="scale" value="noborder" />
 
-<param name="salign" value="" />
+                <param name="devicefont" value="false" />
 
-<param name="allowScriptAccess" value="sameDomain" />
+                <param name="salign" value="" />
 
-<param name="flashVars" value="model=suv" /><embed src="/public/site/swf/colors.swf" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" quality="high" menu="false" wmode="transparent" play="true" loop="true" scale="noborder" devicefont="false" allowscriptaccess="sameDomain" flashvars="model=suv" height="551" width="980"></object>
-</li> 
-          <li class="carOther"> 
-            <ul> 
-              <li class="CarColor"> 
-                <ul> 
-                  <li>Интерьер</li> 
-                  <li class="list both"><span rel="prettyPhoto[iframe]" href="http://www.luxgen-motor.com/colorbox/suv/ColorBox01.html?iframe=true&width=100%&height=100%" class="image"> 
-                      <img src="/public/site/img/cars/suv/interior/black_s.jpg" /></span><span rel="prettyPhoto[iframe]" href="http://www.luxgen-motor.com/colorbox/suv/ColorBox02.html?iframe=true&width=100%&height=100%" class="image"> 
-                      <img src="/public/site/img/cars/suv/interior/yellow_s.jpg" /></span></li> 
+                <param name="allowScriptAccess" value="sameDomain" />
+
+                <param name="flashVars" value="model=suv" /><embed src="/public/site/swf/colors.swf" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" quality="high" menu="false" wmode="transparent" play="true" loop="true" scale="noborder" devicefont="false" allowscriptaccess="sameDomain" flashvars="model=suv" height="551" width="980"></object>
+              </li>
+              <li class="carOther">
+                <ul>
+                  <li class="CarColor">
+                    <ul>
+                      <li>Интерьер</li>
+                      <li class="list both"><span rel="prettyPhoto[iframe]" href="http://www.luxgen-motor.com/colorbox/suv/ColorBox01.html?iframe=true&width=100%&height=100%" class="image">
+                          <img src="/public/site/img/cars/suv/interior/black_s.jpg" /></span><span rel="prettyPhoto[iframe]" href="http://www.luxgen-motor.com/colorbox/suv/ColorBox02.html?iframe=true&width=100%&height=100%" class="image">
+                          <img src="/public/site/img/cars/suv/interior/yellow_s.jpg" /></span></li>
+                    </ul></li>
+    <!--
+    <li class="outfit"><a href="download/suv/table/table.zip">Specs</a></li>
+    -->
+    <!--
+    <li class="outfit"><a href="download/suv/pdf/LUXGEN7_SUV.pdf" target="_blank">Brochure</a></li>
+    -->
+
                 </ul></li>
-<!--
-<li class="outfit"><a href="download/suv/table/table.zip">Specs</a></li>
--->
-<!--
-<li class="outfit"><a href="download/suv/pdf/LUXGEN7_SUV.pdf" target="_blank">Brochure</a></li>
--->
-
-            </ul></li> 
-        </ul></li> 
-    </ul></div>
+            </ul></li>
+        </ul>
+    </div>*}
 
   <div id="topBtn" class="topBtn" style="display: none;">
       <span> </span>
