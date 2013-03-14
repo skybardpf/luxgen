@@ -120,7 +120,7 @@
     <li class="NavList NavNum png">Ходовые качества</li> 
     <li class="NavList NavNum png">Качество</li> 
     <li class="NavList NavNum png">Безопасность</li> 
-    <li class="NavList NavNum png">Цвета и комплектации</li> 
+    {*<li class="NavList NavNum png">Цвета и комплектации</li> *}
     <li class="NavList NavSlide png">Галерея</li> 
   </ul></div> 
 <div class="mainContent"> 
@@ -489,8 +489,8 @@ ConSlidesList 04
             <li class="next">след</li> 
           </ul></div></li> 
     </ul></div> 
-  {*<div class="cont CarStyle">
-        <ul>
+  <div class="cont CarStyle">
+        {*<ul>
           <li class="titleFrame both">
             <h3 class="title">Цвета и комплектации</h3><span class="tools"><a class="FB" href="javascript:;">FB</a><a class="print" href="javascript:print();">print</a></span></li>
           <li class="ContData">
@@ -539,8 +539,8 @@ ConSlidesList 04
 
                 </ul></li>
             </ul></li>
-        </ul>
-    </div>*}
+        </ul>*}
+    </div>
 
   <div id="topBtn" class="topBtn" style="display: none;">
       <span> </span>
