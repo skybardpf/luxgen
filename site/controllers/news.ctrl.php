@@ -18,7 +18,7 @@ class NewsController extends Site_Controller
             $cond['limit'] = 6;
         }
         $month = array(
-            'Jan' => 'Янв.', 'Feb' => 'Фев.', 'Mar' => 'Мар.', 'Apr' => 'Апр.', 'Jun' => 'Июн.', 'Jul' => 'Июл.', 
+            'Jan' => 'Янв.', 'Feb' => 'Фев.', 'Mar' => 'Мар.', 'Apr' => 'Апр.', 'May' => 'Май', 'Jun' => 'Июн.', 'Jul' => 'Июл.',
             'Aug' => 'Авг.', 'Sep' => 'Сен.', 'Oct' => 'Окт.', 'Nov' => 'Нояб.', 'Dec' => 'Дек.',
         );
         debug::add_log("<b>Вытаскиваем новости</b>");
