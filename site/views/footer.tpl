@@ -21,4 +21,5 @@
             <a href="/privacy/">Положение о конфиденциальности</a>
         </li>
     </ul>
+    {$settings.counters}
 </footer>

@@ -155,6 +155,8 @@ cms_menu:
     link: imgs
   - title: Видео
     link: videos
+  - title: Материалы в прессе
+    link: press
 cms_smenu:
   - title: Администраторы
     link: users
