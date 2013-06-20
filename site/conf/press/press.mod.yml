@@ -17,5 +17,5 @@ tables:
       list: [id, title, source, annotation, article, created, display]
       show: [title, source, annotation, article, created, display]
       modify: [created, title, source, annotation, article, display]
-      add: [title, source, annotation, article, display]
+      add: [created, title, source, annotation, article, display]
       site: [id, created, title, source, annotation, article, display]
