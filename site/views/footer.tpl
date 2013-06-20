@@ -1,7 +1,7 @@
 <footer>
     <ul class="FootNav">
         <li class="FootNavLi01 png">
-            <a href="/about/">О компании LUXGEN</a>
+            <a href="/brand-introduction/">О компании LUXGEN</a>
         </li>
         <li class="FootNavLi02 png">
             <a href="/technology-Advanced/">Передовые технологии</a>
