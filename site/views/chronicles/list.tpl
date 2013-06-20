@@ -2,10 +2,10 @@
     <div class="HeaderSlide"></div>
     <div class="subNav subNavFixed both">
         <ul class="subNavUL both">
-            <li class="NavList png"><a href="/brend/">О бренде LUXGEN</a></li>
-            <li class="NavList png"><a href="/about/">Философия бренда</a></li>
-            <li class="NavList png selected"><a href="/chronicles/">Хроники</a></li>
-            <li class="NavList png"><a href="/press/">Пресса о нас</a></li>
+	        <li class="NavList png"><a href="/brand-introduction/">О бренде LUXGEN</a></li>
+	        <li class="NavList png"><a href="/about/">Философия бренда</a></li>
+	        <li class="NavList png selected"><a href="/chronicles/">Хроники</a></li>
+	        <li class="NavList png"><a href="/press/">Пресса о нас</a></li>
         </ul>
         <span class="subNavMask"></span>
     </div>

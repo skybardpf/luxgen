@@ -399,7 +399,7 @@ ConSlidesList 06
           <li class="qualityList qualityListCenter"> 
             <section class="Section"> 
               <h4></h4> 
-              <p>Проводились испытания и в условиях высокогорья оклого <span class="HL">5500–6000</span> м над уровнем моря (на горе Куньлунь).</p></section> 
+              <p>Проводились испытания и в условиях высокогорья на высотах <span class="HL">5500–6000</span> м над уровнем моря (на горе Куньлунь).</p></section>
             <div class="media"> 
               <img src="/public/site/img/quality.02.jpg" /></div></li> 
           <li class="qualityList"> 

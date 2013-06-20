@@ -2,10 +2,10 @@
     <div class="HeaderSlide"></div>
     <div class="subNav subNavFixed both">
         <ul class="subNavUL both">
-            <li class="NavList png"><a href="/brend/">О бренде LUXGEN</a></li>
-            <li class="NavList png"><a href="/about/">Философия бренда</a></li>
-            <li class="NavList png"><a href="/chronicles/">Хроники</a></li>
-            <li class="NavList png selected"><a href="/press/">Пресса о нас</a></li>
+	        <li class="NavList png"><a href="/brand-introduction/">О бренде LUXGEN</a></li>
+	        <li class="NavList png"><a href="/about/">Философия бренда</a></li>
+	        <li class="NavList png"><a href="/chronicles/">Хроники</a></li>
+	        <li class="NavList png selected"><a href="/press/">Пресса о нас</a></li>
         </ul>
         <span class="subNavMask"></span>
     </div>
@@ -20,7 +20,7 @@
                 </span>
             </div>
             <div id="contentFont" class="fontNormal">
-                <div class="ContData">
+                <div class="ContData press">
                     {if $press}
                         <ul class="ContTimeline both">
                             {foreach from=$press item=chronicle name=i}
@@ -33,10 +33,10 @@
                                         <li class="ContTimelineTop">
                                             <time class="TimelineDate">{$chronicle.created|date_format:'%Y.%m.%d'}</time>
                                             <h5 class="TimelineTitle">{$chronicle.title}</h5>
+	                                        <h5 class="TimelineTitle grey">{$chronicle.source}</h5>
                                         </li>
-                                        <li>Источник: {$chronicle.source}</li>
-                                        <li>Аннотация: {$chronicle.annotation}</li>
-                                        <li><a href="{$chronicle.article}">Статья целиком</a><li>
+                                        <li class="lefter">{$chronicle.annotation}</li>
+                                        <li class="lefter"><a class="blue_link" href="{$chronicle.article}"><img src="/public/site/img/pdf_icon.gif" style="margin-right: 5px;margin-bottom: 3px;">Статья целиком</a><li>
 
                                     </ul>
                                 </li>

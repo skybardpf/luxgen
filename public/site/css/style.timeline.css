@@ -75,3 +75,16 @@
     overflow: hidden;
     color: #000;
 }
+.TimelineTitle.grey {
+	color: #808080;
+	font-weight: normal;
+}
+.blue_link {
+	color: #00A5F1;
+}
+.blue_link:hover {
+	text-decoration: underline;
+}
+.lefter {
+	padding-left: 15px;
+}

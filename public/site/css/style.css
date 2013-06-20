@@ -625,3 +625,41 @@ footer ul.siteMap li a {
     display: block;
     font-size: 15px;
 }
+.with_disks {
+	padding-left: 20px;
+	list-style-type: disc;
+	margin: 0 0 10px;
+	letter-spacing: 1px;
+	line-height: 2em;
+	color: #3C3C3C;
+}
+h1.centered {
+	color: #3C3C3C;
+	font-size: 15px;
+	letter-spacing: 1px;
+	margin: 15px 0 0;
+	line-height: 2em;
+}
+.quotes_right {
+	float: right;
+	font-size: 11px;
+	width: 264px;
+	margin-right: 415px;
+	text-align: right;
+}
+.quotes_right .inline {
+	font-style: italic;
+	display: inline;
+}
+#contentFont.fontNormal.static p {
+	letter-spacing: 1px;
+	padding: 0 0 15px;
+	line-height: 2em;
+	color: #3C3C3C;
+}
+#contentFont.fontNormal.static a {
+	color: #0582C4;
+}
+.mainContent .cont .ContData.press p {
+	letter-spacing: normal;
+}
