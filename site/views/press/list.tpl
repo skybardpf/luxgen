@@ -4,15 +4,15 @@
         <ul class="subNavUL both">
             <li class="NavList png"><a href="/brend/">О бренде LUXGEN</a></li>
             <li class="NavList png"><a href="/about/">Философия бренда</a></li>
-            <li class="NavList png selected"><a href="/chronicles/">Хроники</a></li>
-            <li class="NavList png"><a href="/press/">Пресса о нас</a></li>
+            <li class="NavList png"><a href="/chronicles/">Хроники</a></li>
+            <li class="NavList png selected"><a href="/press/">Пресса о нас</a></li>
         </ul>
         <span class="subNavMask"></span>
     </div>
     <div class="mainContent">
         <div class="cont Technology">
             <div class="both titleFrame">
-                <h3 class="title">Хроники</h3>
+                <h3 class="title">Пресса о нас</h3>
                 <span id="chooseFont" class="tools">
                     <a rel="fontSmall" href="#" class="fontDecrease">Маленький</a>
                     <a rel="fontNormal" href="#" class="fontReset">Средний</a>
@@ -21,9 +21,9 @@
             </div>
             <div id="contentFont" class="fontNormal">
                 <div class="ContData">
-                    {if $chronicles}
+                    {if $press}
                         <ul class="ContTimeline both">
-                            {foreach from=$chronicles item=chronicle name=i}
+                            {foreach from=$press item=chronicle name=i}
                                 <li class="ContTimelineList{if $smarty.foreach.i.iteration%2 == 0} ContTimelineMargin ContTimelineRight{else} ContTimelineLeft{/if}">
                                     {if $chronicle.year}
                                         <span class="TimelineYear">{$chronicle.year}</span>
@@ -34,7 +34,9 @@
                                             <time class="TimelineDate">{$chronicle.created|date_format:'%Y.%m.%d'}</time>
                                             <h5 class="TimelineTitle">{$chronicle.title}</h5>
                                         </li>
-                                        <li><img src="{$chronicle.image|replace:'[dir]':'small'}"></li>
+                                        <li>Источник: {$chronicle.source}</li>
+                                        <li>Аннотация: {$chronicle.annotation}</li>
+                                        <li><a href="{$chronicle.article}">Статья целиком</a><li>
 
                                     </ul>
                                 </li>

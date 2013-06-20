@@ -6,7 +6,7 @@ tables:
       source: {type: tinytext, notnull: 1, am: {type: string, req: 1, title: Источник}}
       annotation: {type: text, am: {type: text, req: 1, title: Аннотация}}
       article: {type: tinytext, notnull: 0, am: {type: file, req: 1, title: Статья целиком}}
-      created: {type: datetime, notnull: 1, am: {type: date, req: 1, title: Дата}}
+      created: {type: date, notnull: 1, am: {type: date, req: 1, title: Дата, showsTime: 0, ifFormat: '%d.%m.%Y', daFormat: '%d.%m.%Y'}}
       display: {type: enum('yes','no'), default: 'yes', notnull: 1, am: {type: string, title: Отображать на сайте, htmltype: checkbox, default: 'yes', checked: 'yes', unchecked: 'no', values: {no: нет, yes: да}}}
     table:
       PRIMARY KEY: id

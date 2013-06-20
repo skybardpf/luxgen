@@ -1,6 +1,7 @@
 <header>
     <div class="topbar">
         <ul>
+            <li><a href="/dealer/">Информация для дилеров</a></li>
             <li><a href="/news/">Новости</a></li>
             <li><a href="/gallery/">Галерея</a></li>
             <li><a href="mailto:dealer@luxgen-motor.ru">Контакты</a></li>
