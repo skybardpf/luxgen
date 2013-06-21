@@ -13,8 +13,8 @@
 <div class="subNav subNavFixed both">
     <ul class="subNavUL both">
         <li class="NavList png selected" id="li1" style="display: list-item;"><a href="/gallery/">Изображения</a></li>
-        <li class="NavList png " id="li2" style="display: list-item;"><a href="/wallpaper/">Обои</a></li>
-        <li class="NavList png " id="li3" style="display: list-item;"><a href="/videos/">Видео</a></li>
+        {*<li class="NavList png " id="li2" style="display: list-item;"><a href="/wallpaper/">Обои</a></li>*}
+        {*<li class="NavList png " id="li3" style="display: list-item;"><a href="/videos/">Видео</a></li>*}
     </ul>
     <span class="subNavMask"></span>
 </div>

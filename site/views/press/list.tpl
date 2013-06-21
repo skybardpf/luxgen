@@ -36,7 +36,7 @@
 	                                        <h5 class="TimelineTitle grey">{$chronicle.source}</h5>
                                         </li>
                                         <li class="lefter">{$chronicle.annotation}</li>
-                                        <li class="lefter" style="margin-bottom: 10px;"><a class="blue_link" href="{if $chronicle.linktype eq 'url'}{$chronicle.article}{else}{$chronicle.article}{/if}">Статья целиком</a><li>
+                                        <li class="lefter" style="margin-bottom: 10px;"><a class="blue_link" href="{if $chronicle.linktype eq 'url'}{$chronicle.link}{else}{$chronicle.article}{/if}">Статья целиком</a><li>
 
                                     </ul>
                                 </li>
