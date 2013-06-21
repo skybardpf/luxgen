@@ -30,13 +30,13 @@
                                     {/if}
                                     <ul class="TimelineBox">
 
-                                        <li class="ContTimelineTop">
+                                        <li class="ContTimelineTop press">
                                             <time class="TimelineDate">{$chronicle.created|date_format:'%Y.%m.%d'}</time>
                                             <h5 class="TimelineTitle">{$chronicle.title}</h5>
 	                                        <h5 class="TimelineTitle grey">{$chronicle.source}</h5>
                                         </li>
                                         <li class="lefter">{$chronicle.annotation}</li>
-                                        <li class="lefter"><a class="blue_link" href="{$chronicle.article}"><img src="/public/site/img/pdf_icon.gif" style="margin-right: 5px;margin-bottom: 3px;">Статья целиком</a><li>
+                                        <li class="lefter" style="margin-bottom: 10px;"><a class="blue_link" href="{if $chronicle.linktype eq 'url'}{$chronicle.article}{else}{$chronicle.article}{/if}">Статья целиком</a><li>
 
                                     </ul>
                                 </li>

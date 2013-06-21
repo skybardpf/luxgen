@@ -5,7 +5,10 @@ tables:
       title: {type: tinytext, notnull: 1, am: {type: string, req: 1, title: Заголовок}}
       source: {type: tinytext, notnull: 1, am: {type: string, req: 1, title: Источник}}
       annotation: {type: text, am: {type: ckhtml, req: 1, title: Аннотация}}
-      article: {type: tinytext, notnull: 0, am: {type: file, req: 1, title: Статья целиком}}
+      article: {type: tinytext, notnull: 0, am: {type: file, req: 1, title: Файл}}
+      link: {type: tinytext, notnull: 0, am: {type: string, req: 1, title: Ссылка}}
+      linktype: {type: "enum('file','url')", notnull: 1, default: 'file', am: {type: radio, req: 1, title: Статья целиком, values: {file: Файл, url: Ссылка}}}
+      link_holder: {am: {type: placeholder, id: link_holder}}
       created: {type: date, notnull: 1, am: {type: date, req: 1, title: Дата, showsTime: 0, ifFormat: '%d.%m.%Y', daFormat: '%d.%m.%Y'}}
       display: {type: enum('yes','no'), default: 'yes', notnull: 1, am: {type: string, title: Отображать на сайте, htmltype: checkbox, default: 'yes', checked: 'yes', unchecked: 'no', values: {no: нет, yes: да}}}
     table:
@@ -14,8 +17,10 @@ tables:
         created: [created]
         display: [display]
     actions:
-      list: [id, title, source, annotation, article, created, display]
-      show: [title, source, annotation, article, created, display]
-      modify: [created, title, source, annotation, article, display]
-      add: [created, title, source, annotation, article, display]
-      site: [id, created, title, source, annotation, article, display]
+      list: [id, title, source, annotation, created, display]
+      show: [title, source, annotation, created, display]
+      modify: [created, title, source, annotation, linktype, link_holder, display]
+      add: [created, title, source, annotation, linktype, link_holder, display]
+      site: [id, created, title, source, annotation, linktype, link, article, display]
+      modurl: [created, title, source, annotation, linktype, link_holder, link, display]
+      modfile: [created, title, source, annotation, linktype, link_holder, article, display]
