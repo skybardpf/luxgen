@@ -17,6 +17,7 @@
         </h1>
         <ul class="kindsNav">
             <!--<li class="active"><a href="sedan.html">LUXGEN5 Sedan</a></li>-->
+	        <li><a href="/test_drive/">Тест-драйв</a></li>
             <li><a href="/suv/">LUXGEN7 SUV</a></li>
             <!--<li><a href="mpv.html">LUXGEN7 MPV</a></li>-->
             <!--<li><a href="ev.html">EV<span class="ENFont">+</span> Электромобиль</a></li>-->
