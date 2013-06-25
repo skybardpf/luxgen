@@ -7,8 +7,8 @@ tables:
       patronymic: {am: {type: string, title: Отчество, req: 1}}
       age: {am: {type: integer, title: 'Возраст (полных лет)', req: 1, validate: {ageCheck: 'Возраст не должен быть меньше 18 и превышать 100'}}}
       city: {am: {type: string, title: Город проживания, req: 1}}
-      start_time: {am: {type: select, null: Не выбран, title: Удобное время для связи с, req: 1, validate: {compareTimes: 'Время начала не должно превышать время окончания'}}}
-      end_time: {am: {type: select, null: Не выбран, title: по, req: 1}}
+      start_time: {am: {type: select, null: '...', title: Удобное время для связи , req: 1, validate: {compareTimes: 'Время начала не должно превышать время окончания'}}}
+      end_time: {am: {type: select, null: '...', title: по, req: 1}}
       phone: {am: {type: string, title: Контактный телефон, req: 1}}
       email: {am: {type: mail, title: Электронная почта, req: 1}}
     actions:

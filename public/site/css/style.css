@@ -663,3 +663,27 @@ h1.centered {
 .mainContent .cont .ContData.press p {
 	letter-spacing: normal;
 }
+.feedback {
+	font-size: 13px;
+	width: 980px;
+	letter-spacing: 1px;
+	line-height: 2em;
+	color: #3C3C3C;
+	margin: 130px auto 0;
+}
+.feedback h2 {
+	margin-bottom: 20px;
+}
+.feedback .title {
+	margin-bottom: 20px;
+	display: block;
+}
+.feedback td {
+	padding-bottom: 5px;
+}
+.feedback input[type=text] {
+	width: 218px;
+}
+.feedback a {
+	color: #0582C4;
+}
