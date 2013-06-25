@@ -10,6 +10,8 @@ tables:
       linktype: {type: "enum('file','url')", notnull: 1, default: 'file', am: {type: radio, req: 1, title: Статья целиком, values: {file: Файл, url: Ссылка}}}
       link_holder: {am: {type: placeholder, id: link_holder}}
       created: {type: date, notnull: 1, am: {type: date, req: 1, title: Дата, showsTime: 0, ifFormat: '%d.%m.%Y', daFormat: '%d.%m.%Y'}}
+      sitearticle: {type: enum('yes','no'), default: 'no', notnull: 1, am: {type: string, title: Показать текст статьи на сайте, otitle: Показывать, htmltype: checkbox, default: 'no', checked: 'yes', unchecked: 'no', values: {no: нет, yes: да}}}
+      articletext: {type: longtext, notnull: 1, am: {type: html, htmltype: ckhtml, title: Текст статьи}}
       display: {type: enum('yes','no'), default: 'yes', notnull: 1, am: {type: string, title: Отображать на сайте, htmltype: checkbox, default: 'yes', checked: 'yes', unchecked: 'no', values: {no: нет, yes: да}}}
     table:
       PRIMARY KEY: id
@@ -19,8 +21,8 @@ tables:
     actions:
       list: [id, title, source, annotation, created, display]
       show: [title, source, annotation, created, display]
-      modify: [created, title, source, annotation, linktype, link_holder, display]
-      add: [created, title, source, annotation, linktype, link_holder, display]
-      site: [id, created, title, source, annotation, linktype, link, article, display]
-      modurl: [created, title, source, annotation, linktype, link_holder, link, display]
-      modfile: [created, title, source, annotation, linktype, link_holder, article, display]
+      modify: [created, title, source, annotation, linktype, link_holder, sitearticle, articletext, display]
+      add: [created, title, source, annotation, linktype, link_holder, sitearticle, articletext, display]
+      site: [id, created, title, source, annotation, linktype, link, article, sitearticle, articletext, display]
+      modurl: [created, title, source, annotation, linktype, link_holder, link, sitearticle, articletext, display]
+      modfile: [created, title, source, annotation, linktype, link_holder, article, sitearticle, articletext, display]

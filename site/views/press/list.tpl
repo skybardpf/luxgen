@@ -19,6 +19,9 @@
                     <a rel="fontLarge" href="#" class="fontIncrease">Большой</a>
                 </span>
             </div>
+            {if $request.id}
+            {loadview name='press/show'}
+            {else}
             <div id="contentFont" class="fontNormal">
                 <div class="ContData press">
                     {if $press}
@@ -36,7 +39,13 @@
 	                                        <h5 class="TimelineTitle grey">{$chronicle.source}</h5>
                                         </li>
                                         <li class="lefter">{$chronicle.annotation}</li>
-                                        <li class="lefter" style="margin-bottom: 10px;"><a class="blue_link" href="{if $chronicle.linktype eq 'url'}{$chronicle.link}{else}{$chronicle.article}{/if}">Статья целиком</a><li>
+                                        <li class="lefter" style="margin-bottom: 10px;"><a class="blue_link" href="
+                                        {if $chronicle.sitearticle eq 'no'}
+                                            {if $chronicle.linktype eq 'url'}{$chronicle.link}{else}{$chronicle.article}{/if}
+                                        {else}
+                                            /press/id/{$chronicle.id}
+                                        {/if}
+                                        ">Статья целиком</a><li>
 
                                     </ul>
                                 </li>
@@ -46,6 +55,7 @@
                 </div>
             </div>
         </div>
+        {/if}
         <div id="topBtn" class="topBtn" style="display: none;">
             <span> </span>
         </div>

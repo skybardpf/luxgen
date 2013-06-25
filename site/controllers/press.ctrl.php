@@ -13,7 +13,9 @@ class PressController extends Site_Controller
         zf::addCSS('style', '/public/site/css/style.css');
         zf::addCSS('style.timeline', '/public/site/css/style.timeline.css');
         zf::addCSS('style.template', '/public/site/css/style.template.css');
-
+        if($this->app->request->id){
+           return $this->Show();
+        }
         $cond = $ind = array();
         $cond['order'] = array('created' => 'DESC');
         debug::add_log("<b>Вытаскиваем прессу</b>");
@@ -40,6 +42,14 @@ class PressController extends Site_Controller
         }
 
 
+        $this->page->content = $this->renderView('list');
+//        debug::dump($years);
+        $this->loadView('main',null);
+    }
+    public function Show(){
+        if($this->app->request->id){
+            $this->page->press_item = $this->model('press', 'press')->Get($this->app->request->id, 'press', $this->model('press', 'press')->getFieldsNames('press', 'site'));
+        }
         $this->page->content = $this->renderView('list');
 //        debug::dump($years);
         $this->loadView('main',null);
