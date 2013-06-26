@@ -10,7 +10,8 @@
     </div>
     <div id="floor"></div>
 </div>*}
-<div class="IndexContent" style="min-height: 850px; margin-top: 77px; background: url('/public/site/img/main.jpg') center center;">
+<div class="IndexContent" style="margin-top: 77px;">
+	<img src="/public/site/img/main.jpg" style="width:100%">
 
 </div>
 <link rel="stylesheet" href="/public/site/css/index.css">
