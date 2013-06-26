@@ -1,6 +1,6 @@
 <div class="newsTitle">
     <h3>{$press_item.title}</h3>
-    <h3>Источник: <a class="blue_link" href="{if $press_item.linktype eq 'url'}{$press_item.link}{else}{$press_item.article}{/if}">Статья целиком</a></h3>
+    <h3>Источник: <a class="blue_link" href="{if $press_item.linktype eq 'url'}{$press_item.link}{else}{$press_item.article}{/if}">{$press_item.source}</a></h3>
 </div>
 <div id="contentFont" class="fontNormal">
     <div class="ContData">
