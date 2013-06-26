@@ -687,3 +687,20 @@ h1.centered {
 .feedback a {
 	color: #0582C4;
 }
+.fb_edge_widget_with_comment {
+	bottom: -7px;
+	left: 15px;
+	float: left;
+}
+.press_title {
+	color: #000;
+	font-size: 15px;
+	line-height: 18px;
+	font-weight: bold;
+}
+.newsTitle .blue_link {
+	text-decoration: underline;
+}
+.press_date {
+
+}
