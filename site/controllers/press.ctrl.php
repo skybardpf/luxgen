@@ -35,9 +35,9 @@ class PressController extends Site_Controller
 
 
         if(count($this->page->meta) < 2) {
-            $meta_tags['title'] = 'О компании LUXGEN — Хроники';
-            $meta_tags['keywords'] = 'О компании LUXGEN — Хроники';
-            $meta_tags['description'] = 'О компании LUXGEN — Хроники';
+            $meta_tags['title'] = 'Новости — Пресса о нас';
+            $meta_tags['keywords'] = 'Новости — Пресса о нас';
+            $meta_tags['description'] = 'Новости — Пресса о нас';
             $this->page->meta = $meta_tags;
         }
 
@@ -58,6 +58,12 @@ class PressController extends Site_Controller
     public function Show(){
         if($this->app->request->id){
             $this->page->press_item = $this->model('press', 'press')->Get($this->app->request->id, 'press', $this->model('press', 'press')->getFieldsNames('press', 'site'));
+        }
+		        if(count($this->page->meta) < 2) {
+            $meta_tags['title'] = $this->page->press_item['title'];
+            $meta_tags['keywords'] = 'Новости — Пресса о нас';
+            $meta_tags['description'] = 'Новости — Пресса о нас';
+            $this->page->meta = $meta_tags;
         }
         $this->page->content = $this->renderView('list');
 //        debug::dump($years);
