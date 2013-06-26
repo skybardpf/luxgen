@@ -7,6 +7,7 @@
             <a href="/technology-Advanced/">Передовые технологии</a>
         </li>
     </ul>
+        <div class="fb-like" data-href="http://www.facebook.com/LuxgenRussia" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
     <ul class="siteMap">
         <li>
             <a href="/worldwidesites/">Luxgen в мире</a>
