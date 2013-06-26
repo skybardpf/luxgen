@@ -65,6 +65,15 @@ class PressController extends Site_Controller
             $meta_tags['description'] = 'Новости — Пресса о нас';
             $this->page->meta = $meta_tags;
         }
+		$tmpyears = $this->model('news')->getList('news', array('created'));
+        if (!empty($tmpyears)) {
+            foreach($tmpyears as $year) {
+                $year = date('Y', strtotime($year['created']));
+                $years[$year] = $year;
+            }
+        }
+
+        $this->page->years = $years;
         $this->page->content = $this->renderView('list');
 //        debug::dump($years);
         $this->loadView('main',null);
