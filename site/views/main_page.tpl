@@ -1,4 +1,4 @@
-<div class="IndexContent">
+{*<div class="IndexContent">
     <div id="tv_bg">
         <div class="_bg">
             <div class="_bg_warp"></div>
@@ -9,5 +9,8 @@
         </div>
     </div>
     <div id="floor"></div>
+</div>*}
+<div class="IndexContent" style="min-height: 850px; margin-top: 77px; background: url('/public/site/img/main.jpg');">
+
 </div>
 <link rel="stylesheet" href="/public/site/css/index.css">
