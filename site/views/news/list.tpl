@@ -9,6 +9,7 @@
                     <li class="NavList png{if $smarty.get.year == $year} selected{/if}"><a href="/news/?year={$year}">{$year}</a></li>
                 {/foreach}
             {/if}
+            <li class="NavList png"><a href="/press/">Пресса о нас</a></li>
         </ul>
         <span class="subNavMask"></span>
     </div>

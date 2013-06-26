@@ -2,9 +2,12 @@
     <div class="HeaderSlide"></div>
     <div class="subNav subNavFixed both">
         <ul class="subNavUL both">
-	        <li class="NavList png"><a href="/brand-introduction/">О бренде LUXGEN</a></li>
-	        <li class="NavList png"><a href="/about/">Философия бренда</a></li>
-	        <li class="NavList png"><a href="/chronicles/">Хроники</a></li>
+            <li class="NavList png"><a href="/news/">Последние</a></li>
+            {if $years}
+                {foreach from=$years item=year}
+                    <li class="NavList png"><a href="/news/?year={$year}">{$year}</a></li>
+                {/foreach}
+            {/if}
 	        <li class="NavList png selected"><a href="/press/">Пресса о нас</a></li>
         </ul>
         <span class="subNavMask"></span>
