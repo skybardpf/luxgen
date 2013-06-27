@@ -701,6 +701,14 @@ h1.centered {
 .newsTitle .blue_link {
 	text-decoration: underline;
 }
-.press_date {
-
+.newsTitle .blue_link.press {
+	color: #808080;
+	font-weight: normal;
+}
+h3.press {
+	color: #808080;
+	font-weight: normal;
+}
+.newsTitle.no_marg {
+	margin: 0;
 }
