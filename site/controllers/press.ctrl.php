@@ -18,6 +18,7 @@ class PressController extends Site_Controller
         }
         $cond = $ind = array();
         $cond['order'] = array('created' => 'DESC');
+		$cond['where'] = array('display' => 'yes');
         debug::add_log("<b>Вытаскиваем прессу</b>");
         $press = $this->model('press')->getList('press', 'site', $cond);
         if (!empty($press)) {
