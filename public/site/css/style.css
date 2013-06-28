@@ -376,6 +376,7 @@ header nav .kindsNav li.active a, header nav .kindsNav li a:hover {
     margin: 0 auto;
     text-align: center;
     width: 450px;
+	height: 253px;
 }
 .Technology .ContData {
     position: relative;
