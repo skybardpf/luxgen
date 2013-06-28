@@ -12,9 +12,9 @@
         <li>
             <a href="/worldwidesites/">Luxgen в мире</a>
         </li>
-        <li>
-            <a href="/sitemap/">Карта сайта</a>
-        </li>
+        {*<li>*}
+            {*<a href="/sitemap/">Карта сайта</a>*}
+        {*</li>*}
         <li>
             <a href="/copyright/">Авторские права</a>
         </li>

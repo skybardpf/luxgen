@@ -17,7 +17,6 @@
         </h1>
         <ul class="kindsNav">
             <!--<li class="active"><a href="sedan.html">LUXGEN5 Sedan</a></li>-->
-            <li><a href="/price_features/">Цены и характеристики</a></li>
 	        <li><a href="/test_drive/">Тест-драйв</a></li>
             <li><a href="/suv/">LUXGEN7 SUV</a></li>
             <!--<li><a href="mpv.html">LUXGEN7 MPV</a></li>-->

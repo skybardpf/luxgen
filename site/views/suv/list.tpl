@@ -120,7 +120,7 @@
     <li class="NavList NavNum png">Ходовые качества</li> 
     <li class="NavList NavNum png">Качество</li> 
     <li class="NavList NavNum png">Безопасность</li> 
-    {*<li class="NavList NavNum png">Цвета и комплектации</li> *}
+    <li class="NavList NavNum png">Цены и характеристики</li>
     <li class="NavList NavSlide png">Галерея</li> 
   </ul></div> 
 <div class="mainContent"> 
@@ -393,19 +393,19 @@ ConSlidesList 06
           <li class="qualityList"> 
             <section class="Section"> 
               <h4></h4> 
-              <p>Низкотемпературные ходовые испытания проходили в условиях сверхнизких температур в северных районах Китая.</p></section> 
+              <p>Низкотемпературные ходовые испытания.</p></section>
             <div class="media"> 
               <img src="/public/site/img/quality.01.jpg" /></div></li> 
           <li class="qualityList qualityListCenter"> 
             <section class="Section"> 
               <h4></h4> 
-              <p>Проводились испытания и в условиях высокогорья на высотах <span class="HL">5500–6000</span> м над уровнем моря (на горе Куньлунь).</p></section>
+              <p>Испытания в условиях высокогорья (<span class="HL">5500–6000 м</span> над уровнем моря).</p></section>
             <div class="media"> 
               <img src="/public/site/img/quality.02.jpg" /></div></li> 
           <li class="qualityList"> 
             <section class="Section"> 
               <h4></h4> 
-              <p>Высокотемпературные испытания, а также тесты на воздействие пыли (песка) проходили в условиях жаркого климата Турфана, Китай <span class="HL">(47 ℃)</span>.</p></section> 
+              <p>Высокотемпературные испытания <span class="HL">(47 ℃)</span> и тесты на воздействие пыли / песка.</p></section>
             <div class="media"> 
               <img src="/public/site/img/quality.03.jpg" /></div></li> 
         </ul></li> 
@@ -541,6 +541,15 @@ ConSlidesList 04
             </ul></li>
         </ul>*}
     </div>
+  <div class="cont PriceFeatures">
+      <ul>
+        <li class="titleFrame both">
+          <h3 class="title">Цены и характеристики</h3><span class="tools"><a class="FB" href="javascript:;">FB</a><a class="print" href="javascript:print();">print</a></span></li>
+        <li class="ContData">
+            <p>Информация появится 5 сентября.</p>
+        </li>
+      </ul>
+  </div>
 
   <div id="topBtn" class="topBtn" style="display: none;">
       <span> </span>
