@@ -5,7 +5,7 @@
         </div>
         <div class="_bg_grid_mask"></div>
         <div class="_car">
-            <img class="_on _sedan" src="/public/site/img/20120927181224491.png" style="top: 100px; left: 485px;">
+            <img class="_on _sedan" src="/public/site/img/20120927181224492.png" style="top: 100px; left: 485px;">
         </div>
     </div>
     <div id="floor"></div>

@@ -713,3 +713,8 @@ h3.press {
 .newsTitle.no_marg {
 	margin: 0;
 }
+.drive_title {
+	color: #666666;
+	font-size: 18px;
+	margin: 0 0 5px;
+}
