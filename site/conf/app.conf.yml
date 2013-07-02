@@ -135,6 +135,7 @@ modes:
 settings:
   counters: {title: Счетчики, type: raw_text}
   error_404: {title: Текст ошибки 404, type: raw_text}
+  tdrv_email: {title: email для тест драйв формы, type: string}
 # Меню CMS
 cms_menu:
   - title: Страницы
