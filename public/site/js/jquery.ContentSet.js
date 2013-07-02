@@ -94,11 +94,11 @@
         function eraseCookie(name) {
             createCookie(name, "", -1);
         }
-        var u = navigator.userAgent;
+        /*var u = navigator.userAgent;
         if (u.match(/(iPhone|iPad)/i) || u.match(/Android/i) || u.match(/(IEMobile|Windows Phone)/i)) {
             if (getCookie('mode') != 'w') {
                 window.location = path;
             }
-        }
+        }*/
     });
 })(jQuery);
