@@ -546,7 +546,7 @@ ConSlidesList 04
         <li class="titleFrame both">
           <h3 class="title">Цены и характеристики</h3><span class="tools"><a class="FB" href="javascript:;">FB</a><a class="print" href="javascript:print();">print</a></span></li>
         <li class="ContData">
-            <p>Информация появится 5 сентября.</p>
+            <p>Информация появится в начале сентября 2013г.</p>
         </li>
       </ul>
   </div>
