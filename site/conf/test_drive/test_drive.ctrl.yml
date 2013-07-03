@@ -1,0 +1,17 @@
+title: Заявки
+
+actions:
+  show: [Просмотреть заявку, Просмотр заявки]
+  list: [Просмотреть заявки, Просмотр заявок, [delete]]
+  add: [Добавить заявку, Добавление заявки, Заявка успешно добавлена, Заявку добавить не удалось, '[root_url]test_drive/list/']
+  modify: [Редактировать заявку, Редактирование заявки, Заявка успешно отредактирована, Заявку отредактировать не удалось, '[root_url]test_drive/list/']
+  delete: [Удалить заявку, Удаление заявки, Заявка успешно удалена, Заявку удалить не удалось, '[root_url]test_drive/list/', 'Вы уверены, что хотите удалить эту заявку?']
+
+list_actions:
+  inline:
+    show: {link: 'test_drive/show/id/[id]', put: {title: before}, icon: show}
+    delete: {link: 'test_drive/delete/id/[id]', icon: delete}
+
+  after:
+
+noContent: Заявок не найдено
