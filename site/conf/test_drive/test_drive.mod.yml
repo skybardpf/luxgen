@@ -1,18 +1,25 @@
 tables:
   test_drive:
-    dont_install: 1
     fields:
-      surname: {am: {type: string, title: Фамилия, req: 1}}
-      name: {am: {type: string, title: Имя, req: 1}}
-      patronymic: {am: {type: string, title: Отчество, req: 1}}
-      age: {am: {type: integer, title: 'Возраст (полных лет)', req: 1, validate: {ageCheck: 'Возраст не должен быть меньше 18 и превышать 100'}}}
-      city: {am: {type: string, title: Город проживания, req: 1}}
-      start_time: {am: {type: select, null: '...', title: Удобное время для связи , req: 1, validate: {compareTimes: 'Время начала не должно превышать время окончания'}}}
-      end_time: {am: {type: select, null: '...', title: по, req: 1}}
-      phone: {am: {type: string, title: Контактный телефон, req: 1}}
-      email: {am: {type: mail, title: Электронная почта, req: 1}}
+      id: {type: int, notnull: 1, auto_increment: 1, am: {type: integer}}
+      created: {type: datetime, notnull: 1, am: {type: datetime, req: 1, title: Дата создания}}
+      surname: {type: tinytext, am: {type: string, title: Фамилия, req: 1}}
+      name: {type: tinytext, am: {type: string, title: Имя, req: 1}}
+      patronymic: {type: tinytext, am: {type: string, title: Отчество, req: 1}}
+      age: {type: tinytext, am: {type: integer, title: 'Возраст (полных лет)', req: 1, validate: {ageCheck: 'Возраст не должен быть меньше 18 и превышать 100'}}}
+      city: {type: tinytext, am: {type: string, title: Город проживания, req: 1}}
+      start_time: {type: tinytext, am: {type: select, null: '...', title: Удобное время для связи , req: 1, validate: {compareTimes: 'Время начала не должно превышать время окончания'}}}
+      end_time: {type: tinytext, am: {type: select, null: '...', title: по, req: 1}}
+      phone: {type: tinytext, am: {type: string, title: Контактный телефон, req: 1}}
+      email: {type: tinytext, am: {type: mail, title: Электронная почта, req: 1}}
+    table:
+      PRIMARY KEY: id
     actions:
       site_form: [surname, name, patronymic, age, city, start_time, end_time, phone, email]
+      list: [id, created, surname, name, patronymic, age, city, start_time, end_time, phone, email]
+      modify: [surname, name, patronymic, age, city, start_time, end_time, phone, email]
+      add: [surname, name, patronymic, age, city, start_time, end_time, phone, email]
+      show: [surname, name, patronymic, age, city, start_time, end_time, phone, email]
 
 mail:
   test_drive_request:
@@ -23,5 +30,5 @@ mail:
       <p>[date_time]</p>
       <p>[fields]</p>
   repl:
-    site_name: "Public Post"
+    site_name: "Luxgen"
   date_format: H:i:s d.m.Y

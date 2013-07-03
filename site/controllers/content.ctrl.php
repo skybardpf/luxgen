@@ -22,6 +22,9 @@ class ContentController extends Site_Content_Controller
 				'fields' => $fields,
 				'host' => $_SERVER['HTTP_HOST']
 			);
+            $data['created'] = date('Y-m-d H:i:s');
+            $model->Save('test_drive', $data);
+
 			$model->SendMail($this->page->settings['tdrv_email'], $data_to_send, 'test_drive_request');
 			$this->page->success_send = true;
 		} else {

@@ -158,6 +158,8 @@ cms_menu:
     link: videos
   - title: Материалы в прессе
     link: press
+  - title: Заявки на тест драйв
+    link: test_drive
 cms_smenu:
   - title: Администраторы
     link: users
