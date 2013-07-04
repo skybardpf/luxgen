@@ -91,7 +91,7 @@
 }
 .Wrap .midWrap .mainContent div.cont .ContData .ConSlides .ConSlidesUL li.ConSlidesList .ConSlidesInfo {
     display: block;
-    letter-spacing: 0.2em;
+    /*letter-spacing: 0.2em;*/
     position: relative;
 }
 .Wrap .midWrap .mainContent div.cont .ContData .ConSlides .ConSlidesUL li.ConSlidesList .ConSlidesMedia * {
@@ -177,7 +177,7 @@
     bottom: 0;
     display: block;
     left: 0;
-    letter-spacing: 0.1em;
+    /*letter-spacing: 0.1em;*/
     position: absolute;
     width: 100%;
 }
@@ -253,7 +253,7 @@
 .Wrap .midWrap .mainContent div.Power .ContData .ConSlides .ConSlidesUL li.ConSlidesList .ConSlidesInfo {
     display: block;
     float: right;
-    letter-spacing: 0.1em;
+    /*letter-spacing: 0.1em;*/
     margin: 0 40px 0 0;
     position: relative;
     width: 250px;
@@ -328,7 +328,7 @@
 .Wrap .midWrap .mainContent div.Safety .ContData .ConSlides .ConSlidesUL li.ConSlidesList .ConSlidesInfo {
     display: block;
     float: right;
-    letter-spacing: 0.1em;
+    /*letter-spacing: 0.1em;*/
     margin: 0 40px 0 0;
     position: relative;
     width: 350px;
@@ -410,7 +410,7 @@
 }
 .Wrap .midWrap .mainContent div.CarStyle .ContData .carOther .catalog {
     background: url("/public/site/img/BgMask.png") repeat scroll 0 0 transparent;
-    letter-spacing: 0.34em;
+    /*letter-spacing: 0.34em;*/
 }
 .Wrap .midWrap .mainContent div.CarStyle .ContData .carOther .catalog a {
     background: url("/public/site/img/media.dowmload.icon.gif") no-repeat scroll 5px 4px transparent;

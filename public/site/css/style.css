@@ -304,17 +304,17 @@ header nav .kindsNav li.active a, header nav .kindsNav li a:hover {
 .mainContent .cont .ContData h3 {
     color: #00A5F1;
     font-size: 18px;
-    letter-spacing: 1px;
+    /*letter-spacing: 1px;*/
     margin: 5px 0 0;
 }
 .mainContent .cont .ContData h4 {
     color: #00A5F1;
     font-size: 16px;
-    letter-spacing: 1px;
+    /*letter-spacing: 1px;*/
     margin: 5px 0 0;
 }
 .mainContent .cont .ContData p {
-    letter-spacing: 1px;
+    /*letter-spacing: 1px;*/
     padding: 0 0 15px;
 }
 .ContPrivacy {
@@ -324,13 +324,13 @@ header nav .kindsNav li.active a, header nav .kindsNav li a:hover {
 }
 .ContPrivacy .info {
     float: left;
-    letter-spacing: 0.1em;
+    /*letter-spacing: 0.1em;*/
     line-height: 2em;
 }
 .ContPrivacy .info section h5 {
     color: #3C3C3C;
     font-size: 15px;
-    letter-spacing: 1px;
+    /*letter-spacing: 1px;*/
     margin: 15px 0 0;
 }
 .ContAbout {
@@ -341,7 +341,7 @@ header nav .kindsNav li.active a, header nav .kindsNav li a:hover {
 .ContAbout .info {
     color: #FFFFFF;
     float: left;
-    letter-spacing: 0.1em;
+    /*letter-spacing: 0.1em;*/
     line-height: 2em;
     width: 320px;
 }
@@ -350,7 +350,7 @@ header nav .kindsNav li.active a, header nav .kindsNav li a:hover {
     display: block;
     font-family: Arial,sans-serif;
     font-weight: bold;
-    letter-spacing: -0.03em;
+    /*letter-spacing: -0.03em;*/
     line-height: 58px;
 }
 .ContAbout .info h4.slogan .sloganInfo {
@@ -363,7 +363,7 @@ header nav .kindsNav li.active a, header nav .kindsNav li a:hover {
     color: #0582C4;
     font-size: 15px;
     font-weight: normal;
-    letter-spacing: 1px;
+    /*letter-spacing: 1px;*/
     margin: 15px 0 0;
 }
 .ContAbout .media {
@@ -630,14 +630,14 @@ footer ul.siteMap li a {
 	padding-left: 20px;
 	list-style-type: disc;
 	margin: 0 0 10px;
-	letter-spacing: 1px;
+	/*letter-spacing: 1px;*/
 	line-height: 2em;
 	color: #3C3C3C;
 }
 h1.centered {
 	color: #3C3C3C;
 	font-size: 15px;
-	letter-spacing: 1px;
+	/*letter-spacing: 1px;*/
 	margin: 15px 0 0;
 	line-height: 2em;
 }
@@ -653,7 +653,7 @@ h1.centered {
 	display: inline;
 }
 #contentFont.fontNormal.static p {
-	letter-spacing: 1px;
+	/*letter-spacing: 1px;*/
 	padding: 0 0 15px;
 	line-height: 2em;
 	color: #3C3C3C;
@@ -662,12 +662,12 @@ h1.centered {
 	color: #0582C4;
 }
 .mainContent .cont .ContData.press p {
-	letter-spacing: normal;
+	/*letter-spacing: normal;*/
 }
 .feedback {
 	font-size: 13px;
 	width: 980px;
-	letter-spacing: 1px;
+	/*letter-spacing: 1px;*/
 	line-height: 2em;
 	color: #3C3C3C;
 	margin: 130px auto 0;
@@ -717,4 +717,10 @@ h3.press {
 	color: #666666;
 	font-size: 18px;
 	margin: 0 0 5px;
+}
+.fb_link {
+	float: left;
+	position: relative;
+	left: 32px;
+	top: -2px;
 }

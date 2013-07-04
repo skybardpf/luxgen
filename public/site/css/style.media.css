@@ -41,7 +41,7 @@
     bottom: 0;
     display: block;
     left: 0;
-    letter-spacing: 0.1em;
+    /*letter-spacing: 0.1em;*/
     position: absolute;
     width: 100%;
 }

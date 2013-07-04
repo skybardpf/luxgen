@@ -211,7 +211,7 @@
 
 .Wrap .midWrap .mainContent .Technology .technologyUL .technologyTouchList .Section h5 {
     font-size      : 12px;
-    letter-spacing : 1px;
+    /*letter-spacing : 1px;*/
     color          : #00a5f1;
 }
 

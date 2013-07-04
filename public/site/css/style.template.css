@@ -236,7 +236,7 @@ a, a:hover {
     bottom: 0;
     display: block;
     left: 0;
-    letter-spacing: 0.1em;
+    /*letter-spacing: 0.1em;*/
     position: absolute;
     width: 100%;
 }
@@ -463,11 +463,11 @@ a, a:hover {
 .Wrap .midWrap .mainContent div.cont li.ContData h4 {
     color: #00A5F1;
     font-size: 16px;
-    letter-spacing: 1px;
+    /*letter-spacing: 1px;*/
     margin: 5px 0 0;
 }
 .Wrap .midWrap .mainContent div.cont li.ContData p {
-    letter-spacing: 1px;
+    /*letter-spacing: 1px;*/
     padding: 0 0 15px;
 }
 .Wrap .midWrap .mainContent div.cont li.ContData div.QRCode {

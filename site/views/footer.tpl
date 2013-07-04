@@ -8,6 +8,7 @@
         </li>
     </ul>
         <div class="fb-like" data-href="http://www.facebook.com/LuxgenRussia" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
+	<div class="fb_link"><a target="_blank" href="http://www.facebook.com/LuxgenRussia"><img src="/public/site/img/facebook_icon_circle_512x512.png" style="width:28px;"></a></div>
     <ul class="siteMap">
         <li>
             <a href="/worldwidesites/">Luxgen в мире</a>
