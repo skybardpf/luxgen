@@ -11,7 +11,7 @@
     <div id="floor"></div>
 </div>*}
 <div class="IndexContent" style="margin-top: 77px;">
-	<img src="/public/site/img/Viaduct1.jpg" style="width:100%;">
+	<img src="/public/site/img/Viaduct2.jpg" style="width:100%;">
 
 </div>
 <link rel="stylesheet" href="/public/site/css/index.css">
