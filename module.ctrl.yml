@@ -1,0 +1,35 @@
+title: Пользователи                                             # Название модуля
+#complex: 1                                                     # Комплексный модуль
+
+actions:                                                        # Список действий модуля
+  show: [Просмотреть пользователя, Просмотр пользователя]
+  list: [Просмотреть пользователей, Просмотр пользователей, [add_post, change_pass, transfer, delete]]
+  add: [Добавить пользователя, Добавление пользователя, Пользователь успешно добавлен, Пользователя добавить не удалось, '[root_url]siteusers/type/[type]/']
+  modify: [Редактировать пользователя, Редактирование пользователя, Пользователь успешно отредактирован, Пользователя отредактировать не удалось, '[root_url]siteusers/type/[type]/']
+  change_pass: [Изменить пароль пользователя, Изменение пароля пользователя, Пароль пользователя успешно изменен, Пароль пользователя изменить не удалось, '[root_url]siteusers/type/[type]/']
+  delete: [Удалить пользователя, Удаление пользователя, Пользователь успешно удален, Пользователя удалить не удалось, '[root_url]siteusers/type/[type]/', Вы уверены что хотите удалить этого пользователя?]
+  banned: [Забаненные пользователи, Просмотр пользователей, [delete_ip]]
+  list_banned_ip: [Заблокированные ip адреса, Заблокированые ip адреса, [delete_ip]]
+
+list_actions:
+  inline:                                                       # Действия в списке просмотра
+# Для простого модуля не нужно указывать таблицу
+    siteusers:                                                  # Таблица и список доступных из просмотра действий
+      modify: {link: 'siteusers/modify/id/[id]/type/[type]', put: {id: before}, icon: edit}
+      id: {title: show, link: 'siteusers/show/id/[id]/type/[type]'}
+      name: {title: show, link: 'siteusers/show/id/[id]/type/[type]'}
+      change_pass: {link: 'siteusers/change_pass/id/[id]/type/[type]', icon: pass}
+      transfer: {title: transfer, link: 'siteusers/transfer/id/[id]/type/[type]', icon: user-icon}
+      delete: {link: 'siteusers/delete/id/[id]', icon: delete}
+      add_post: {link: 'post/add/pid/[id]', icon: edit}
+    banned_ip:
+      delete_ip: {link: 'siteusers/delete_ip/id/[id]', icon: delete}
+  after:                                                        # Действия после просмотра (кнопки)
+    siteusers:
+      add: 'siteusers/add/type/[type]'
+    banned_ip:
+      add_ip: 'siteusers/add_ip'
+
+noContent:                                                      # Сообщение об отсутствии элементов (в случае простого модуля - сразу текст)
+  siteusers: Пользователей не найдено
+  banned_ip: Заблокированных ip адресов не найдено

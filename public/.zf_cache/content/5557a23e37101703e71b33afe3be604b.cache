@@ -1,0 +1,145 @@
+<?php $data=array (
+  6 => 
+  array (
+    'id' => '6',
+    'pid' => '1',
+    'path' => 'about',
+    'title' => 'О компании LUXGEN',
+    'description' => '',
+    'count' => '0',
+    'level' => 0,
+    'url' => '/about',
+  ),
+  7 => 
+  array (
+    'id' => '7',
+    'pid' => '1',
+    'path' => 'technology-Advanced',
+    'title' => 'Передовые технологии',
+    'description' => '',
+    'count' => '0',
+    'level' => 0,
+    'url' => '/technology-Advanced',
+  ),
+  8 => 
+  array (
+    'id' => '8',
+    'pid' => '1',
+    'path' => 'technology-Think',
+    'title' => 'THINK+',
+    'description' => '',
+    'count' => '0',
+    'level' => 0,
+    'url' => '/technology-Think',
+  ),
+  9 => 
+  array (
+    'id' => '9',
+    'pid' => '1',
+    'path' => 'technology-ThinkTouch',
+    'title' => 'THINK+ TOUCH',
+    'description' => '',
+    'count' => '0',
+    'level' => 0,
+    'url' => '/technology-ThinkTouch',
+  ),
+  10 => 
+  array (
+    'id' => '10',
+    'pid' => '1',
+    'path' => 'worldwidesites',
+    'title' => 'Luxgen в мире ',
+    'description' => '',
+    'count' => '0',
+    'level' => 0,
+    'url' => '/worldwidesites',
+  ),
+  11 => 
+  array (
+    'id' => '11',
+    'pid' => '1',
+    'path' => 'sitemap',
+    'title' => 'Карта сайта',
+    'description' => '',
+    'count' => '0',
+    'level' => 0,
+    'url' => '/sitemap',
+  ),
+  12 => 
+  array (
+    'id' => '12',
+    'pid' => '1',
+    'path' => 'copyright',
+    'title' => 'Пункты о защите авторского права и товарных знаков',
+    'description' => '',
+    'count' => '0',
+    'level' => 0,
+    'url' => '/copyright',
+  ),
+  13 => 
+  array (
+    'id' => '13',
+    'pid' => '1',
+    'path' => 'privacy',
+    'title' => 'Положение о конфиденциальности',
+    'description' => '',
+    'count' => '0',
+    'level' => 0,
+    'url' => '/privacy',
+  ),
+  14 => 
+  array (
+    'id' => '14',
+    'pid' => '1',
+    'path' => 'suv',
+    'title' => 'LUXGEN7 SUV',
+    'description' => '',
+    'count' => '0',
+    'level' => 0,
+    'url' => '/suv',
+  ),
+  15 => 
+  array (
+    'id' => '15',
+    'pid' => '1',
+    'path' => 'dealer',
+    'title' => 'Как стать дилером LUXGEN',
+    'description' => 'Как стать дилером LUXGEN',
+    'count' => '0',
+    'level' => 0,
+    'url' => '/dealer',
+  ),
+  16 => 
+  array (
+    'id' => '16',
+    'pid' => '1',
+    'path' => 'brand-introduction',
+    'title' => 'О бренде LUXGEN',
+    'description' => '',
+    'count' => '0',
+    'level' => 0,
+    'url' => '/brand-introduction',
+  ),
+  17 => 
+  array (
+    'id' => '17',
+    'pid' => '1',
+    'path' => 'price_features',
+    'title' => 'Цены и характеристики',
+    'description' => 'Цены и характеристики',
+    'count' => '0',
+    'level' => 0,
+    'url' => '/price_features',
+  ),
+  18 => 
+  array (
+    'id' => '18',
+    'pid' => '1',
+    'path' => 'about2',
+    'title' => 'о компании 2',
+    'description' => '',
+    'count' => '0',
+    'level' => 0,
+    'url' => '/about2',
+  ),
+);

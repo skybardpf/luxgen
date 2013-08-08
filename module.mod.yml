@@ -1,0 +1,74 @@
+#tables:
+  #siteusers:                                       # Название таблицы
+    #on_modify: {mdate: 'Y-m-d H:i:s'}  
+    #on_create: {cdate: 'Y-m-d H:i:s'}
+    #moder_fields:                                  # Запрет на одновременное редактирование
+      #title: modifier                              # Поле, хранящее имя администратора, у которого открыт объект
+      #date: modifier_date                          # Поле, хранящее дату сердцебиения
+
+    #fields:                                        # Поля таблицы
+      #id: {type: int, length: 10, unsigned: 1, auto_increment: 1, notnull: 1, am: {type: integer, title: ID}}
+      #modifier: {type: tinytext, am: {type: string, title: Редактирует}}
+      #modifier_date: {type: datetime}
+
+    #foreign:                                       # Внешние поля
+      #comments:                                    # Название поля
+        #table: comments                            # Таблица для связи
+        #field: 'COUNT(DISTINCT(c.id))'             # Поле связывания
+        #asis: 1                                    # Без обработки
+        #use_ref: su2comm                           # Используемая связь
+        #am: {title: комментариев}}                 # Параметры вывода в списке
+
+    #table:                                         # Ключи таблицы
+      #PRIMARY KEY: id                              # Первичный ключ
+      #KEYS:                                        # Ключи
+        #deleted: [deleted]                         # Название ключа и поля таблицы
+        #modifier_date: [modifier_date]                       
+      #UNIQUE:                                      # Уникальные ключи
+        #email: [email]                             # Название ключа и поля таблицы
+
+    #actions:                                       # Списки полей для вывода
+      #list: [id, surname, name, nick, registration_type, phone, phones, currentplace_city_id, comment, workplace, birthday, modifier]
+      #show: [name, surname, nick, gender, avatar, mail, homemail, workmail, phone, homesite, icq, skype, birthday, workplace, currentplace_city_id, region_id, comment]
+      #modify: [name, surname, nick, gender, avatar, mail, homemail, workmail, mails, phone, phones, homesite, icq, skype, birthday_date, birthday_month, birthday_year, workplace, currentplace_city_id, region_id, comment]
+      #add: [name, surname, nick, gender, avatar, mail, homemail, workmail, mails, phone, phones, homesite, icq, skype, birthday_date, birthday_month, birthday_year, workplace, currentplace_city_id, region_id, comment]
+
+    #images:                                        # Если используются картинки
+      #avatar:                                      # Название поля
+        #tiny:                                      # Название директории
+          #w: 30                                    # Ширина
+          #h: 30                                    # Высота
+          #ratio: 'equal'                           # Режим обрезания (equal - точно по заданным размерам)
+          #cut: 5                                   # Позиционирование обрезания (5 - по центру)
+          #colormode: grayscale                     # Цветовой режим (grayscale - черно-белый)
+
+    #paging:                                        # Вывод в списке постранично
+      #npp: 20                                      # Число на страницу
+      #css_class: 'paging'                          # CSS класс ссылок
+      #base_url: ''                                 # базовая ссылка
+      #url_append: ''                               # дополнение к ссылке
+      #separator: ' '                               # разделитель между ссылками
+      #linkcount: 10                                # число ссылок
+      #first: ''                                    # текст ссылки на первую страницу
+      #prev: ''                                     # текст ссылки на предидущую страницу
+      #next: ''                                     # текст ссылки на следующую страницу
+      #last: ''                                     # текст ссылки на последнюю страницу
+      #skip: ' ... '                                # текст пропуска страниц
+
+#refs:                                              # Связи
+  # Простая связь двух таблиц
+  #su2comm: {type: M-1, join: left, tables: {siteusers: id, comments: siteuser_id}, alias: c}
+
+#mail:
+  #requestpass:                                     #mail_type
+    #subject: '[site_name]: Восстановление пароля'  # Тема письма
+    #type: text/html                                # Тип письма
+    #message: |                                     # Тело письма
+      #<p>Вы запросили восстановление пароля</p>
+      #<hr>
+      #    Для изменения пароля пройдите по <a href="http://[HTTP_HOST][link]">ссылке</a> и следуйте дальнейшим инструкциям
+      #<hr>
+      #[DATE]<br>
+  #repl:                                            # Данные по умолчанию
+    #site_name: "Public Post"
+  #date_format: H:i:s d.m.Y                         # Формат даты для ключевого слова [DATE]

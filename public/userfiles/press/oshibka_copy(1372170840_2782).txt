@@ -1,0 +1,254 @@
+08:35:36 [INFO] [ColorMe] Didn't found TagAPI!
+08:35:36 [INFO] Server permissions file permissions.yml is empty, ignoring it
+08:35:36 [INFO] Done (9,873s)! For help, type "help" or "?"
+08:35:36 [INFO] Starting remote control listener
+08:35:36 [INFO] RCON running on 0.0.0.0:1488
+08:35:36 [INFO] Registered command buildcraft with permission node buildcraft.core.CommandBuildCraft
+08:35:36 [INFO] Registered command cofh with permission node cofh.command.CommandCoFH
+08:35:36 [INFO] Registered command beekeeping with permission node forestry.apiculture.CommandBeekeepingMode
+08:35:36 [INFO] Registered command givedrone with permission node forestry.apiculture.CommandGiveBee
+08:35:36 [INFO] Registered command giveprincess with permission node forestry.apiculture.CommandGiveBee
+08:35:36 [INFO] Registered command givequeen with permission node forestry.apiculture.CommandGiveBee
+08:35:36 [INFO] Registered command spawntree with permission node forestry.arboriculture.CommandSpawnTree
+08:35:36 [INFO] Registered command spawnforest with permission node forestry.arboriculture.CommandSpawnForest
+08:35:36 [INFO] Registered command forestry with permission node forestry.core.CommandForestry
+08:35:36 [INFO] Registered command mail with permission node forestry.mail.CommandMail
+08:35:36 [INFO] Registered command freq with permission node codechicken.wirelessredstone.core.CommandFreq
+08:35:36 [INFO] Loading NEI
+08:35:36 [INFO] [MobArena] MobArena v0.94.4.98 is now available!
+08:35:36 [INFO] [MobArena] Your version: v0.94.4.95
+08:35:36 [INFO] Accepted EditSessionFactory of type net.coreprotect.worldedit.CoreProtectEditSessionFactory from net.coreprotect.worldedit
+08:35:36 [INFO] [uHome] Giving default permissions to players.
+08:35:37 [INFO] /178.123.86.54:52875 lost connection
+08:35:37 [INFO] /188.120.231.170:55794 lost connection
+08:35:37 [INFO] /178.123.86.54:52876 lost connection
+08:35:37 [INFO] /85.26.232.188:14110 lost connection
+08:35:42 [WARNING] [MobHealth] [MobHealth] 6.0.0 is available. You're using 5.3.4
+08:35:42 [WARNING] [MobHealth] [MobHealth] http://dev.bukkit.org/server-mods/mobhealth/
+08:36:59 [INFO] Connection reset
+08:40:47 [SEVERE] The server has stopped responding!
+08:40:47 [SEVERE] Please report this to http://www.mcportcentral.co.za/
+08:40:47 [SEVERE] Spigot version: 1.4.7-R1.1-SNAPSHOT
+08:40:47 [SEVERE] Begin Exception Trace For All Threads:
+08:40:47 [SEVERE] ------------------------------
+08:40:47 [SEVERE] Current Thread: Thread-18
+08:40:47 [SEVERE]     PID: 50 | Alive: true | State: TIMED_WAITING
+08:40:47 [SEVERE]     Stack:
+08:40:47 [SEVERE]         java.lang.Thread.sleep(Native Method)
+08:40:47 [SEVERE]         uk.co.mdtechnology.automessage.SendMessage.run(SendMessage.java:52)
+08:40:47 [SEVERE]         java.lang.Thread.run(Thread.java:722)
+08:40:47 [SEVERE] ------------------------------
+08:40:47 [SEVERE] Current Thread: Connection #30 read thread
+08:40:47 [SEVERE]     PID: 177 | Alive: true | State: RUNNABLE
+08:40:47 [SEVERE]     Stack:
+08:40:47 [SEVERE]         java.net.SocketInputStream.socketRead0(Native Method)
+08:40:47 [SEVERE]         java.net.SocketInputStream.read(SocketInputStream.java:150)
+08:40:47 [SEVERE]         java.net.SocketInputStream.read(SocketInputStream.java:121)
+08:40:47 [SEVERE]         java.net.SocketInputStream.read(SocketInputStream.java:203)
+08:40:47 [SEVERE]         java.io.FilterInputStream.read(FilterInputStream.java:83)
+08:40:47 [SEVERE]         ef.a(Packet.java:151)
+08:40:47 [SEVERE]         cg.i(TcpConnection.java:325)
+08:40:47 [SEVERE]         cg.c(TcpConnection.java:553)
+08:40:47 [SEVERE]         ch.run(TcpReaderThread.java:23)
+08:40:47 [SEVERE] ------------------------------
+08:40:47 [SEVERE] Current Thread: Spigot Metrics Gathering Thread
+08:40:47 [SEVERE]     PID: 31 | Alive: true | State: TIMED_WAITING
+08:40:47 [SEVERE]     Stack:
+08:40:47 [SEVERE]         java.lang.Thread.sleep(Native Method)
+08:40:47 [SEVERE]         org.bukkit.craftbukkit.v1_4_R1.util.TimedThread.run(TimedThread.java:29)
+08:40:47 [SEVERE] ------------------------------
+08:40:47 [SEVERE] Current Thread: Thread-5
+08:40:47 [SEVERE]     PID: 17 | Alive: true | State: TIMED_WAITING
+08:40:47 [SEVERE]     Stack:
+08:40:47 [SEVERE]         java.lang.Thread.sleep(Native Method)
+08:40:47 [SEVERE]         hp.run(DedicatedServerSleepThread.java:23)
+08:40:47 [SEVERE] ------------------------------
+08:40:47 [SEVERE] Current Thread: Cleaner-thread-0
+08:40:47 [SEVERE]     PID: 34 | Alive: true | State: TIMED_WAITING
+08:40:47 [SEVERE]     Stack:
+08:40:47 [SEVERE]         java.lang.Thread.sleep(Native Method)
+08:40:47 [SEVERE]         snaq.util.ObjectPool$Cleaner.run(ObjectPool.java:1279)
+08:40:47 [SEVERE] ------------------------------
+08:40:47 [SEVERE] Current Thread: Server thread
+08:40:47 [SEVERE]     PID: 16 | Alive: true | State: BLOCKED
+08:40:47 [SEVERE]     Stack:
+08:40:47 [SEVERE]         com.earth2me.essentials.EssentialsTimer.run(EssentialsTimer.java:39)
+08:40:47 [SEVERE]         org.bukkit.craftbukkit.v1_4_R1.scheduler.CraftTask.run(CraftTask.java:53)
+08:40:47 [SEVERE]         org.bukkit.craftbukkit.v1_4_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:344)
+08:40:47 [SEVERE]         net.minecraft.server.MinecraftServer.r(MinecraftServer.java:787)
+08:40:47 [SEVERE]         ho.r(DedicatedServer.java:309)
+08:40:47 [SEVERE]         net.minecraft.server.MinecraftServer.q(MinecraftServer.java:745)
+08:40:47 [SEVERE]         net.minecraft.server.MinecraftServer.run(MinecraftServer.java:632)
+08:40:47 [SEVERE]         fy.run(ThreadMinecraftServer.java:16)
+08:40:47 [SEVERE] ------------------------------
+08:40:47 [SEVERE] Current Thread: Thread-28
+08:40:47 [SEVERE]     PID: 67 | Alive: true | State: RUNNABLE
+08:40:47 [SEVERE]     Stack:
+08:40:47 [SEVERE]         java.net.PlainSocketImpl.socketAccept(Native Method)
+08:40:47 [SEVERE]         java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:398)
+08:40:47 [SEVERE]         java.net.ServerSocket.implAccept(ServerSocket.java:522)
+08:40:47 [SEVERE]         java.net.ServerSocket.accept(ServerSocket.java:490)
+08:40:47 [SEVERE]         jf.run(RConThreadMain.java:97)
+08:40:47 [SEVERE]         java.lang.Thread.run(Thread.java:722)
+08:40:47 [SEVERE] ------------------------------
+08:40:47 [SEVERE] Current Thread: Listen thread
+08:40:47 [SEVERE]     PID: 29 | Alive: true | State: RUNNABLE
+08:40:47 [SEVERE]     Stack:
+08:40:47 [SEVERE]         java.net.PlainSocketImpl.socketAccept(Native Method)
+08:40:47 [SEVERE]         java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:398)
+08:40:47 [SEVERE]         java.net.ServerSocket.implAccept(ServerSocket.java:522)
+08:40:47 [SEVERE]         java.net.ServerSocket.accept(ServerSocket.java:490)
+08:40:47 [SEVERE]         hu.run(ServerListenThread.java:83)
+08:40:47 [SEVERE] ------------------------------
+08:40:47 [SEVERE] Current Thread: File IO Thread
+08:40:47 [SEVERE]     PID: 88 | Alive: true | State: TIMED_WAITING
+08:40:47 [SEVERE]     Stack:
+08:40:47 [SEVERE]         java.lang.Thread.sleep(Native Method)
+08:40:47 [SEVERE]         aiw.b(ThreadedFileIOBase.java:61)
+08:40:47 [SEVERE]         aiw.run(ThreadedFileIOBase.java:27)
+08:40:47 [SEVERE]         java.lang.Thread.run(Thread.java:722)
+08:40:47 [SEVERE] ------------------------------
+08:40:47 [SEVERE] Current Thread: DestroyJavaVM
+08:40:47 [SEVERE]     PID: 18 | Alive: true | State: RUNNABLE
+08:40:47 [SEVERE]     Stack:
+08:40:47 [SEVERE] ------------------------------
+08:40:47 [SEVERE] Current Thread: Thread-9
+08:40:47 [SEVERE]     PID: 32 | Alive: true | State: RUNNABLE
+08:40:47 [SEVERE]     Stack:
+08:40:47 [SEVERE]         java.net.PlainSocketImpl.socketAccept(Native Method)
+08:40:47 [SEVERE]         java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:398)
+08:40:47 [SEVERE]         java.net.ServerSocket.implAccept(ServerSocket.java:522)
+08:40:47 [SEVERE]         java.net.ServerSocket.accept(ServerSocket.java:490)
+08:40:47 [SEVERE]         net.minestatus.minequery.QueryServer.run(QueryServer.java:76)
+08:40:47 [SEVERE] ------------------------------
+08:40:47 [SEVERE] Current Thread: Spigot Watchdog Thread
+08:40:47 [SEVERE]     PID: 30 | Alive: true | State: RUNNABLE
+08:40:47 [SEVERE]     Stack:
+08:40:47 [SEVERE]         java.lang.Thread.dumpThreads(Native Method)
+08:40:47 [SEVERE]         java.lang.Thread.getAllStackTraces(Thread.java:1618)
+08:40:47 [SEVERE]         org.bukkit.craftbukkit.v1_4_R1.util.WatchdogThread.run(WatchdogThread.java:60)
+08:40:47 [SEVERE] ------------------------------
+08:40:47 [SEVERE] Current Thread: Jobs-DatabaseSaveTask
+08:40:47 [SEVERE]     PID: 64 | Alive: true | State: TIMED_WAITING
+08:40:47 [SEVERE]     Stack:
+08:40:47 [SEVERE]         java.lang.Thread.sleep(Native Method)
+08:40:47 [SEVERE]         me.zford.jobs.bukkit.tasks.DatabaseSaveTask.run(DatabaseSaveTask.java:41)
+08:40:47 [SEVERE] ------------------------------
+08:40:47 [SEVERE] Current Thread: Thread-6
+08:40:47 [SEVERE]     PID: 19 | Alive: true | State: RUNNABLE
+08:40:47 [SEVERE]     Stack:
+08:40:47 [SEVERE]         java.io.FileInputStream.readBytes(Native Method)
+08:40:47 [SEVERE]         java.io.FileInputStream.read(FileInputStream.java:242)
+08:40:47 [SEVERE]         java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+08:40:47 [SEVERE]         java.io.BufferedInputStream.read(BufferedInputStream.java:254)
+08:40:47 [SEVERE]         java.io.FilterInputStream.read(FilterInputStream.java:83)
+08:40:47 [SEVERE]         org.bukkit.craftbukkit.libs.jline.console.ConsoleReader$1.read(ConsoleReader.java:167)
+08:40:47 [SEVERE]         org.bukkit.craftbukkit.libs.jline.internal.InputStreamReader.read(InputStreamReader.java:267)
+08:40:47 [SEVERE]         org.bukkit.craftbukkit.libs.jline.internal.InputStreamReader.read(InputStreamReader.java:204)
+08:40:47 [SEVERE]         org.bukkit.craftbukkit.libs.jline.console.ConsoleReader.readCharacter(ConsoleReader.java:995)
+08:40:47 [SEVERE]         org.bukkit.craftbukkit.libs.jline.console.ConsoleReader.readLineSimple(ConsoleReader.java:1506)
+08:40:47 [SEVERE]         org.bukkit.craftbukkit.libs.jline.console.ConsoleReader.readLine(ConsoleReader.java:1153)
+08:40:47 [SEVERE]         org.bukkit.craftbukkit.libs.jline.console.ConsoleReader.readLine(ConsoleReader.java:1117)
+08:40:47 [SEVERE]         org.bukkit.craftbukkit.libs.jline.console.ConsoleReader.readLine(ConsoleReader.java:1105)
+08:40:47 [SEVERE]         hq.run(DedicatedServerCommandThread.java:41)
+08:40:47 [SEVERE] ------------------------------
+08:40:47 [SEVERE] Current Thread: Thread-15
+08:40:47 [SEVERE]     PID: 38 | Alive: true | State: TIMED_WAITING
+08:40:47 [SEVERE]     Stack:
+08:40:47 [SEVERE]         java.lang.Thread.sleep(Native Method)
+08:40:47 [SEVERE]         com.griefcraft.modules.credits.CreditsModule$CreditsTask.run(CreditsModule.java:110)
+08:40:47 [SEVERE]         java.lang.Thread.run(Thread.java:722)
+08:40:47 [SEVERE] ------------------------------
+08:40:47 [SEVERE] Current Thread: pool-1-thread-8
+08:40:47 [SEVERE]     PID: 75 | Alive: true | State: BLOCKED
+08:40:47 [SEVERE]     Stack:
+08:40:47 [SEVERE]         com.earth2me.essentials.storage.YamlStorageReader.load(YamlStorageReader.java:32)
+08:40:47 [SEVERE]         com.earth2me.essentials.storage.AbstractDelayedYamlFileReader.run(AbstractDelayedYamlFileReader.java:37)
+08:40:47 [SEVERE]         org.bukkit.craftbukkit.v1_4_R1.scheduler.CraftTask.run(CraftTask.java:53)
+08:40:47 [SEVERE]         org.bukkit.craftbukkit.v1_4_R1.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:53)
+08:40:47 [SEVERE]         java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+08:40:47 [SEVERE]         java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+08:40:47 [SEVERE]         java.lang.Thread.run(Thread.java:722)
+08:40:47 [SEVERE] ------------------------------
+08:40:47 [SEVERE] Current Thread: pool-1-thread-18
+08:40:47 [SEVERE]     PID: 85 | Alive: true | State: RUNNABLE
+08:40:47 [SEVERE]     Stack:
+08:40:47 [SEVERE]         java.util.HashMap.get(HashMap.java:326)
+08:40:47 [SEVERE]         org.bukkit.plugin.java.JavaPluginLoader.getClassByName(JavaPluginLoader.java:251)
+08:40:47 [SEVERE]         org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:264)
+08:40:47 [SEVERE]         org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:247)
+08:40:47 [SEVERE]         java.lang.ClassLoader.loadClass(ClassLoader.java:423)
+08:40:47 [SEVERE]         java.lang.ClassLoader.loadClass(ClassLoader.java:356)
+08:40:47 [SEVERE]         java.lang.ClassLoader.defineClass1(Native Method)
+08:40:47 [SEVERE]         java.lang.ClassLoader.defineClass(ClassLoader.java:791)
+08:40:47 [SEVERE]         java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+08:40:47 [SEVERE]         org.bukkit.plugin.java.PluginClassLoader.remappedFindClass(PluginClassLoader.java:345)
+08:40:47 [SEVERE]         org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:271)
+08:40:47 [SEVERE]         org.bukkit.plugin.java.JavaPluginLoader.getClassByName(JavaPluginLoader.java:260)
+08:40:47 [SEVERE]         org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:264)
+08:40:47 [SEVERE]         org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:247)
+08:40:47 [SEVERE]         java.lang.ClassLoader.loadClass(ClassLoader.java:423)
+08:40:47 [SEVERE]         java.lang.ClassLoader.loadClass(ClassLoader.java:356)
+08:40:47 [SEVERE]         com.earth2me.essentials.metrics.MetricsStarter.run(MetricsStarter.java:75)
+08:40:47 [SEVERE]         org.bukkit.craftbukkit.v1_4_R1.scheduler.CraftTask.run(CraftTask.java:53)
+08:40:47 [SEVERE]         org.bukkit.craftbukkit.v1_4_R1.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:53)
+08:40:47 [SEVERE]         java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+08:40:47 [SEVERE]         java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+08:40:47 [SEVERE]         java.lang.Thread.run(Thread.java:722)
+08:40:47 [SEVERE] ------------------------------
+08:40:47 [SEVERE] Current Thread: Thread-20
+08:40:47 [SEVERE]     PID: 52 | Alive: true | State: TIMED_WAITING
+08:40:47 [SEVERE]     Stack:
+08:40:47 [SEVERE]         java.lang.Thread.sleep(Native Method)
+08:40:47 [SEVERE]         net.coreprotect.thread.CacheCleanUp.run(CacheCleanUp.java:14)
+08:40:47 [SEVERE]         java.lang.Thread.run(Thread.java:722)
+08:40:47 [SEVERE] ------------------------------
+08:40:47 [SEVERE] Current Thread: pool-1-thread-17
+08:40:47 [SEVERE]     PID: 84 | Alive: true | State: BLOCKED
+08:40:47 [SEVERE]     Stack:
+08:40:47 [SEVERE]         com.earth2me.essentials.storage.YamlStorageReader.prepareConstructor(YamlStorageReader.java:65)
+08:40:47 [SEVERE]         com.earth2me.essentials.storage.YamlStorageReader.load(YamlStorageReader.java:32)
+08:40:47 [SEVERE]         com.earth2me.essentials.storage.AbstractDelayedYamlFileReader.run(AbstractDelayedYamlFileReader.java:37)
+08:40:47 [SEVERE]         org.bukkit.craftbukkit.v1_4_R1.scheduler.CraftTask.run(CraftTask.java:53)
+08:40:47 [SEVERE]         org.bukkit.craftbukkit.v1_4_R1.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:53)
+08:40:47 [SEVERE]         java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+08:40:47 [SEVERE]         java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+08:40:47 [SEVERE]         java.lang.Thread.run(Thread.java:722)
+08:40:47 [SEVERE] ------------------------------
+08:40:47 [SEVERE] Current Thread: Thread-21
+08:40:47 [SEVERE]     PID: 53 | Alive: true | State: TIMED_WAITING
+08:40:47 [SEVERE]     Stack:
+08:40:47 [SEVERE]         java.lang.Thread.sleep(Native Method)
+08:40:47 [SEVERE]         net.coreprotect.consumer.Consumer.run(Consumer.java:46)
+08:40:47 [SEVERE]         java.lang.Thread.run(Thread.java:722)
+08:40:47 [SEVERE] ------------------------------
+08:40:47 [SEVERE] Current Thread: pool-1-thread-11
+08:40:47 [SEVERE]     PID: 78 | Alive: true | State: BLOCKED
+08:40:47 [SEVERE]     Stack:
+08:40:47 [SEVERE]         com.earth2me.essentials.UserMap$1.run(UserMap.java:49)
+08:40:47 [SEVERE]         org.bukkit.craftbukkit.v1_4_R1.scheduler.CraftTask.run(CraftTask.java:53)
+08:40:47 [SEVERE]         org.bukkit.craftbukkit.v1_4_R1.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:53)
+08:40:47 [SEVERE]         java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+08:40:47 [SEVERE]         java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+08:40:47 [SEVERE]         java.lang.Thread.run(Thread.java:722)
+08:40:47 [SEVERE] ------------------------------
+08:40:47 [SEVERE] Current Thread: pool-1-thread-14
+08:40:47 [SEVERE]     PID: 81 | Alive: true | State: BLOCKED
+08:40:47 [SEVERE]     Stack:
+08:40:47 [SEVERE]         com.earth2me.essentials.UserMap$1.run(UserMap.java:49)
+08:40:47 [SEVERE]         org.bukkit.craftbukkit.v1_4_R1.scheduler.CraftTask.run(CraftTask.java:53)
+08:40:47 [SEVERE]         org.bukkit.craftbukkit.v1_4_R1.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:53)
+08:40:47 [SEVERE]         java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+08:40:47 [SEVERE]         java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+08:40:47 [SEVERE]         java.lang.Thread.run(Thread.java:722)
+08:40:47 [SEVERE] ------------------------------
+08:40:47 [SEVERE] Current Thread: Connection #30 write thread
+08:40:47 [SEVERE]     PID: 178 | Alive: true | State: TIMED_WAITING
+08:40:47 [SEVERE]     Stack:
+08:40:47 [SEVERE]         java.lang.Thread.sleep(Native Method)
+08:40:47 [SEVERE]         ci.run(TcpWriterThread.java:49)
+08:40:47 [SEVERE] ------------------------------
+08:40:47 [SEVERE] Current Thread: Attach Listener
+08:40:47 [SEVERE]     PID: 5 | Alive: true | State: RUNNABLE
+08:40:47 [SEVERE]     Stack:
+08:40:47 [SEVERE] ------------------------------
