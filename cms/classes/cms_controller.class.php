@@ -207,19 +207,23 @@ class CMS_Controller extends AdvancedController
 		return $this->actionList($tableName, $modelNameOrModel);
 	}
 
-	public function actionList($tableName = null, $modelNameOrModel = null)
+    /**
+     * @param string $tableName
+     * @param string $modelNameOrModel
+     */
+    public function actionList($tableName = null, $modelNameOrModel = null)
 	{
-		zf::addJS('jquery.event.drag', PUBLIC_PATH . 'cms/js/jquery.event.drag.js');
-		zf::addJS('jquery.event.drop', PUBLIC_PATH . 'cms/js/jquery.event.drop.js');
+		zf::addJS('jquery.event.drag', BASE_URL . 'cms/js/jquery.event.drag.js');
+		zf::addJS('jquery.event.drop', BASE_URL . 'cms/js/jquery.event.drop.js');
         if (isset($this->page->list_actions['multiple']) || isset($this->page->list_actions['multy_change'])) {
-            zf::addJS('multiple_list', PUBLIC_PATH . 'cms/js/multiple_list.js');
+            zf::addJS('multiple_list', BASE_URL . 'cms/js/multiple_list.js');
         }
 		if (!$tableName) $tableName = $this->ctrlName;
 		if (!$modelNameOrModel) $modelNameOrModel = $this->ctrlName;
 		$action = $this->action ? $this->action : 'list';
 		$this->setTitle($action);
 		$this->page->rightFromTable = !empty($this->conf['actions'][$action][2]) ? $this->conf['actions'][$action][2] : array();
-		if (!empty($this->conf['noContent'])) {
+        if (!empty($this->conf['noContent'])) {
 			if (is_array($this->conf['noContent'])) {
 				$noContent = strpos($action, 'list_') !== false
 				?
@@ -245,6 +249,7 @@ class CMS_Controller extends AdvancedController
 			);
 		}
 		$ret = parent::actionList($modelNameOrModel, $tableName, array(), array(), $noContent);
+
 
 		if ($this->app->request->ajax) {
 			echo $this->page->content;

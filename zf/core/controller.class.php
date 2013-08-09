@@ -317,6 +317,7 @@ class Controller extends ConfLoader
 		//if (!$action) $action = $this->app->request->uri;
 		
 		$views = misc::get($this->app->conf, 'views');
+        var_dump($views);die;
 
 		$form = new form($arr, $elements, $action, $formName, $method, misc::get($views, 'forms'), true, $target, $id);
 

@@ -53,7 +53,7 @@
 		{if $data.$field}
 				<div id="mediaspace_{$field}"></div>
 	            <script type="text/javascript">
-					var so = new SWFObject({PUBLIC_PATH.'zf/mediaplayer/player.swf'},'mpl','470','320','9');
+					var so = new SWFObject('{$BASE_URL}zf/mediaplayer/player.swf','mpl','470','320','9');
 					so.addParam('allowfullscreen','true');
 					so.addParam('allowscriptaccess','always');
 					so.addParam('wmode','opaque');
@@ -72,7 +72,7 @@
 				{foreach from=$data.$field item=video name=video}
 					<div id="mediaspace_{$field}_{$smarty.foreach.video.iteration}"></div>
 		            <script type="text/javascript">
-						var so = new SWFObject({PUBLIC_PATH.'zf/mediaplayer/player.swf'},'mpl','470','320','9');
+						var so = new SWFObject('{$BASE_URL}zf/mediaplayer/player.swf','mpl','470','320','9');
 						so.addParam('allowfullscreen','true');
 						so.addParam('allowscriptaccess','always');
 						so.addParam('wmode','opaque');
@@ -99,7 +99,7 @@
 		{/if}
 		{elseif $fields.$field.type eq "images"}
 			{foreach from=$data.$field item=field_value name=field_values}
-                <a href="{$field_value|replace:'[dir]':'original'}" target="_blank"><img src="{$field_value|replace:'[dir]':'icon'}"></a>
+                <a href="{$field_value|replace:'[dir]':'original'}" target="_blank"><img src="{$BASE_URL}{$field_value|replace:'[dir]':'icon'}"></a>
 			{foreachelse}
                 {$fields.$field.empty|default:"не задано"}
 			{/foreach}
