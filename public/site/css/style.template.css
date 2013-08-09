@@ -32,7 +32,7 @@ a, a:hover {
     z-index: 10;
 }
 .Wrap .Header .topbar {
-    background: url("/public/site/img/headerBG.png") repeat-x scroll 0 0 transparent;
+    background: url("../img/headerBG.png") repeat-x scroll 0 0 transparent;
     font-size: 15px;
     height: 25px;
     line-height: 25px;
@@ -121,7 +121,7 @@ a, a:hover {
     width: 973px;
 }
 .Wrap .HeaderSlide .SlideFrame ul.Slide li.SlideTab ul.SlideListTab li.SlideTabList {
-    background: url("/public/site/img/SlideListTab.png") no-repeat scroll 0 0 transparent;
+    background: url("../img/SlideListTab.png") no-repeat scroll 0 0 transparent;
     color: #FFFFFF;
     cursor: pointer;
     display: inline-block;
@@ -143,7 +143,7 @@ a, a:hover {
     z-index: 3;
 }
 .Wrap .HeaderSlide .SlideFrame ul.Slide li.SlideTab ul.SlideListTab li.SlideTabDownLoad a.download, .Wrap .HeaderSlide .SlideFrame ul.Slide li.SlideTab ul.SlideListTab li.SlideTabDownLoad span.TabName {
-    background: url("/public/site/img/SlideListTab.png") no-repeat scroll 0 0 transparent;
+    background: url("../img/SlideListTab.png") no-repeat scroll 0 0 transparent;
     color: #FFFFFF;
     cursor: pointer;
     display: block;
@@ -222,7 +222,7 @@ a, a:hover {
     width: 100%;
 }
 .Wrap .HeaderSlide .SlideFrame ul.Slide li.SlideTab ul.SlideTabContent li.SlideTabContentList li.list .active {
-    background: url("/public/site/img/BgMask.png") repeat scroll 0 0 transparent;
+    background: url("../img/BgMask.png") repeat scroll 0 0 transparent;
     color: #FFFFFF;
     display: none;
     height: 100%;
@@ -246,7 +246,7 @@ a, a:hover {
     margin: 0 5px;
 }
 .Wrap .HeaderSlide .SlideFrame ul.Slide li.SlideTab ul.SlideTabContent li.SlideTabContentList li.list .active .Article .text {
-    background: url("/public/site/img/media.dowmload.icon.gif") no-repeat scroll right bottom transparent;
+    background: url("../img/media.dowmload.icon.gif") no-repeat scroll right bottom transparent;
     margin: 0 5px 5px;
     padding: 0 20px 0 0;
 }
@@ -274,7 +274,7 @@ a, a:hover {
     font-weight: bold;
 }
 .Wrap .HeaderSlide .SlideFrame ul.Slide li.SlideTab ul.SlideTabContent li.SlideTabContentList div.JQpaper ul li span.qp_btn {
-    background: url("/public/site/img/SlideListTab-arrow.png") no-repeat scroll 0 center transparent;
+    background: url("../img/SlideListTab-arrow.png") no-repeat scroll 0 center transparent;
     cursor: pointer;
     float: left;
     height: 100%;
@@ -316,7 +316,7 @@ a, a:hover {
     background: none repeat scroll 0 0 #0083C9;
 }
 .Wrap .Header .Nav {
-    background: url("/public/site/img/headerBG.png") repeat-x scroll 0 -25px transparent;
+    background: url("/site/img/headerBG.png") repeat-x scroll 0 -25px transparent;
     display: block;
     height: 52px;
     line-height: 52px;
@@ -330,7 +330,7 @@ a, a:hover {
     margin: 0 0 0 25px;
 }
 .Wrap .Header .Nav h1 a {
-    background: url("/public/site/img/luxgenLogo.png") no-repeat scroll center center transparent;
+    background: url("/site/img/luxgenLogo.png") no-repeat scroll center center transparent;
     display: block;
     text-indent: -99999px;
     width: 168px;
@@ -352,7 +352,7 @@ a, a:hover {
     color: #0083C9;
 }
 .Wrap .midWrap .subNav {
-    background: url("/public/site/img/headerBG.png") repeat-x scroll 0 -77px transparent;
+    background: url("/site/img/headerBG.png") repeat-x scroll 0 -77px transparent;
     left: 0;
     position: absolute;
     text-align: right;
@@ -371,7 +371,7 @@ a, a:hover {
     z-index: 10;
 }
 .Wrap .midWrap .subNav li {
-    background: url("/public/site/img/subnavLine.jpg") no-repeat scroll left center transparent;
+    background: url("/site/img/subnavLine.jpg") no-repeat scroll left center transparent;
     color: #FFFFFF;
     cursor: pointer;
     float: left;
@@ -434,7 +434,7 @@ a, a:hover {
     margin: 5px 5px 0 0;
 }
 .Wrap .midWrap .mainContent div.cont li.titleFrame span.tools a {
-    background: url("/public/site/img/title-icon.png") no-repeat scroll 0 center transparent;
+    background: url("/site/img/title-icon.png") no-repeat scroll 0 center transparent;
     display: inline-block;
     height: 15px;
     margin: 0 2px 0 5px;
@@ -495,7 +495,7 @@ a, a:hover {
     z-index: 1;
 }
 .Wrap .midWrap .mainContent .topBtn span {
-    background: url("/public/site/img/btnTop.png") no-repeat scroll center center transparent;
+    background: url("/site/img/btnTop.png") no-repeat scroll center center transparent;
     cursor: pointer;
     display: block;
     height: 51px;
@@ -514,7 +514,7 @@ a, a:hover {
     position: absolute;
 }
 .Wrap .Footer {
-    background: url("/public/site/img/headerBG.png") repeat-x scroll left -111px transparent;
+    background: url("/site/img/headerBG.png") repeat-x scroll left -111px transparent;
     color: #FFFFFF;
     height: 35px;
     line-height: 35px;
@@ -533,7 +533,7 @@ a, a:hover {
     padding: 0 5px 0 0;
 }
 .Wrap .Footer ul.FootSubNav {
-    background: url("/public/site/img/BgMask.png") repeat scroll 0 0 transparent;
+    background: url("/site/img/BgMask.png") repeat scroll 0 0 transparent;
     bottom: 56px;
     left: 0;
     line-height: 20px;
@@ -549,7 +549,7 @@ a, a:hover {
     text-indent: -99999px;
 }
 .Wrap .Footer ul.FootNav li a {
-    background: url("/public/site/img/footerNav.png") no-repeat scroll 0 0 transparent;
+    background: url("/site/img/footerNav.png") no-repeat scroll 0 0 transparent;
     cursor: pointer;
     display: block;
     height: 35px;
@@ -616,7 +616,7 @@ span.mediaHrefBK {
     z-index: 5;
 }
 .Wrap .youtubeMediaList span.playMask {
-    background: url("/public/site/img/play.png") no-repeat scroll center center transparent;
+    background: url("/site/img/play.png") no-repeat scroll center center transparent;
     cursor: pointer;
     display: block;
     height: 100%;
@@ -627,10 +627,10 @@ span.mediaHrefBK {
     z-index: 3;
 }
 .Wrap .youtubeMediaList span.playMaskHover {
-    background: url("/public/site/img/play_hover.png") no-repeat scroll center center transparent;
+    background: url("/site/img/play_hover.png") no-repeat scroll center center transparent;
 }
 .Wrap .midWrap .mainContent div.cont li.ContData ul.technologyUL li.technologyList .youtubeMediaList p {
-    background: url("/public/site/img/grayGradient.png") repeat-y scroll 0 0 transparent;
+    background: url("/site/img/grayGradient.png") repeat-y scroll 0 0 transparent;
     color: #FFFFFF;
     margin: -23px 0 0;
     padding: 0 0 0 5px;

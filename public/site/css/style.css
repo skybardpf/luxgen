@@ -24,7 +24,7 @@ a, a:hover {
     max-width: 100%;
 }
 .Wrap .youtubeMediaList span.playMask {
-    background: url("/public/site/img/play.png") no-repeat scroll center center transparent;
+    background: url("/site/img/play.png") no-repeat scroll center center transparent;
     cursor: pointer;
     display: block;
     height: 100%;
@@ -35,7 +35,7 @@ a, a:hover {
     z-index: 3;
 }
 .Wrap .youtubeMediaList span.playMask:hover, .Wrap .youtubeMediaList span.playMaskHover {
-    background: url("/public/site/img/play_hover.png") no-repeat scroll center center transparent;
+    background: url("/site/img/play_hover.png") no-repeat scroll center center transparent;
 }
 .Wrap .youtubeMediaList .youtubeMedia {
     height: 100%;
@@ -155,7 +155,7 @@ header nav .kindsNav li.active a, header nav .kindsNav li a:hover {
     width: 28px;
 }
 .mainContent .topBtn span {
-    background: url("/public/site/img/btnTop.png") no-repeat scroll center center transparent;
+    background: url("/site/img/btnTop.png") no-repeat scroll center center transparent;
     cursor: pointer;
     display: block;
     height: 51px;
@@ -181,7 +181,7 @@ header nav .kindsNav li.active a, header nav .kindsNav li a:hover {
     position: relative;
 }
 #tv_bg ._bg_grid_mask {
-    background: url("/public/site/img/bg_grid.png") repeat scroll 0 0 transparent;
+    background: url("/site/img/bg_grid.png") repeat scroll 0 0 transparent;
     display: none;
     left: 0;
     /*min-height: 392px;*/
@@ -195,7 +195,7 @@ header nav .kindsNav li.active a, header nav .kindsNav li a:hover {
     height: 392px;
     position: absolute;
     width: 100%;
-    background-image: url("/public/site/img/20120927181146752.jpg");
+    background-image: url("/site/img/20120927181146752.jpg");
     left: 0;
     top: 0;
 }
@@ -209,7 +209,7 @@ header nav .kindsNav li.active a, header nav .kindsNav li a:hover {
     display: none;
     /*min-height: 190px;*/
     min-width: 935px;
-    background: url("/public/site/img/floor.png") no-repeat scroll center 0 #fff;
+    background: url("/site/img/floor.png") no-repeat scroll center 0 #fff;
     height: 244px;
     margin: 0 auto;
     overflow: hidden;
@@ -226,7 +226,7 @@ header nav .kindsNav li.active a, header nav .kindsNav li a:hover {
     z-index: 10;
 }
 .subNav li {
-    background: url("/public/site/img/subnavLine.jpg") no-repeat scroll left center transparent;
+    background: url("../img/subnavLine.jpg") no-repeat scroll left center transparent;
     color: #FFFFFF;
     cursor: pointer;
     float: left;
@@ -285,7 +285,7 @@ header nav .kindsNav li.active a, header nav .kindsNav li a:hover {
     margin: 5px 5px 0 0;
 }
 .mainContent .cont .titleFrame .tools a {
-    background: url("/public/site/img/title-icon.png") no-repeat scroll 0 center transparent;
+    background: url("../img/title-icon.png") no-repeat scroll 0 center transparent;
     display: inline-block;
     height: 15px;
     margin: 0 2px 0 5px;
@@ -334,7 +334,7 @@ header nav .kindsNav li.active a, header nav .kindsNav li a:hover {
     margin: 15px 0 0;
 }
 .ContAbout {
-    background: url("/public/site/img/about-bg.jpg") no-repeat scroll center top #000000;
+    background: url("../img/about-bg.jpg") no-repeat scroll center top #000000;
     padding: 220px 20px 0;
     position: relative;
 }
@@ -390,7 +390,7 @@ header nav .kindsNav li.active a, header nav .kindsNav li a:hover {
     top: 0;
 }
 .Technology .technologyTHINKUL {
-    background: url("/public/site/img/technology.think.image.jpg") no-repeat scroll center center transparent;
+    background: url("../img/technology.think.image.jpg") no-repeat scroll center center transparent;
     height: 550px;
     overflow: hidden;
     position: relative;
@@ -430,7 +430,7 @@ header nav .kindsNav li.active a, header nav .kindsNav li a:hover {
     top: 280px;
 }
 .Technology .technologyDataUL li.data {
-    background: url("/public/site/img/BgMask.png") repeat scroll 0 0 transparent;
+    background: url("../img/BgMask.png") repeat scroll 0 0 transparent;
     color: #FFFFFF;
     display: none;
     height: 200px;
@@ -476,7 +476,7 @@ header nav .kindsNav li.active a, header nav .kindsNav li a:hover {
     border: 1px solid #4E84A2;
 }
 .Technology .technologyDataUL li.btn {
-    background: url("/public/site/img/colorbox/btnClose.jpg") no-repeat scroll center center transparent;
+    background: url("../img/colorbox/btnClose.jpg") no-repeat scroll center center transparent;
     cursor: pointer;
     display: none;
     height: 23px;
@@ -491,7 +491,7 @@ header nav .kindsNav li.active a, header nav .kindsNav li a:hover {
     text-indent: -99999px;
 }
 .ContMonth .month span {
-    background: url("/public/site/img/news/newsline.gif") no-repeat scroll 0 0 transparent;
+    background: url("/public../img/news/newsline.gif") no-repeat scroll 0 0 transparent;
     display: block;
     height: 60px;
     text-indent: -99999px;
@@ -580,7 +580,7 @@ ul.ContMonth li.active span.month12 {
     margin-bottom: 20px;
 }
 footer {
-    background: url("/public/site/img/headerBG.png") repeat-x scroll left -111px transparent;
+    background: url("../img/headerBG.png") repeat-x scroll left -111px transparent;
     color: #FFFFFF;
     height: 35px;
     line-height: 35px;
@@ -605,7 +605,7 @@ footer ul.FootNav li {
 footer ul.FootNav li a {
     color: #707070;
     font-size: 15px;
-    background: url("/public/site/img/footerNav.png") no-repeat scroll 0 0 transparent;
+    background: url("../img/footerNav.png") no-repeat scroll 0 0 transparent;
     cursor: pointer;
     float: left;
     height: 35px;

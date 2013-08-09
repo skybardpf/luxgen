@@ -1,6 +1,6 @@
 
 .ContTimeline {
-    background: url("/public/site/img/about/line.gif") repeat-y scroll center 0 transparent;
+    background: url("../img/about/line.gif") repeat-y scroll center 0 transparent;
     margin: 0 auto;
     width: 880px;
 }
@@ -16,7 +16,7 @@
 .ContTimeline .ContTimelineMonth {
 }
 .ContTimeline .ContTimelineLeft:after, .ContTimeline .ContTimelineLeft .after {
-    background: url("/public/site/img/about/arrow.gif") no-repeat scroll -9px 0 transparent;
+    background: url("../img/about/arrow.gif") no-repeat scroll -9px 0 transparent;
     content: " ";
     display: block;
     height: 15px;
@@ -26,7 +26,7 @@
     width: 9px;
 }
 .ContTimeline .ContTimelineRight:after, .ContTimeline .ContTimelineRight .after {
-    background: url("/public/site/img/about/arrow.gif") no-repeat scroll 0 0 transparent;
+    background: url("../img/about/arrow.gif") no-repeat scroll 0 0 transparent;
     content: " ";
     display: block;
     height: 15px;

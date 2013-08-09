@@ -109,6 +109,7 @@ class Controller extends ConfLoader
 		$this->ctrlName = $ctrlName; 
 		$this->app      = $app;
 		$this->page     = $this->app->page;
+        $this->page->BASE_URL = BASE_URL;
 		if (!$ctrlName) return;
 	}
 	
@@ -123,7 +124,7 @@ class Controller extends ConfLoader
 	{
 		//кеширование JS-ников
 		if (!$render and $this->app->mode == 'production' && 0) {
-			include_once './zf/third-party/packer/class.JavaScriptPacker.php';
+			include_once ROOT_PATH . '/zf/third-party/packer/class.JavaScriptPacker.php';
         	$js = $this->page->pageJS;
         	$alljs = array('name' => '', 'names' => array(), 'urls' => array(), 'content' => array());
         	foreach ($js as $name => $path) {
@@ -134,7 +135,7 @@ class Controller extends ConfLoader
         			unset($js[$name]);
         		}
         	}
-        	$alljs['name'] = PUBLIC_PATH.'site/js/'.md5(implode(';', $alljs['names'])).'.js';
+        	$alljs['name'] = BASE_URL.'site/js/'.md5(implode(';', $alljs['names'])).'.js';
         	if (!is_file('.'.$alljs['name'])) {
 				foreach ($alljs['urls'] as $path) {
 	        		if ($path[0] == '/' and is_file('.'.$path)) {
@@ -156,8 +157,7 @@ class Controller extends ConfLoader
         		$this->page->pageJS = array_merge(array(md5(implode(';', $alljs['names'])) => $alljs['name']), $js);
         	}
         }
-        
-        
+
         $this->page->loadView(
             $view,
             empty($this->app->conf['mvc']['use_subdirs']['views']) ? 0 : ($ctrlName === null ? 0 : 1),
@@ -317,8 +317,6 @@ class Controller extends ConfLoader
 		//if (!$action) $action = $this->app->request->uri;
 		
 		$views = misc::get($this->app->conf, 'views');
-        var_dump($views);die;
-
 		$form = new form($arr, $elements, $action, $formName, $method, misc::get($views, 'forms'), true, $target, $id);
 
 		$form->ctrl = $this;

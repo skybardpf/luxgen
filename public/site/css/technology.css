@@ -18,7 +18,7 @@
     margin: 10px;
 }
 .Wrap .midWrap .mainContent .Technology .technologyUL .technologyList h4.title {
-    background: url("/public/site/img/technology/technology.title.png") no-repeat scroll 0 0 transparent;
+    background: url("../img/technology/technology.title.png") no-repeat scroll 0 0 transparent;
     padding: 25px 0 0;
 }
 .Wrap .midWrap .mainContent .Technology .technologyUL .technologyList h4.title01 {
@@ -45,7 +45,7 @@
     position: relative;
 }
 .Wrap .midWrap .mainContent .Technology .ContData .technologyTHINKUL {
-    background: url("/public/site/img/technology/technology.think.image.jpg") no-repeat scroll center center transparent;
+    background: url("../img/technology/technology.think.image.jpg") no-repeat scroll center center transparent;
     height: 550px;
     overflow: hidden;
     position: relative;
@@ -85,7 +85,7 @@
     top: 280px;
 }
 .Wrap .midWrap .mainContent .Technology .ContData .technologyDataUL li.data {
-    background: url("/public/site/img/BgMask.png") repeat scroll 0 0 transparent;
+    background: url("../img/BgMask.png") repeat scroll 0 0 transparent;
     color: #FFFFFF;
     display: none;
     height: 200px;
@@ -131,7 +131,7 @@
     border: 1px solid #4E84A2;
 }
 .Wrap .midWrap .mainContent .Technology .ContData .technologyDataUL li.btn {
-    background: url("/public/site/img/colorbox/btnClose.jpg") no-repeat scroll center center transparent;
+    background: url("../img/colorbox/btnClose.jpg") no-repeat scroll center center transparent;
     cursor: pointer;
     display: none;
     height: 23px;

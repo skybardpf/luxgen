@@ -24,7 +24,7 @@
 
 .Wrap .midWrap .mainContent .Technology .technologyUL .technologyList h4.title {
     padding    : 25px 0 0 0;
-    background : url(/public/site/img/cars/technology.title.png) no-repeat 0 0;
+    background : url(../img/cars/technology.title.png) no-repeat 0 0;
 }
 
 .Wrap .midWrap .mainContent .Technology .technologyUL .technologyList h4.title01 {
@@ -61,7 +61,7 @@
 
 .Wrap .midWrap .mainContent .Technology .ContData .technologyTHINKUL {
     position   : relative;
-    background : url(/public/site/img/technology/technology.think.image.jpg) no-repeat center center;
+    background : url(../img/technology/technology.think.image.jpg) no-repeat center center;
     width      : 980px;
     height     : 550px;
     overflow   : hidden;
@@ -114,7 +114,7 @@
     position   : absolute;
     width      : 880px;
     height     : 200px;
-    background : url(/public/site/img/BgMask.png);
+    background : url(../img/BgMask.png);
     display    : none;
     color      : #FFF;
 }
@@ -168,7 +168,7 @@
     position    : absolute;
     width       : 23px;
     height      : 23px;
-    background  : url(/public/site/img/colorbox/btnClose.jpg) no-repeat center center;
+    background  : url(../img/colorbox/btnClose.jpg) no-repeat center center;
     text-indent : -99999px;
     cursor      : pointer;
     display     : none;

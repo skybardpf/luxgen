@@ -53,7 +53,7 @@
 #floor {
     margin: 0 auto;
     height: 244px;
-    background: url(/public/site/img/floor.png) no-repeat;
+    background: url(../img/floor.png) no-repeat;
     position: relative;
     overflow: hidden;
 }
@@ -68,7 +68,7 @@ body {
 }
 
 .bg_base {
-    background: url(/public/site/img/base.png) no-repeat;
+    background: url(../img/base.png) no-repeat;
 }
 
 .bg_base.arrow_prev,
@@ -144,7 +144,7 @@ body {
     width: 100%;
     /*min-height: 392px;*/
     overflow: hidden;
-    background: url(/public/site/img/bg_grid.png) 0 0 repeat;
+    background: url(../img/bg_grid.png) 0 0 repeat;
 }
 
 #tv_bg ._bg {
@@ -322,7 +322,7 @@ body {
 }
 
 #snapShotBarNav {
-    background: url(/public/site/img/bg_page_snapshot_bar.png) 0 0 repeat-x;
+    background: url(../img/bg_page_snapshot_bar.png) 0 0 repeat-x;
     height: 30px;
     padding-top: 9px;
     position: relative;
@@ -330,7 +330,7 @@ body {
 
 #snapShotBarNav .snapshotBar {
     display: inline-block;
-    background: url(/public/site/img/bg_snapshot_drag_bar.gif) 0 0 no-repeat;
+    background: url(../img/bg_snapshot_drag_bar.gif) 0 0 no-repeat;
     width: 300px;
     height: 22px;
     position: relative;
@@ -338,7 +338,7 @@ body {
 
 #snapShotBarNav .snapshotBarEnd {
     display: inline-block;
-    background: url(/public/site/img/bg_snapshot_drag_bar.gif) 100% 0 no-repeat;
+    background: url(../img/bg_snapshot_drag_bar.gif) 100% 0 no-repeat;
     width: 5px;
     height: 22px;
     margin-left: -3px;
@@ -378,7 +378,7 @@ body {
     *display: inline;
     width: 25px;
     height: 25px;
-    background: url(/public/site/img/btn_page_nav.gif) 0 0 no-repeat;
+    background: url(../img/btn_page_nav.gif) 0 0 no-repeat;
 }
 
 #pageNavFuncBtn .btn_prev {
@@ -386,7 +386,7 @@ body {
     *display: inline;
     width: 25px;
     height: 25px;
-    background: url(/public/site/img/btn_page_nav.gif) -25px 0 no-repeat;
+    background: url(../img/btn_page_nav.gif) -25px 0 no-repeat;
 }
 
 #pageNavFuncBtn .btn_next {
@@ -394,7 +394,7 @@ body {
     *display: inline;
     width: 25px;
     height: 25px;
-    background: url(/public/site/img/btn_page_nav.gif) -50px 0 no-repeat;
+    background: url(../img/btn_page_nav.gif) -50px 0 no-repeat;
 }
 
 #pageNavFuncBtn .btn_hint {
@@ -414,7 +414,7 @@ body {
 #pageNavContainer .pageNavTitleBlk {
     width: 100%;
     height: 111px;
-    background: url(/public/site/img/bg_page_nav_title_desc.gif) 0 0 repeat-x;
+    background: url(../img/bg_page_nav_title_desc.gif) 0 0 repeat-x;
     padding-top: 25px;
     padding-left: 25px;
 }
@@ -459,7 +459,7 @@ body {
     top: 0;
     left: 25px;
     z-index: 700;
-    background: url(/public/site/img/icon_page_nav_indicator.png) 0 0 no-repeat;
+    background: url(../img/icon_page_nav_indicator.png) 0 0 no-repeat;
 }
 
 #pageNavContainer .pageNavSnapBlk .pageNav_Snap {
@@ -509,7 +509,7 @@ body {
 }
 
 #indexNews .newsHead {
-    background: url(/public/site/img/bg_news.png) 0 -111px no-repeat;
+    background: url(../img/bg_news.png) 0 -111px no-repeat;
     width: 281px;
     height: 25px;
     padding: 6px 0 0;
@@ -517,18 +517,18 @@ body {
 
 #indexNews .newsHead .switcher {
     display: block;
-    background: url(/public/site/img/bg_news.png) 0 -6px no-repeat;
+    background: url('../img/bg_news.png') 0 -6px no-repeat;
     width: 281px;
     height: 25px;
     cursor: pointer;
 }
 
 #indexNews .newsHead .active {
-    background: url(/public/site/img/bg_news.png) 0 -43px no-repeat;
+    background: url(../img/bg_news.png) 0 -43px no-repeat;
 }
 
 #indexNews .newsBody {
-    background: url(/public/site/img/bg_news.png) 0 bottom no-repeat;
+    background: url(../img/bg_news.png) 0 bottom no-repeat;
     width: 257px;
     padding: 0 12px 2px;
     max-height: 69px;

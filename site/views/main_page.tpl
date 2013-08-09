@@ -11,7 +11,7 @@
     <div id="floor"></div>
 </div>*}
 <div class="IndexContent" style="margin-top: 77px;">
-	<img src="/site/img/Viaduct5.jpg" style="width:100%;">
+	<img src="{$BASE_URL}site/img/Viaduct5.jpg" style="width:100%;">
 
 </div>
-<link rel="stylesheet" href="/site/css/index.css">
+<link rel="stylesheet" href="{$BASE_URL}site/css/index.css">

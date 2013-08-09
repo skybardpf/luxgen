@@ -6,15 +6,15 @@ div.light_square .pp_content .ppt {
     color: #FFFFFF;
 }
 div.light_square .pp_contract {
-    background: url("/public/site/img/colorbox/sprite.png") no-repeat scroll 0 -26px transparent;
+    background: url("../img/colorbox/sprite.png") no-repeat scroll 0 -26px transparent;
     cursor: pointer;
 }
 div.light_square .pp_contract:hover {
-    background: url("/public/site/img/colorbox/sprite.png") no-repeat scroll 0 -47px transparent;
+    background: url("../img/colorbox/sprite.png") no-repeat scroll 0 -47px transparent;
     cursor: pointer;
 }
 div.light_square .pp_close {
-    background: url("/public/site/img/colorbox/btnClose.jpg") no-repeat scroll 0 0 transparent;
+    background: url("../img/colorbox/btnClose.jpg") no-repeat scroll 0 0 transparent;
     cursor: pointer;
     height: 23px;
     width: 23px;
@@ -29,17 +29,17 @@ div.light_square .pp_gallery a.pp_arrow_previous, div.light_square .pp_gallery a
     margin-top: 12px !important;
 }
 div.light_square .pp_arrow_previous {
-    background: url("/public/site/img/colorbox/btnNextPrev.png") no-repeat scroll 0 0 transparent;
+    background: url("../img/colorbox/btnNextPrev.png") no-repeat scroll 0 0 transparent;
 }
 div.light_square .pp_arrow_next {
-    background: url("/public/site/img/colorbox/btnNextPrev.png") no-repeat scroll -49px 0 transparent;
+    background: url("../img/colorbox/btnNextPrev.png") no-repeat scroll -49px 0 transparent;
 }
 div.light_square .pp_previous:hover {
-    background: url("/public/site/img/colorbox/btnPrevious.png") no-repeat scroll left center transparent;
+    background: url("../img/colorbox/btnPrevious.png") no-repeat scroll left center transparent;
     cursor: pointer;
 }
 div.light_square .pp_loaderIcon {
-    background: url("/public/site/img/colorbox/loader.gif") no-repeat scroll center center transparent;
+    background: url("../img/colorbox/loader.gif") no-repeat scroll center center transparent;
 }
 div.pp_pic_holder a:focus {
     outline: medium none;
@@ -215,7 +215,7 @@ a.pp_arrow_next {
     padding: 0;
 }
 .pp_gallery li.default a {
-    background: url("/public/site/img/colorbox/default_thumbnail.gif") no-repeat scroll 0 0 transparent;
+    background: url("../img/colorbox/default_thumbnail.gif") no-repeat scroll 0 0 transparent;
     display: block;
     height: 33px;
     width: 50px;

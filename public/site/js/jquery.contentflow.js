@@ -110,7 +110,7 @@ var ContentFlowGlobal = {
 
     init: function () {
         /* add default stylesheets */
-        this.addStylesheet("css/style.contentflow.css");
+        this.addStylesheet("/site/css/style.contentflow.css");
         //this.addStylesheet(this.CSSBaseDir+'css/mycontentflow.css');    // FF2: without adding a css-file FF2 hangs on a reload.
         //      I don't have the slidest idea why
         //      Could be timing problem

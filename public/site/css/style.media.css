@@ -27,7 +27,7 @@
     max-width: 100%;
 }
 .Wrap .midWrap .mainContent .media li.mediaList .active {
-    background: url("/public/site/img/BgMask.png") repeat scroll 0 0 transparent;
+    background: url("../img/BgMask.png") repeat scroll 0 0 transparent;
     color: #FFFFFF;
     display: none;
     height: 100%;
@@ -51,7 +51,7 @@
     margin: 0 10px;
 }
 .Wrap .midWrap .mainContent .media li.mediaList .active .Article li.text {
-    background: url("/public/site/img/media.dowmload.icon.gif") no-repeat scroll right bottom transparent;
+    background: url("../img/media.dowmload.icon.gif") no-repeat scroll right bottom transparent;
     margin: 0 10px 5px;
     padding: 0 20px 0 0;
 }

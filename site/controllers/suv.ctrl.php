@@ -23,7 +23,9 @@ class SuvController extends Site_Controller
         }
         
         $this->page->content = $this->renderView('list');
-//        debug::dump($imgs);
+//
         $this->loadView('main',null);
+
+//        debug::dump($this->loadView('main',null));die;
     }
 }
