@@ -5,8 +5,8 @@ class WallpaperController extends Site_Controller
         if ($this->app->request->id) {
             return $this->Show($this->app->request->id);
         }
-        zf::addCSS('colorbox', '/public/site/css/colorbox.css');
-        zf::addJS('colorbox', '/public/site/js/jquery.colorbox.js');
+        zf::addCSS('colorbox', PUBLIC_PATH.'/site/css/colorbox.css');
+        zf::addJS('colorbox', PUBLIC_PATH.'/site/js/jquery.colorbox.js');
         $this->page->imgs = $imgs = $this->model('imgs')->getList(
             'imgs', 
             'site', 

@@ -1,4 +1,4 @@
-app: luxgen
+﻿п»їapp: luxgen
 title: luxgen_title
 charset: utf-8
 #mode: development # If set this mode will be used
@@ -76,6 +76,17 @@ run_at:
     db_user: root
     db_pass: zK1dQp1988
     db_sql_mode: ''
+  le:
+    cond: {host: [luxgen-dealer.le.devel]}
+    mode: development
+    db_engine: mysql
+    db_charset: utf-8
+    db_use_pconnection: 0
+    db_host: 192.168.0.205
+    db_name: luxgen
+    db_user: artektiv
+    db_pass: qazwsxedc
+    db_sql_mode: ''
   demo:
     cond: {host: [luxgen-motor.artektiv.ru]}
     mode: production
@@ -107,6 +118,7 @@ modes:
       local: *
       yury: *
       anna: *
+      le: *
     db_debug: {store_queries: 1, store_raw_queries: 1, store_results: 1, store_caller: 1, store_times: 1, times_precision: 5}
     debug: {error_reporting: E_ALL, display_errors: 1, log_errors: 1, store_codesniplets: 1}
     smarty: {debug: 0}
@@ -133,41 +145,41 @@ modes:
 
 # Application parameters.
 settings:
-  counters: {title: Счетчики, type: raw_text}
-  error_404: {title: Текст ошибки 404, type: raw_text}
-  tdrv_email: {title: email для тест драйв формы, type: string}
-# Меню CMS
+  counters: {title: РЎС‡РµС‚С‡РёРєРё, type: raw_text}
+  error_404: {title: РўРµРєСЃС‚ РѕС€РёР±РєРё 404, type: raw_text}
+  tdrv_email: {title: email РґР»СЏ С‚РµСЃС‚ РґСЂР°Р№РІ С„РѕСЂРјС‹, type: string}
+# РњРµРЅСЋ CMS
 cms_menu:
-  - title: Страницы
+  - title: РЎС‚СЂР°РЅРёС†С‹
     link: content
     icon: content
     submenu:
-      - title: Показать страницы
+      - title: РџРѕРєР°Р·Р°С‚СЊ СЃС‚СЂР°РЅРёС†С‹
         link: content/list
-      - title: Редактировать главную
+      - title: Р РµРґР°РєС‚РёСЂРѕРІР°С‚СЊ РіР»Р°РІРЅСѓСЋ
         link: content/modify/id/1/pid/1
-  - title: Новости
+  - title: РќРѕРІРѕСЃС‚Рё
     link: news
-  - title: Хроники
+  - title: РҐСЂРѕРЅРёРєРё
     link: chronicle
-  - title: Модели автомобилей
+  - title: РњРѕРґРµР»Рё Р°РІС‚РѕРјРѕР±РёР»РµР№
     link: models
-  - title: Изображения
+  - title: Р�Р·РѕР±СЂР°Р¶РµРЅРёСЏ
     link: imgs
-  - title: Видео
+  - title: Р’РёРґРµРѕ
     link: videos
-  - title: Материалы в прессе
+  - title: РњР°С‚РµСЂРёР°Р»С‹ РІ РїСЂРµСЃСЃРµ
     link: press
-  - title: Заявки на тест драйв
+  - title: Р—Р°СЏРІРєРё РЅР° С‚РµСЃС‚ РґСЂР°Р№РІ
     link: test_drive
 cms_smenu:
-  - title: Администраторы
+  - title: РђРґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂС‹
     link: users
     submenu:
-      - title: Добавить
+      - title: Р”РѕР±Р°РІРёС‚СЊ
         link: users/add
       - hr
-      - title: Роли
+      - title: Р РѕР»Рё
         link: users/list_roles
-      - title: Добавить роль
+      - title: Р”РѕР±Р°РІРёС‚СЊ СЂРѕР»СЊ
         link: users/add_role
