@@ -8,7 +8,7 @@
     </script>
 {/literal}*}
 
-<link rel="stylesheet" href="/public/site/css/style.media.css">
+<link rel="stylesheet" href="{$BASE_URL}site/css/style.media.css">
 <div class="HeaderSlide"></div>
 <div class="subNav subNavFixed both">
     <ul class="subNavUL both">

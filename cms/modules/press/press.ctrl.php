@@ -2,7 +2,7 @@
 class PressController extends CMS_Controller
 {
     public function actionAdd(){
-        zf::addJS('presscms', PUBLIC_PATH.'/site/js/press.js');
+        zf::addJS('presscms', PUBLIC_PATH . 'site/js/press.js');
         if($_POST){
             if($_POST["linktype"]=='url'){
                 $this->fields = $this->model()->getFields('press', 'modurl');
@@ -14,7 +14,7 @@ class PressController extends CMS_Controller
     }
 
     public function actionModify(){
-        zf::addJS('presscms', PUBLIC_PATH.'/site/js/press.js');
+        zf::addJS('presscms', PUBLIC_PATH . 'site/js/press.js');
         if($_POST){
             if($_POST["linktype"]=='url'){
                 $this->fields = $this->model()->getFields('press', 'modurl');

@@ -38,8 +38,8 @@
     <tr class="m-item-center" {if $smarty.foreach.list.iteration%2==0}style="background-color:#e4e4e4;"{/if} id="row_{$row.id}">
         <td class="pos">
             {if $usePos}
-                <a href="{if $posUp}{$posUp}{else}{$sLink}pos/up/id/{$row.id}/{/if}"><img src="/public/cms/img/icons/arrow_up-active.png" /></a>
-                <a href="{if $posDown}{$posDown}{else}{$sLink}pos/down/id/{$row.id}/{/if}"><img src="/public/cms/img/icons/arrow_down-active.png" /></a>
+                <a href="{if $posUp}{$posUp}{else}{$sLink}pos/up/id/{$row.id}/{/if}"><img src="{$BASE_URL}cms/img/icons/arrow_up-active.png" /></a>
+                <a href="{if $posDown}{$posDown}{else}{$sLink}pos/down/id/{$row.id}/{/if}"><img src="{$BASE_URL}cms/img/icons/arrow_down-active.png" /></a>
             {/if}
         </td>
         {foreach from=$titles item=columnTitle key=key name=items}
@@ -47,7 +47,7 @@
                 {if $fields.$key.values}
                     {assign var="arrKey" value=$row.$key}
                     {if $key eq 'status'}
-                        <a title="Редактировать статус заказа" href="/admin/fm/modify_orders/id/{$row.id}/"><img alt="Редактировать статус заказа" src="/public/cms/img/icons/edit.png" /></a>{$fields[$key].values[$arrKey]}
+                        <a title="Редактировать статус заказа" href="/admin/fm/modify_orders/id/{$row.id}/"><img alt="Редактировать статус заказа" src="{$BASE_URL}cms/img/icons/edit.png" /></a>{$fields[$key].values[$arrKey]}
                     {elseif $key eq 'client_id'}
                         <a title="Посмотреть клиента" href="/admin/clients/show/id/{$arrKey}/">{$fields[$key].values[$arrKey]}</a>
                     {else}
@@ -60,10 +60,10 @@
                         {$fields.$key.empty|default:"не задано"}
                     {/foreach}
                 {elseif $fields.$key.type eq 'date'}
-                    <a title="Посмотреть заказ" href="/admin/fm/show_orders/id/{$row.id}/"><img alt="Посмотреть заказ" src="/public/cms/img/icons/show.png" /></a>
+                    <a title="Посмотреть заказ" href="/admin/fm/show_orders/id/{$row.id}/"><img alt="Посмотреть заказ" src="{$BASE_URL}cms/img/icons/show.png" /></a>
                     {$row.$key|date_format:"%d.%m.%Y"}
                 {elseif $fields.$key.type eq 'datetime'}
-                    <a title="Посмотреть заказ" href="/admin/fm/show_orders/id/{$row.id}/"><img alt="Посмотреть заказ" src="/public/cms/img/icons/show.png" /></a>
+                    <a title="Посмотреть заказ" href="/admin/fm/show_orders/id/{$row.id}/"><img alt="Посмотреть заказ" src="{$BASE_URL}cms/img/icons/show.png" /></a>
                     {$row.$key|date_format:"%d.%m.%Y %H:%M"}
                 {else}
                     {call name="get_listing_value" item=$row key=$key}{$row.$key}{/call}
@@ -73,7 +73,7 @@
                     </a>
                 {/if}
                 {if $list_actions.inline.$key.put.pos eq "after"}
-                    <a title="{$list_actions.inline.$key.put.title}" href="{$root_url}{$list_actions.inline.$key.put.link|replace:"[id]":$row.id|replace:"[pid]":$request.pid|replace:'[model]':$request.model}/">{if $list_actions.inline.$key.put.icon}<img alt="{$list_actions.inline.$key.put.title}" src="/public/cms/img/icons/{$list_actions.inline.$key.put.icon}.png" />{else}{$list_actions.inline.$key.put.title}{/if}</a>
+                    <a title="{$list_actions.inline.$key.put.title}" href="{$root_url}{$list_actions.inline.$key.put.link|replace:"[id]":$row.id|replace:"[pid]":$request.pid|replace:'[model]':$request.model}/">{if $list_actions.inline.$key.put.icon}<img alt="{$list_actions.inline.$key.put.title}" src="{$BASE_URL}cms/img/icons/{$list_actions.inline.$key.put.icon}.png" />{else}{$list_actions.inline.$key.put.title}{/if}</a>
                 {/if}
             </td>
         {/foreach}
@@ -98,7 +98,7 @@
                 {foreach from=$rightFromTable key=rKey item=rItem}
                     {if (strpos($rKey, 'delete') !== 0 OR $row.undeletable ne 'yes')}
                         {check_cond action=$rItem item=$row}
-                        <a href="{$root_url}{$rItem.link|replace:"[id]":$row.id|replace:"[pid]":$request.pid|replace:'[model]':$request.model}/" title="{$rItem.title}"><img src="/public/cms/img/icons/{$rItem.icon}.png" alt="{$rItem.title}" /></a>
+                        <a href="{$root_url}{$rItem.link|replace:"[id]":$row.id|replace:"[pid]":$request.pid|replace:'[model]':$request.model}/" title="{$rItem.title}"><img src="{$BASE_URL}cms/img/icons/{$rItem.icon}.png" alt="{$rItem.title}" /></a>
                         {/check_cond}
                     {/if}
                 {/foreach}

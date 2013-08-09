@@ -1,11 +1,11 @@
 {if $request.pid}
 Действия над категорией: <a href="{$root_url}{$ctrlName}/add/pid/{$request.pid}/" title="Добавить подкатегорию"><img
-	alt="Добавить подкатегорию" src="/public/cms/img/icons/add.png" style="margin-bottom: -4px; margin-right: 4px;"></a><a href="{$root_url}{$ctrlName}/modify/id/{$request.pid}/" title="Редактировать"><img
-	alt="Редактировать" src="/public/cms/img/icons/edit.png" style="margin-bottom: -4px; margin-right: 4px;"></a><a href="{$root_url}{$ctrlName}/delete/id/{$request.pid}/" title="Удалить"><img
-	alt="Удалить" src="/public/cms/img/icons/delete.png" style="margin-bottom: -4px; margin-right: 4px;"></a><a href="{$root_url}images/list/model/catalog_tree/pid/{$request.pid}/" title="Фотогалерея"><img
-	alt="Фотогалерея" src="/public/cms/img/icons/gallery.gif" style="margin-bottom: -4px; margin-right: 4px;"></a>
+	alt="Добавить подкатегорию" src="{$BASE_URL}cms/img/icons/add.png" style="margin-bottom: -4px; margin-right: 4px;"></a><a href="{$root_url}{$ctrlName}/modify/id/{$request.pid}/" title="Редактировать"><img
+	alt="Редактировать" src="{$BASE_URL}cms/img/icons/edit.png" style="margin-bottom: -4px; margin-right: 4px;"></a><a href="{$root_url}{$ctrlName}/delete/id/{$request.pid}/" title="Удалить"><img
+	alt="Удалить" src="{$BASE_URL}cms/img/icons/delete.png" style="margin-bottom: -4px; margin-right: 4px;"></a><a href="{$root_url}images/list/model/catalog_tree/pid/{$request.pid}/" title="Фотогалерея"><img
+	alt="Фотогалерея" src="{$BASE_URL}cms/img/icons/gallery.gif" style="margin-bottom: -4px; margin-right: 4px;"></a>
 <a href="{$root_url}{$ctrlName}/puzzle/pid/{$request.pid}/" title="Пазл"><img
-	alt="Фотогалерея" src="/public/cms/img/icons/arrow_compass.gif" style="margin-bottom: -4px; margin-right: 4px;"
+	alt="Фотогалерея" src="{$BASE_URL}cms/img/icons/arrow_compass.gif" style="margin-bottom: -4px; margin-right: 4px;"
 ></a>
 <br><br><br>
 
@@ -37,7 +37,7 @@
 						href="{$root_url}{$list_actions.inline.$key.put.link|replace:"[id]":$row.id|replace:"[pid]":$request.pid|replace:'[model]':$request.model}/">
 						{if $list_actions.inline.$key.put.icon}
 							<img alt="{$list_actions.inline.$key.put.title}"
-								src="/public/cms/img/icons/{$list_actions.inline.$key.put.icon}.png"
+								src="{$BASE_URL}cms/img/icons/{$list_actions.inline.$key.put.icon}.png"
 								style="float: left; margin-right: 4px;"/>
 						{else}
 							{$list_actions.inline.$key.put.title}
@@ -84,7 +84,7 @@
                     </a>
                 {/if}
                 {if $list_actions.inline.$key.put.pos eq "after"}
-                    <a title="{$list_actions.inline.$key.put.title}" href="{$root_url}{$list_actions.inline.$key.put.link|replace:"[id]":$row.id|replace:"[pid]":$request.pid|replace:'[model]':$request.model}/">{if $list_actions.inline.$key.put.icon}<img alt="{$list_actions.inline.$key.put.title}" src="/public/cms/img/icons/{$list_actions.inline.$key.put.icon}.png" />{else}{$list_actions.inline.$key.put.title}{/if}</a>
+                    <a title="{$list_actions.inline.$key.put.title}" href="{$root_url}{$list_actions.inline.$key.put.link|replace:"[id]":$row.id|replace:"[pid]":$request.pid|replace:'[model]':$request.model}/">{if $list_actions.inline.$key.put.icon}<img alt="{$list_actions.inline.$key.put.title}" src="{$BASE_URL}cms/img/icons/{$list_actions.inline.$key.put.icon}.png" />{else}{$list_actions.inline.$key.put.title}{/if}</a>
                 {/if}
             </td>
         {/foreach}
@@ -94,7 +94,7 @@
                 {foreach from=$rightFromTable key=rKey item=rItem}
                     {if (strpos($rKey, 'delete') !== 0 OR $row.undeletable ne 'yes')}
                         {check_cond action=$rItem item=$row}
-                        <a href="{$root_url}{$rItem.link|replace:"[id]":$row.id|replace:"[pid]":$request.pid|replace:'[model]':$request.model}/" title="{$rItem.title}"><img src="/public/cms/img/icons/{$rItem.icon}.png" alt="{$rItem.title}" /></a>
+                        <a href="{$root_url}{$rItem.link|replace:"[id]":$row.id|replace:"[pid]":$request.pid|replace:'[model]':$request.model}/" title="{$rItem.title}"><img src="{$BASE_URL}cms/img/icons/{$rItem.icon}.png" alt="{$rItem.title}" /></a>
                         {/check_cond}
                     {/if}
                 {/foreach}

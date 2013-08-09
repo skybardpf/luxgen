@@ -1,6 +1,7 @@
 <?php
 function smarty_function_loadview($params, &$smarty)
 {
+    $smarty->page->BASE_URL = BASE_URL;
     $narr = explode('/', $params['name'], 2);
     unset($params['name']);
     foreach ($params as $key => $val) {

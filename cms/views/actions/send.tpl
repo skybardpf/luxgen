@@ -58,8 +58,8 @@
                 {if $list_actions.multiple or $list_actions.multy_change}<td><input type="checkbox" name='multiple_items[]' class="multiple" value={$row.id}></td>{/if}
                 <td class="pos">
                     {if $usePos}
-                        <a href="{if $posUp}{$posUp}{else}{$sLink}pos/up/id/{$row.id}/{/if}"><img src="/public/cms/img/icons/uparrow-green.png" /></a>
-                        <a href="{if $posDown}{$posDown}{else}{$sLink}pos/down/id/{$row.id}/{/if}"><img src="/public/cms/img/icons/downarrow-green.png" /></a>
+                        <a href="{if $posUp}{$posUp}{else}{$sLink}pos/up/id/{$row.id}/{/if}"><img src="{$BASE_URL}cms/img/icons/uparrow-green.png" /></a>
+                        <a href="{if $posDown}{$posDown}{else}{$sLink}pos/down/id/{$row.id}/{/if}"><img src="{$BASE_URL}cms/img/icons/downarrow-green.png" /></a>
                     {/if}
                 </td>
                 {foreach from=$titles item=columnTitle key=key name=items}
@@ -70,7 +70,7 @@
                                    href="{$root_url}{$mult_act.link|replace:"[id]":$row.id|replace:"[pid]":$request.pid|replace:'[model]':$request.model|replace:'[type]':$request.type}/">
                                     {if $mult_act.icon}
                                         <img alt="{$mult_act.title}"
-                                             src="/public/cms/img/icons/{$mult_act.icon}.png"
+                                             src="{$BASE_URL}cms/img/icons/{$mult_act.icon}.png"
                                              style="float: left; margin-right: 4px;"/>
                                         {else}
                                         {$mult_act.title}
@@ -82,7 +82,7 @@
                                href="{$root_url}{$list_actions.inline.$key.put.link|replace:"[id]":$row.id|replace:"[pid]":$request.pid|replace:'[model]':$request.model|replace:'[type]':$request.type}/">
                                 {if $list_actions.inline.$key.put.icon}
                                     <img alt="{$list_actions.inline.$key.put.title}"
-                                         src="/public/cms/img/icons/{$list_actions.inline.$key.put.icon}.png"
+                                         src="{$BASE_URL}cms/img/icons/{$list_actions.inline.$key.put.icon}.png"
                                          style="float: left; margin-right: 4px;"/>
                                     {else}
                                     {$list_actions.inline.$key.put.title}
@@ -170,7 +170,7 @@
                         </a>
                         {/if}
                         {if $list_actions.inline.$key.put.pos eq "after"}
-                            <a title="{$list_actions.inline.$key.put.title}" href="{$root_url}{$list_actions.inline.$key.put.link|replace:"[id]":$row.id|replace:"[pid]":$request.pid|replace:'[model]':$request.model|replace:'[type]':$request.type}/">{if $list_actions.inline.$key.put.icon}<img alt="{$list_actions.inline.$key.put.title}" src="/public/cms/img/icons/{$list_actions.inline.$key.put.icon}.png" />{else}{$list_actions.inline.$key.put.title}{/if}</a>
+                            <a title="{$list_actions.inline.$key.put.title}" href="{$root_url}{$list_actions.inline.$key.put.link|replace:"[id]":$row.id|replace:"[pid]":$request.pid|replace:'[model]':$request.model|replace:'[type]':$request.type}/">{if $list_actions.inline.$key.put.icon}<img alt="{$list_actions.inline.$key.put.title}" src="{$BASE_URL}cms/img/icons/{$list_actions.inline.$key.put.icon}.png" />{else}{$list_actions.inline.$key.put.title}{/if}</a>
                         {/if}
                     </td>
                 {/foreach}
@@ -197,7 +197,7 @@
                                                              href="{$root_url}{$rItem.link|replace:"[id]":$row.id|replace:"[pid]":$request.pid|replace:'[model]':$request.model|replace:'[type]':$request.type}/"
                                                              {if $rItem.rel}rel="{$rItem.rel|replace:"[id]":$row.id|replace:"[pid]":$request.pid|replace:'[model]':$request.model|replace:'[type]':$request.type}"{/if}
                                                              {if $rItem.onclick}onclick='{$rItem.onclick}'{/if}
-                                                             title="{$rItem.title}"><img src="/public/cms/img/icons/{$rItem.icon}.png" alt="{$rItem.title}" /></a>
+                                                             title="{$rItem.title}"><img src="{$BASE_URL}cms/img/icons/{$rItem.icon}.png" alt="{$rItem.title}" /></a>
                                     {/check_cond}
                                 {/if}
                             {/if}

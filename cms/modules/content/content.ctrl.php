@@ -46,9 +46,9 @@ class ContentController extends CMS_Controller
    		if (isset($this->model()->conf['tables']['content']['fields']['categories']['virtual'])) {
         	$this->model('content')->initValues(array('categories'));
         }
-        zf::addJS('content', PUBLIC_PATH.'/cms/js/content.js');
+        zf::addJS('content', PUBLIC_PATH . 'cms/js/content.js');
         if (file_exists('public/site/js/external.js')) {
-        	zf::addJS('content', PUBLIC_PATH.'/site/js/external.js');
+        	zf::addJS('content', PUBLIC_PATH . 'site/js/external.js');
         }
         if ($this->app->request->id == 1) {
 			$this->fields     = $this->model('content')->getFields('content', 'modify_main');
@@ -70,7 +70,7 @@ class ContentController extends CMS_Controller
     public function actionAdd($tableName = null, $modelNameorModel = null, $addData = array())
     {
     	if (file_exists('public/site/js/external.js')) {
-        	zf::addJS('content', PUBLIC_PATH.'/site/js/external.js');
+        	zf::addJS('content', PUBLIC_PATH . 'site/js/external.js');
         }
     	
         $this->model('content')->initValues(array('pid' => $this->app->request->pid));
@@ -126,12 +126,12 @@ class ContentController extends CMS_Controller
     {
         $this->page->vTree     = $this->tree = $this->model('content')->getTree(0, 0, 0, true);
         $this->page->treeLevel = 0;
-    	zf::addJS('jquery',PUBLIC_PATH.'/zf/js/jquery.js');
-    	zf::addJS('ui.core',PUBLIC_PATH.'/zf/js/jquery/ui.core.js');
-    	zf::addJS('jquery.cookie',PUBLIC_PATH.'/zf/js/jquery/jquery.cookie.js');
-    	zf::addJS('jquery.simple.tree',PUBLIC_PATH.'/cms/js/jquery.simple.tree.js');
-    	zf::addJS('tree_view',PUBLIC_PATH.'/cms/js/tree_view.js');
-    	zf::addCSS('simpletree', PUBLIC_PATH.'/cms/css/simpletree.css');
+    	zf::addJS('jquery',PUBLIC_PATH . 'zf/js/jquery.js');
+    	zf::addJS('ui.core',PUBLIC_PATH . 'zf/js/jquery/ui.core.js');
+    	zf::addJS('jquery.cookie',PUBLIC_PATH . 'zf/js/jquery/jquery.cookie.js');
+    	zf::addJS('jquery.simple.tree',PUBLIC_PATH . 'cms/js/jquery.simple.tree.js');
+    	zf::addJS('tree_view',PUBLIC_PATH . 'cms/js/tree_view.js');
+    	zf::addCSS('simpletree', PUBLIC_PATH . 'cms/css/simpletree.css');
     	
     	$this->page->content = $this->renderView('tree', 'content');
     }

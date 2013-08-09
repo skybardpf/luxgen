@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>{$title|default:'CMS'}</title>
 <!-- CSS -->
-<link rel="stylesheet" type="text/css" href="/public/cms/css/style.css" />
+<link rel="stylesheet" type="text/css" href="{PUBLIC_PATH.'cms/css/style.css'}" />
 {foreach from=$pageCSS item=item}
 <link href='{$item}' rel='stylesheet' type='text/css'>
 {/foreach}

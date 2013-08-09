@@ -14,8 +14,8 @@
         
         <td class="pos">
             {if $usePos}
-                <a href="{if $posUp}{$posUp}{else}{$sLink}pos/up/id/{$row.id}/{/if}"><img src="/public/cms/img/icons/arrow_up-active.png" /></a>
-                <a href="{if $posDown}{$posDown}{else}{$sLink}pos/down/id/{$row.id}/{/if}"><img src="/public/cms/img/icons/arrow_down-active.png" /></a>
+                <a href="{if $posUp}{$posUp}{else}{$sLink}pos/up/id/{$row.id}/{/if}"><img src="{$BASE_URL}cms/img/icons/arrow_up-active.png" /></a>
+                <a href="{if $posDown}{$posDown}{else}{$sLink}pos/down/id/{$row.id}/{/if}"><img src="{$BASE_URL}cms/img/icons/arrow_down-active.png" /></a>
             {/if}
         </td>
         {foreach from=$titles item=columnTitle key=key name=items}
@@ -43,7 +43,7 @@
                     </a>
                 {/if}
                 {if $list_actions.inline.$key.put.pos eq "after"}
-                    <a title="{$list_actions.inline.$key.put.title}" href="{$root_url}{$list_actions.inline.$key.put.link|replace:"[id]":$row.id|replace:"[pid]":$request.pid|replace:'[model]':$request.model}/">{if $list_actions.inline.$key.put.icon}<img alt="{$list_actions.inline.$key.put.title}" src="/public/cms/img/icons/{$list_actions.inline.$key.put.icon}.png" />{else}{$list_actions.inline.$key.put.title}{/if}</a>
+                    <a title="{$list_actions.inline.$key.put.title}" href="{$root_url}{$list_actions.inline.$key.put.link|replace:"[id]":$row.id|replace:"[pid]":$request.pid|replace:'[model]':$request.model}/">{if $list_actions.inline.$key.put.icon}<img alt="{$list_actions.inline.$key.put.title}" src="{$BASE_URL}cms/img/icons/{$list_actions.inline.$key.put.icon}.png" />{else}{$list_actions.inline.$key.put.title}{/if}</a>
                 {/if}
             </td>
         {/foreach}
@@ -59,7 +59,7 @@
             <td>
                 Пустой
             </td>
-            <th class="del"><a href="/admin/fma/delete_warehouse/id/{$row.id}/"><img src="/public/cms/img/icons/delete.png" alt="Удалить"></a></th>
+            <th class="del"><a href="/admin/fma/delete_warehouse/id/{$row.id}/"><img src="{$BASE_URL}cms/img/icons/delete.png" alt="Удалить"></a></th>
         {/if}
     </tr>
     {/foreach}

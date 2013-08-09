@@ -4,8 +4,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>{$title|default:'CMS'}</title>
 <!-- CSS -->
-<link rel="stylesheet" type="text/css" href="/public/cms/css/style.css" />
-<link rel="stylesheet" type="text/css" href="/public/cms/css/style2.css" />
+<link rel="stylesheet" type="text/css" href="{PUBLIC_PATH.'cms/css/style.css'}" />
+<link rel="stylesheet" type="text/css" href="{PUBLIC_PATH.'cms/css/style2.css'}" />
 {foreach from=$pageCSS item=item}
 <link href='{$item}' rel='stylesheet' type='text/css'>
 {/foreach}
@@ -37,7 +37,7 @@ var ctrlName = '{$ctrlName}';
 <tr id="header">
 <td colspan="3">
     <div id="logo">
-        <a href="/"><img src="img/logo.png" style="float:left;"></a> <h1 style="float:left; margin:6px 0 0 5px;">/</h1>
+        <a href="/"><img src="{$BASE_URL}img/logo.png" style="float:left;"></a> <h1 style="float:left; margin:6px 0 0 5px;">/</h1>
     </div>
     <div id="project_title">
         <h1>Интернет-магазин "Италкер"</h1>
@@ -163,42 +163,42 @@ var ctrlName = '{$ctrlName}';
                     <tr class="m-item-center">
                         <td style="width:25px;"></td>
                         <td style="width:25px;"></td>
-                        <td style="width:25px;"><img src="img/house.png"></td>
+                        <td style="width:25px;"><img src="{$BASE_URL}house.png"></td>
                         <td><a href="#">Главная</a></td>
-                        <td style="width:25px;"><a href="#"><img src="img/cross-green.png"></a></td>
-                        <td style="width:25px;"><a href="#"><img src="img/lymph.png"></a></td>
-                        <td style="width:25px;"><a href="#"><img src="img/pencil.png"></a></td>
+                        <td style="width:25px;"><a href="#"><img src="{$BASE_URL}cross-green.png"></a></td>
+                        <td style="width:25px;"><a href="#"><img src="{$BASE_URL}lymph.png"></a></td>
+                        <td style="width:25px;"><a href="#"><img src="{$BASE_URL}pencil.png"></a></td>
                         <td style="width:25px;"></td>
                     </tr>
                     <tr class="m-item-center" style="background-color:#e4e4e4;">
                         <td></td>
-                        <td><a href="#"><img src="img/downarrow-green.png"></a></td>
-                        <td><img src="img/sheet-icon.png"></td>
+                        <td><a href="#"><img src="{$BASE_URL}downarrow-green.png"></a></td>
+                        <td><img src="{$BASE_URL}sheet-icon.png"></td>
                         <td><a href="#">О компании</a></td>
-                        <td><a href="#"><img src="img/cross-green.png"></a></td>
-                        <td><a href="#"><img src="img/lymph.png"></a></td>
-                        <td><a href="#"><img src="img/pencil.png"></a></td>
-                        <td><a href="#"><img src="img/cross-red.png"></a></td>
+                        <td><a href="#"><img src="{$BASE_URL}img/cross-green.png"></a></td>
+                        <td><a href="#"><img src="{$BASE_URL}img/lymph.png"></a></td>
+                        <td><a href="#"><img src="{$BASE_URL}img/pencil.png"></a></td>
+                        <td><a href="#"><img src="{$BASE_URL}img/cross-red.png"></a></td>
                     </tr>
                     <tr class="m-item-center">
-                        <td><a href="#"><img src="img/uparrow-green.png"></a></td>
-                        <td><a href="#"><img src="img/downarrow-green.png"></a></td>
-                        <td><img src="img/sheet-icon.png"></td>
+                        <td><a href="#"><img src="{$BASE_URL}img/uparrow-green.png"></a></td>
+                        <td><a href="#"><img src="{$BASE_URL}img/downarrow-green.png"></a></td>
+                        <td><img src="{$BASE_URL}img/sheet-icon.png"></td>
                         <td><a href="#">Доставка</a></td>
-                        <td><a href="#"><img src="img/cross-green.png"></a></td>
-                        <td><a href="#"><img src="img/lymph.png"></a></td>
-                        <td><a href="#"><img src="img/pencil.png"></a></td>
-                        <td><a href="#"><img src="img/cross-red.png"></a></td>
+                        <td><a href="#"><img src="{$BASE_URL}img/cross-green.png"></a></td>
+                        <td><a href="#"><img src="{$BASE_URL}img/lymph.png"></a></td>
+                        <td><a href="#"><img src="{$BASE_URL}img/pencil.png"></a></td>
+                        <td><a href="#"><img src="{$BASE_URL}img/cross-red.png"></a></td>
                     </tr>
                     <tr class="m-item-center" style="background-color:#e4e4e4;">
-                        <td><a href="#"><img src="img/uparrow-green.png"></a></td>
+                        <td><a href="#"><img src="{$BASE_URL}img/uparrow-green.png"></a></td>
                         <td></td>
-                        <td><img src="img/sheet-icon.png"></td>
+                        <td><img src="{$BASE_URL}img/sheet-icon.png"></td>
                         <td><a href="#">Контакты</a></td>
-                        <td><a href="#"><img src="img/cross-green.png"></a></td>
-                        <td><a href="#"><img src="img/lymph.png"></a></td>
-                        <td><a href="#"><img src="img/pencil.png"></a></td>
-                        <td><a href="#"><img src="img/cross-red.png"></a></td>
+                        <td><a href="#"><img src="{$BASE_URL}img/cross-green.png"></a></td>
+                        <td><a href="#"><img src="{$BASE_URL}img/lymph.png"></a></td>
+                        <td><a href="#"><img src="{$BASE_URL}img/pencil.png"></a></td>
+                        <td><a href="#"><img src="{$BASE_URL}img/cross-red.png"></a></td>
                     </tr>
                 </table>
                 </div>

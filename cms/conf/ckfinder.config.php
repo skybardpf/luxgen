@@ -66,7 +66,7 @@ Examples:
 
 ATTENTION: The trailing slash is required.
 */
-$baseUrl = PUBLIC_PATH.'/userfiles/';
+$baseUrl = PUBLIC_PATH.'userfiles/';
 
 /*
 $baseDir : the path to the local directory (in the server) which points to the
@@ -313,8 +313,8 @@ will be automatically converted to ASCII letters.
 $config['ForceAscii'] = false;
 
 
-require_once dirname(__FILE__)."/../../public/zf/ckfinder/plugins/imageresize/plugin.php";
-require_once dirname(__FILE__)."/../../public/zf/ckfinder/plugins/fileeditor/plugin.php";
+require_once ZF_EXT_PATH . "ckfinder/plugins/imageresize/plugin.php";
+require_once ZF_EXT_PATH . "ckfinder/plugins/fileeditor/plugin.php";
 
 #include_once "../../../plugins/watermark/plugin.php";
 

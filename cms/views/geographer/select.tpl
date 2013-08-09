@@ -14,8 +14,8 @@
             {/foreach}
         </select> 
         {if $sel_meta eq 'true'}
-            <a href="/admin/geographer/mod_geo/id/{$selected_meta}/type/meta"title="Редактировать этот Мета-тип"><img src="/public/cms/img/icons/edit.png" alt=""></a>
-            <a href="/admin/geographer/add_meta/" title="Добавить Мета-тип"><img src="/public/cms/img/icons/add.png"></a>
+            <a href="/admin/geographer/mod_geo/id/{$selected_meta}/type/meta"title="Редактировать этот Мета-тип"><img src="{$BASE_URL}cms/img/icons/edit.png" alt=""></a>
+            <a href="/admin/geographer/add_meta/" title="Добавить Мета-тип"><img src="{$BASE_URL}cms/img/icons/add.png"></a>
         {/if}
     {if $datas}
         <br/>
@@ -35,9 +35,9 @@
             {/foreach}
         </select>
         {if $sel_data eq 'true'}
-            <a href="/admin/geographer/add_data/id/{$selected_data}" title="Добавить данные"><img src="/public/cms/img/icons/add.png" alt=""></a>
-            <a href="/admin/geographer/del_data/id/{$selected_data}" title="удалить данные"><img src="/public/cms/img/icons/delete.png" alt=""></a>
-            <a href="/admin/geographer/mod_geo/id/{$selected_data}/type/data" title="Редактировать данные"><img src="/public/cms/img/icons/edit.png" alt=""></a>
+            <a href="/admin/geographer/add_data/id/{$selected_data}" title="Добавить данные"><img src="{$BASE_URL}cms/img/icons/add.png" alt=""></a>
+            <a href="/admin/geographer/del_data/id/{$selected_data}" title="удалить данные"><img src="{$BASE_URL}cms/img/icons/delete.png" alt=""></a>
+            <a href="/admin/geographer/mod_geo/id/{$selected_data}/type/data" title="Редактировать данные"><img src="{$BASE_URL}cms/img/icons/edit.png" alt=""></a>
         {/if}
     {else}
     {/if}

@@ -33,16 +33,16 @@
        <td>
         <div class="comments" style=" margin-left: {math equation='x*16' x=$node.level}px;" >
             <a href ="{$root_url}comments/modify/id/{$node.id}/page/articles/pid/{$id}">
-                <img src="/public/cms/img/icons/edit.png" alt="Редактировать" align="left" title="Редактировать">
+                <img src="{$BASE_URL}cms/img/icons/edit.png" alt="Редактировать" align="left" title="Редактировать">
             </a>
             <a href ="{$root_url}comments/show/id/{$node.id}/page/articles/pid/{$id}">
-                <img src="/public/cms/img/icons/show.png" alt="Посмотреть комментарий" align="left" title="Посмотреть комментарий">
+                <img src="{$BASE_URL}cms/img/icons/show.png" alt="Посмотреть комментарий" align="left" title="Посмотреть комментарий">
             </a>
             <a href ="{$root_url}comments/delete/id/{$node.id}/page/articles/pid/{$id}">
-                <img src="/public/cms/img/icons/delete.png" alt="Удалить комментарий" align="left" title="Удалить комментарий">
+                <img src="{$BASE_URL}cms/img/icons/delete.png" alt="Удалить комментарий" align="left" title="Удалить комментарий">
             </a>
             <a href ="{$root_url}comments/deleteall/id/{$node.id}/page/articles/pid/{$id}">
-                <img src="/public/cms/img/icons/delete!.png" alt="Удалить ветку комментария" align="left" title="Удалить ветку комментария">
+                <img src="{$BASE_URL}cms/img/icons/delete!.png" alt="Удалить ветку комментария" align="left" title="Удалить ветку комментария">
             </a>
             &nbsp
             <a href="{$root_url}comments/add/type/comments/pid/{$node.id}/page/articles/item/{$id}" title="Комментировать">

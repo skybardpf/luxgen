@@ -27,13 +27,13 @@ class CommonController extends Controller
 				header('Location: /admin/'. ltrim($url, '/'));
 				exit;
 			}
-			zf::addJS('main', PUBLIC_PATH.'/cms/js/main.js');
-			zf::addJS('cookie', PUBLIC_PATH.'/cms/js/cookie.js');
-			zf::addJS('jquery.cookie', PUBLIC_PATH.'/cms/js/jquery.cookie.js');
-			zf::addJS('group', PUBLIC_PATH.'/cms/js/group.js');
+			zf::addJS('main', BASE_URL . 'cms/js/main.js');
+			zf::addJS('cookie', BASE_URL . 'cms/js/cookie.js');
+			zf::addJS('jquery.cookie', BASE_URL . 'cms/js/jquery.cookie.js');
+			zf::addJS('group', BASE_URL . 'cms/js/group.js');
             $this->page->auth = 1;
 			$this->app->session->set('uid', $uid);
-            zf::addJS('menu', PUBLIC_PATH.'/cms/js/menu.js');
+            zf::addJS('menu', BASE_URL . 'cms/js/menu.js');
             $this->auth = 1;
             if (!empty($this->app->conf['additional_js'])) {
                 foreach ($this->app->conf['additional_js'] as $key => $path) {
@@ -42,8 +42,8 @@ class CommonController extends Controller
             }            
         
             $langFile = zf::gi()->app->conf['charset'] == 'utf-8' ? 'calendar-ru.js' : 'calendar-ru-cp1251.js';
-            zf::addJS('dynDateTime', PUBLIC_PATH.'/zf/js/jquery.dynDateTime.js');
-            zf::addJS('dynDateTime_lang', "/public/zf/js/dyndatetime/$langFile");
+            zf::addJS('dynDateTime', BASE_URL . 'zf/js/jquery.dynDateTime.js');
+            zf::addJS('dynDateTime_lang', BASE_URL . "zf/js/dyndatetime/$langFile");
             
 /*            if ($_POST && 0) {
                 $location = $_SERVER['REQUEST_URI'];
@@ -56,7 +56,7 @@ class CommonController extends Controller
             	header('Location: '.zf::$root_url.$firstRole['uri']);
             }*/
 		} else {
-			zf::addJS('login', PUBLIC_PATH.'/cms/js/login.js');
+			zf::addJS('login', BASE_URL . 'cms/js/login.js');
 			$this->loadForm('auth', array(
 				array('name' => 'login', 'htmltype' => 'text', 'title' => 'Логин'),
 				array('name' => 'pass', 'htmltype' => 'pass', 'title' => 'Пароль')
@@ -159,11 +159,15 @@ class CommonController extends Controller
     
 	public function stop()
 	{
+        $this->page->WEB_ROOT = WEB_ROOT;
+        $this->page->BASE_URL = BASE_URL;
+        $this->page->ABSOLUTE_BASE_URL = BASE_URL;
+
 		if ($this->auth) {
             $this->page->main_menu    = $this->app->conf['menu'];
             $this->page->main_smenu   = $this->app->conf['smenu'];
             if ($this->page->panel) {
-                zf::addJS('panel', PUBLIC_PATH.'/cms/js/panel.js');
+                zf::addJS('panel', BASE_URL . 'cms/js/panel.js');
             }
             if (!$this->page->pageTitleLast) {
                 $this->page->pageTitleLast = misc::getNe($this->page->data, array('name', 'title', 'login'), '');
@@ -175,7 +179,7 @@ class CommonController extends Controller
         if ($this->app->request->main_view && $this->page->auth) {
             $this->loadView(str_replace('-', '/', $this->app->request->main_view), null);
         } elseif ($this->app->request->popup) {
-            zf::addJS('close_btn', PUBLIC_PATH.'/cms/js/close_btn.js');
+            zf::addJS('close_btn', BASE_URL . 'cms/js/close_btn.js');
             $this->loadView($this->app->conf['popup'], null);
         } elseif (!$this->app->request->ajax) {
         	$this->loadView($this->app->conf['main'], null);

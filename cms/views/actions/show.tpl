@@ -53,7 +53,7 @@
 		{if $data.$field}
 				<div id="mediaspace_{$field}"></div>
 	            <script type="text/javascript">
-					var so = new SWFObject(PUBLIC_PATH.'zf/mediaplayer/player.swf','mpl','470','320','9');
+					var so = new SWFObject({PUBLIC_PATH.'zf/mediaplayer/player.swf'},'mpl','470','320','9');
 					so.addParam('allowfullscreen','true');
 					so.addParam('allowscriptaccess','always');
 					so.addParam('wmode','opaque');
@@ -72,7 +72,7 @@
 				{foreach from=$data.$field item=video name=video}
 					<div id="mediaspace_{$field}_{$smarty.foreach.video.iteration}"></div>
 		            <script type="text/javascript">
-						var so = new SWFObject(PUBLIC_PATH.'zf/mediaplayer/player.swf','mpl','470','320','9');
+						var so = new SWFObject({PUBLIC_PATH.'zf/mediaplayer/player.swf'},'mpl','470','320','9');
 						so.addParam('allowfullscreen','true');
 						so.addParam('allowscriptaccess','always');
 						so.addParam('wmode','opaque');

@@ -2,8 +2,8 @@
     {foreach from=$pictures item=picture key=key}
         <tr>
             <td>
-                <a href='{$root_url}{$ctrlName}/posit/dir/up/id/{$picture.id}/pid/{$pid}/'><image src="/public/cms/img/icons/arrow_up.png" style="float: left;"></a>
-                <a href='{$root_url}{$ctrlName}/posit/dir/down/id/{$picture.id}/pid/{$pid}/'><image src="/public/cms/img/icons/arrow_down.png" style="float: left;"></a>
+                <a href='{$root_url}{$ctrlName}/posit/dir/up/id/{$picture.id}/pid/{$pid}/'><image src="{$BASE_URL}cms/img/icons/arrow_up.png" style="float: left;"></a>
+                <a href='{$root_url}{$ctrlName}/posit/dir/down/id/{$picture.id}/pid/{$pid}/'><image src="{$BASE_URL}cms/img/icons/arrow_down.png" style="float: left;"></a>
             </td>
             <td>
                 <a href="{$root_url}{$ctrlName}/modify_image/id/{$picture.id}/pid/{$pid}/">
@@ -14,7 +14,7 @@
                 {$picture.title}<br />
             </td>
             <td>
-                <a href='{$root_url}{$ctrlName}/delete_image/id/{$picture.id}/pid/{$pid}/'><image src="/public/cms/img/icons/delete.png" style="float: left;"></a>
+                <a href='{$root_url}{$ctrlName}/delete_image/id/{$picture.id}/pid/{$pid}/'><image src="{$BASE_URL}cms/img/icons/delete.png" style="float: left;"></a>
             </td>
         </tr>
     {/foreach}

@@ -9,7 +9,7 @@
     <input type="submit" value="Начать экспорт">
 </form>
 {elseif $export.result == 'success'}
-Экспорт завершился удачно, вы можете загрузить полученный файл <a href="/public/userfiles/export/{$export.filename}">здесь</a>
+Экспорт завершился удачно, вы можете загрузить полученный файл <a href="{$BASE_URL}userfiles/export/{$export.filename}">здесь</a>
 {else}
 Экспорт не удался, попробуйте еще раз или обратитесь к администратору
 {/if}

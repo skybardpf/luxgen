@@ -209,10 +209,10 @@ class CMS_Controller extends AdvancedController
 
 	public function actionList($tableName = null, $modelNameOrModel = null)
 	{
-		zf::addJS('jquery.event.drag', PUBLIC_PATH.'/cms/js/jquery.event.drag.js');
-		zf::addJS('jquery.event.drop', PUBLIC_PATH.'/cms/js/jquery.event.drop.js');
+		zf::addJS('jquery.event.drag', PUBLIC_PATH . 'cms/js/jquery.event.drag.js');
+		zf::addJS('jquery.event.drop', PUBLIC_PATH . 'cms/js/jquery.event.drop.js');
         if (isset($this->page->list_actions['multiple']) || isset($this->page->list_actions['multy_change'])) {
-            zf::addJS('multiple_list', PUBLIC_PATH.'/cms/js/multiple_list.js');
+            zf::addJS('multiple_list', PUBLIC_PATH . 'cms/js/multiple_list.js');
         }
 		if (!$tableName) $tableName = $this->ctrlName;
 		if (!$modelNameOrModel) $modelNameOrModel = $this->ctrlName;

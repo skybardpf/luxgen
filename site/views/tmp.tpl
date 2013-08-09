@@ -1,5 +1,5 @@
 <div class="HeaderSlide">
-    <link rel="stylesheet" type="text/css" href="/public/site/css/style.sitemap.css"/>
+    <link rel="stylesheet" type="text/css" href="{$BASE_URL}site/css/style.sitemap.css"/>
 </div>
 <div class="mainContent">
     <div class="cont">

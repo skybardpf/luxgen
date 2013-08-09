@@ -165,7 +165,7 @@ class form
 		$this->conf    = $conf;
 		$this->use_ids = $use_ids;
 		if ($elements) $this->loadElements($elements);
-		zf::addJS('zf.form', PUBLIC_PATH.'/zf/js/form.js');
+		zf::addJS('zf.form', PUBLIC_PATH.'zf/js/form.js');
 	}
 
 	/**
@@ -231,7 +231,7 @@ class form
 					case 'video':
 					case 'audio':
                         if ($_FILES && $_FILES[$key]['error'] != 4) {
-							$val['value'] = $_FILES ? $_FILES[$val['name']]['tmp_name'] : PUBLIC_PATH.'/img/no_image.gif';
+							$val['value'] = $_FILES ? $_FILES[$val['name']]['tmp_name'] : PUBLIC_PATH.'img/no_image.gif';
 							$val['file']  = $_FILES[$val['name']];
 							break;
 						} else {
@@ -977,9 +977,9 @@ class form
 	public function get_image_input($inp, $attrStr)
 	{
         if ($inp['crop']) {
-            zf::addJS('image_cropper_select', PUBLIC_PATH.'/zf/js/jquery.imgareaselect.js');
-            zf::addJS('image_cropper', PUBLIC_PATH.'/zf/js/form.image_cropper.js');
-            zf::addCSS('image_cropper', PUBLIC_PATH.'/zf/imagearea/imgareaselect-animated.css');
+            zf::addJS('image_cropper_select', PUBLIC_PATH.'zf/js/jquery.imgareaselect.js');
+            zf::addJS('image_cropper', PUBLIC_PATH.'zf/js/form.image_cropper.js');
+            zf::addCSS('image_cropper', PUBLIC_PATH.'zf/imagearea/imgareaselect-animated.css');
             $dirs = ' rel="'.urlencode(json_encode($inp['dirs'])).'"';
         } else {
             $dirs = '';
@@ -1011,7 +1011,7 @@ class form
 		}
 		else {
 			$ret = '';
-			zf::addJS('zf_images', PUBLIC_PATH.'/zf/js/files.js');
+			zf::addJS('zf_images', PUBLIC_PATH.'zf/js/files.js');
 			if (!empty($inp['value'])) {
 				foreach ($inp['value'] as $img) {
 					$image = is_array($img) ? $img['image'] : $img;
@@ -1056,9 +1056,9 @@ class form
 	
 	public function get_ckfile_input($inp, $attrStr)
 	{
-		zf::addJS('ckfinder', PUBLIC_PATH.'/zf/ckfinder/ckfinder.js');
+		zf::addJS('ckfinder', PUBLIC_PATH.'zf/ckfinder/ckfinder.js');
 		return '<input type="text" name="'.$inp['name'].'" value="'.$inp['value'].'" style="padding-right: 18px;">'
-		.'<img src="/public/cms/img/icons/delete.png" style="margin-left: -26px; margin-right: 10px; vertical-align: middle;" '
+		.'<img src="'.PUBLIC_PATH.'cms/img/icons/delete.png'.'" style="margin-left: -26px; margin-right: 10px; vertical-align: middle;" '
 		.'onclick="$(this).prev().val(\'\');">'
 		.(!empty($inp['value']) ? '<a href="'.$inp['value'].'" target="_blank">скачать</a>':'')
 		.'<script>
@@ -1082,7 +1082,7 @@ class form
 	public function get_files_input($inp, $attrStr)
 	{
 		$ret = '';
-		zf::addJS('zf_images', PUBLIC_PATH.'/zf/js/files.js');
+		zf::addJS('zf_images', PUBLIC_PATH.'zf/js/files.js');
 		if (!empty($inp['value'])) {
 			foreach ($inp['value'] as $img) {
 				$image = is_array($img) ? $img['file'] : $img;
@@ -1121,12 +1121,12 @@ class form
     public function get_mfiles_input($inp, $attrStr)
     {
         $ret = '';
-        zf::addJS('zf_form', PUBLIC_PATH.'/zf/js/jquery.form.js');
-        zf::addJS('zf_MultiFile', PUBLIC_PATH.'/zf/js/jquery.MultiFile.js');
-        zf::addJS('zf_blockUI', PUBLIC_PATH.'/zf/js/jquery.blockUI.js');
+        zf::addJS('zf_form', PUBLIC_PATH.'zf/js/jquery.form.js');
+        zf::addJS('zf_MultiFile', PUBLIC_PATH.'zf/js/jquery.MultiFile.js');
+        zf::addJS('zf_blockUI', PUBLIC_PATH.'zf/js/jquery.blockUI.js');
         if (!empty($inp['value'])) {
-            zf::addJS('lytebox_js', PUBLIC_PATH.'/zf/js/lytebox_322cmod1.3.js');
-            zf::addCSS('lytebox_css', PUBLIC_PATH.'/zf/css/lytebox_322cmod1.3.css');
+            zf::addJS('lytebox_js', PUBLIC_PATH.'zf/js/lytebox_322cmod1.3.js');
+            zf::addCSS('lytebox_css', PUBLIC_PATH.'zf/css/lytebox_322cmod1.3.css');
             foreach ($inp['value'] as $f) {
                 $file = is_array($f) ? $f['file'] : $f;
                 if (!empty($inp['del_by_id']) && $inp['del_by_id'] && is_array($f)) {
@@ -1171,7 +1171,7 @@ class form
 			}
 		}
 		if ($inp['value'] && strrpos($inp['value'], '.tmp') != strlen($inp['value']) - 4) {
-			zf::addJS('swfobject', PUBLIC_PATH.'/zf/js/swfobject.js');
+			zf::addJS('swfobject', PUBLIC_PATH.'zf/js/swfobject.js');
 
 			$inp['value'] = str_replace(
 				'.'.pathinfo($inp['value'], PATHINFO_EXTENSION),
@@ -1196,7 +1196,7 @@ class form
 			$id = $this->getId($inp);
 			$ret = "<div id=\"mediaspace_$id\">".lang::p('open')."</div>"
 			. "<script type=\"text/javascript\">
-				var so = new SWFObject(PUBLIC_PATH.'/zf/mediaplayer/player.swf','mpl','470','320','9');
+				var so = new SWFObject(".PUBLIC_PATH.'zf/mediaplayer/player.swf'.",'mpl','470','320','9');
 					  so.addParam('allowfullscreen','true');
 					  so.addParam('allowscriptaccess','always');
 					  so.addParam('wmode','opaque');
@@ -1219,8 +1219,8 @@ class form
 	{
 		$repl = array();
 		if ($inp['value'] && strrpos($inp['value'], '.tmp') != strlen($inp['value']) - 4) {
-			zf::addJS('swfobject_ap', PUBLIC_PATH.'/zf/audioplayer/swfobject_ap.js');
-			zf::addJS('audio-player', PUBLIC_PATH.'/zf/audioplayer/audio-player.js');
+			zf::addJS('swfobject_ap', PUBLIC_PATH.'zf/audioplayer/swfobject_ap.js');
+			zf::addJS('audio-player', PUBLIC_PATH.'zf/audioplayer/audio-player.js');
 
 			$inp['value'] = str_replace(
 				'.'.pathinfo($inp['value'], PATHINFO_EXTENSION),
@@ -1285,7 +1285,7 @@ class form
 
 	public function get_tselect_input($inp, $attrStr)
 	{
-		zf::addJS('form.tselect', PUBLIC_PATH.'/zf/js/form.tselect.js');
+		zf::addJS('form.tselect', PUBLIC_PATH.'zf/js/form.tselect.js');
 
 		$id = $this->getId($inp);
 		$url = ( isset($inp['url']) and !empty($inp['url']) ) ? $inp['url'] : '/';
@@ -1361,7 +1361,7 @@ class form
 
 	public function get_multitext_input($inp, $attrStr)
 	{
-		zf::addJS('form.multitext', PUBLIC_PATH.'/zf/js/form.multitext.js');
+		zf::addJS('form.multitext', PUBLIC_PATH.'zf/js/form.multitext.js');
         if (!empty($inp['value'])) {
 			$first=true;
 			foreach ($inp['value'] as $v)	{
@@ -1383,7 +1383,7 @@ class form
 
 	public function get_doublemultitext_input($inp, $attrStr)
 	{
-		zf::addJS('form.doublemultitext', PUBLIC_PATH.'/zf/js/form.doublemultitext.js');
+		zf::addJS('form.doublemultitext', PUBLIC_PATH.'zf/js/form.doublemultitext.js');
 		$ret='
 		<table width="90%">
 			<tr>
@@ -1456,15 +1456,15 @@ class form
 
 		$ret .= '<div class="metromap" style="display: none; position: relative;">
 			<a href="" class="closemap">'.lang::p('map_close').'</a><br>
-			<img src="'.(!empty($inp['map_img'])? $inp['map_img'] : PUBLIC_PATH.'/zf/img/metro_moscow.gif').'">
+			<img src="'.(!empty($inp['map_img'])? $inp['map_img'] : PUBLIC_PATH.'zf/img/metro_moscow.gif').'">
 			<a href="#" class="station" style="display: none;">
-				<img wigth="11" height="12" class="placeholder" src="/public/zf/img/null.gif" alt="Станция метро" title="Станция метро">
-				<img wigth="11" height="12" class="marker" style="display: none;" src="/public/zf/img/pointer.gif" alt="Станция метро" title="Станция метро">
+				<img wigth="11" height="12" class="placeholder" src="'.PUBLIC_PATH.'zf/img/null.gif'.'" alt="Станция метро" title="Станция метро">
+				<img wigth="11" height="12" class="marker" style="display: none;" src="'.PUBLIC_PATH.'zf/img/pointer.gif'.'" alt="Станция метро" title="Станция метро">
 			</a>
 		</div>';
 
 		$ret .= '</div>';
-		zf::addJS('form.metroselect', PUBLIC_PATH.'/zf/js/form.metroselect.js');
+		zf::addJS('form.metroselect', PUBLIC_PATH.'zf/js/form.metroselect.js');
 		$stations = array();
 		foreach ($inp['values'] as $k => $v) {
 			$stations[] = "{id: $k, title: '{$v['title']}', top: {$v['top']}, left: {$v['left']}}";
@@ -1680,12 +1680,12 @@ class form
 				$is.features = [".implode(',', array_map(array($this, 'quote'), $inp['features']))."];
 				$is.width = '".(!empty($inp['width']) ? $inp['width'] : '100%')."';
 				$is.height = 200;
-				//$is.css=PUBLIC_PATH.'/zsms/css/main.css';
+				//$is.css=PUBLIC_PATH.'zsms/css/main.css';
 				$is.mode = 'XHTMLBody';
 				$is.REPLACE('".$this->getId($inp)."');
 			</script>
 		";
-        zf::addJS('wysiwyg', PUBLIC_PATH.'/zf/wysiwyg/innovaeditor.js', false, true);
+        zf::addJS('wysiwyg', PUBLIC_PATH.'zf/wysiwyg/innovaeditor.js', false, true);
 		return $ret;
 	}
 
@@ -1704,8 +1704,8 @@ class form
 
 	public function get_captcha_input($inp, $attrStr)
 	{
-		zf::addJS('refreshcaptcha', PUBLIC_PATH.'/zf/js/form.captcharefresh.js');
-		$ret  = "<div style='position:relative;'><img style='cursor: pointer;' src=\"/captcha/".$inp['conf']['background_color']."/?".rand()."\" $attrStr /><img style='display:none; position:absolute; top:0; left:0;' src=PUBLIC_PATH.'/zf/img/loading.gif' alt=''/></div><br />";
+		zf::addJS('refreshcaptcha', PUBLIC_PATH.'zf/js/form.captcharefresh.js');
+		$ret  = "<div style='position:relative;'><img style='cursor: pointer;' src=\"/captcha/".$inp['conf']['background_color']."/?".rand()."\" $attrStr /><img style='display:none; position:absolute; top:0; left:0;' src='" . PUBLIC_PATH.'zf/img/loading.gif' . "' alt=''/></div><br />";
 		unset($inp['value']);
 		$ret .= $this->get_text_input($inp, $attrStr);
 		return $ret;
@@ -1758,16 +1758,16 @@ class form
 			$is.REPLACE('".$this->getId($inp)."');
 			</script>
 		";
-        zf::addJS('wysiwyg', PUBLIC_PATH.'/zf/wysiwyg/innovaeditor.js', false, true);
+        zf::addJS('wysiwyg', PUBLIC_PATH.'zf/wysiwyg/innovaeditor.js', false, true);
 		return $ret;
 	}
 
 	public function get_ckhtml_input($inp, $attrStr)
 	{
-		include_once 'public/zf/ckeditor/ckeditor.php';
-		require_once 'public/zf/ckfinder/ckfinder.php';
-		zf::addJS('ckedito', PUBLIC_PATH.'/zf/ckeditor/ckeditor.js');
-		zf::addJS('ckfinder', PUBLIC_PATH.'/zf/ckfinder/ckfinder.js');
+		include_once PUBLIC_PATH . 'zf/ckeditor/ckeditor.php';
+		require_once PUBLIC_PATH . 'zf/ckfinder/ckfinder.php';
+		zf::addJS('ckedito', PUBLIC_PATH.'zf/ckeditor/ckeditor.js');
+		zf::addJS('ckfinder', PUBLIC_PATH.'zf/ckfinder/ckfinder.js');
 		$id = $this->getId($inp);
 		$ck = 'ck'.$inp['name'];
         $ck = str_replace('[', '', $ck);
@@ -1785,7 +1785,7 @@ class form
 		$ret = "<textarea name=\"{$inp['name']}\" {$attrStr}>{$value}</textarea>
 		<script type=\"text/javascript\">
 		var $ck = CKEDITOR.replace('$id', ".json_encode($conf).");
-		CKFinder.setupCKEditor( $ck, '".(!empty($inp['ckfinder']) ? $inp['ckfinder'] : PUBLIC_PATH.'/zf/ckfinder/')."' );
+		CKFinder.setupCKEditor( $ck, '".(!empty($inp['ckfinder']) ? $inp['ckfinder'] : PUBLIC_PATH.'zf/ckfinder/')."' );
 		</script>";
 
 		return $ret;
@@ -1824,9 +1824,9 @@ class form
         $inp['daFormat'] = '%d.%m.%Y %H:%M';
         $ret = "<input type=\"text\" name=\"{$inp['name']}\" value=\"".($inp['value'] ? date('d.m.Y H:i', strtotime($inp['value'])) : '')."\" {$attrStr}/>".$this->get_date_js($inp);
         $langFile = zf::gi()->app->conf['charset'] == 'utf-8' ? 'calendar-ru.js' : 'calendar-ru-cp1251.js';
-        zf::addJS('dynDateTime', PUBLIC_PATH.'/zf/js/jquery.dynDateTime.js');
-        zf::addJS('dynDateTime_lang', "/public/zf/js/dyndatetime/$langFile");
-        zf::addCSS('dynDateTime', PUBLIC_PATH.'/zf/css/calendar-blue.css');
+        zf::addJS('dynDateTime', PUBLIC_PATH.'zf/js/jquery.dynDateTime.js');
+        zf::addJS('dynDateTime_lang', PUBLIC_PATH . "zf/js/dyndatetime/$langFile");
+        zf::addCSS('dynDateTime', PUBLIC_PATH.'zf/css/calendar-blue.css');
         return $ret;
     }
 
@@ -1843,10 +1843,10 @@ class form
                 });
             </script>
 		";
-        zf::addJS('ui', PUBLIC_PATH.'/zf/js/jquery-ui-1.7.1.custom.min.js');
-		zf::addJS('timepicker', PUBLIC_PATH.'/zf/js/jquery.ui.timepicker.js');
-        zf::addCSS('ui', PUBLIC_PATH.'/zf/css/jquery-ui-1.8.14.custom.css');
-		zf::addCSS('timepicker', PUBLIC_PATH.'/zf/css/jquery.ui.timepicker.css');
+        zf::addJS('ui', PUBLIC_PATH.'zf/js/jquery-ui-1.7.1.custom.min.js');
+		zf::addJS('timepicker', PUBLIC_PATH.'zf/js/jquery.ui.timepicker.js');
+        zf::addCSS('ui', PUBLIC_PATH.'zf/css/jquery-ui-1.8.14.custom.css');
+		zf::addCSS('timepicker', PUBLIC_PATH.'zf/css/jquery.ui.timepicker.css');
 		return $ret;
 	}
 
@@ -1879,9 +1879,9 @@ class form
 			</script>
 		";*/
 		$langFile = zf::gi()->app->conf['charset'] == 'utf-8' ? 'calendar-ru.js' : 'calendar-ru-cp1251.js';
-		zf::addJS('dynDateTime', PUBLIC_PATH.'/zf/js/jquery.dynDateTime.js');
-		zf::addJS('dynDateTime_lang', "/public/zf/js/dyndatetime/$langFile");
-		zf::addCSS('dynDateTime', PUBLIC_PATH.'/zf/css/calendar-blue.css');
+		zf::addJS('dynDateTime', PUBLIC_PATH.'zf/js/jquery.dynDateTime.js');
+		zf::addJS('dynDateTime_lang', PUBLIC_PATH . "zf/js/dyndatetime/$langFile");
+		zf::addCSS('dynDateTime', PUBLIC_PATH.'zf/css/calendar-blue.css');
 		return $ret;
 	}
 
@@ -2015,7 +2015,7 @@ class form
 		} else {
 			zf::addJS('yandex.map', 'http://api-maps.yandex.ru/1.1/index.xml?key='.$key);
 		}
-		zf::addJS('form.geo', PUBLIC_PATH.'/zf/js/form.geo.js');
+		zf::addJS('form.geo', PUBLIC_PATH.'zf/js/form.geo.js');
 		$id = $this->getId($inp);
 		$strname = '';
 		if (!empty($inp['strname'])) {

@@ -71,11 +71,11 @@
                 <td>{$retail_price}
                     {if $date|strtotime gte $date_now}
                         <a href="{$root_url}{$ctrlName}/modify_future_price/pid/{$id}/type/retail_price/id/{$retail_price_id}/date/{$date}/">
-                            <img style="float: right;" src="/public/cms/img/icons/edit.png" alt="">
+                            <img style="float: right;" src="{$BASE_URL}cms/img/icons/edit.png" alt="">
                         </a>
                         {if $retail_price_real}
                             <a href="{$root_url}{$ctrlName}/delete_price/id/{$retail_price_id}/">
-                                <img style="float: right;" src="/public/cms/img/icons/delete.png" alt="">
+                                <img style="float: right;" src="{$BASE_URL}cms/img/icons/delete.png" alt="">
                             </a>
                         {/if}
                     {/if}
@@ -83,11 +83,11 @@
                 <td>{$purchase_price}
                     {if $date|strtotime gte $date_now}
                         <a href="{$root_url}{$ctrlName}/modify_future_price/pid/{$id}/type/purchase_price/id/{$purchase_price_id}/date/{$date}/">
-                            <img style="float: right;" src="/public/cms/img/icons/edit.png" alt="">
+                            <img style="float: right;" src="{$BASE_URL}cms/img/icons/edit.png" alt="">
                         </a>
                         {if $purchase_price_real}
                             <a href="{$root_url}{$ctrlName}/delete_price/id/{$purchase_price_id}/">
-                                <img style="float: right;" src="/public/cms/img/icons/delete.png" alt="">
+                                <img style="float: right;" src="{$BASE_URL}cms/img/icons/delete.png" alt="">
                             </a>
                         {/if}    
                     {/if}
@@ -95,11 +95,11 @@
                 <td>{$purchase_price_supplier}
                     {if $date|strtotime gte $date_now}
                         <a href="{$root_url}{$ctrlName}/modify_future_price/pid/{$id}/type/purchase_price_supplier/id/{$purchase_price_supplier_id}/date/{$date}/">
-                            <img style="float: right;" src="/public/cms/img/icons/edit.png" alt="">
+                            <img style="float: right;" src="{$BASE_URL}cms/img/icons/edit.png" alt="">
                         </a>
                         {if $purchase_price_supplier_real}
                             <a href="{$root_url}{$ctrlName}/delete_price/id/{$purchase_price_supplier_id}/">
-                                <img style="float: right;" src="/public/cms/img/icons/delete.png" alt="">
+                                <img style="float: right;" src="{$BASE_URL}cms/img/icons/delete.png" alt="">
                             </a>
                         {/if}
                     {/if}
@@ -115,17 +115,17 @@
         <tr>
             <td>Розничная цена</td>
             <td>{$curr_retail_price}</td>
-            <td class="del"><a href="{$root_url}{$ctrlName}/modify_price/pid/{$id}/type/retail_price/id/{$curr_retail_price_id}/"><img src="/public/cms/img/icons/edit.png" alt=""></a></td>
+            <td class="del"><a href="{$root_url}{$ctrlName}/modify_price/pid/{$id}/type/retail_price/id/{$curr_retail_price_id}/"><img src="{$BASE_URL}cms/img/icons/edit.png" alt=""></a></td>
         </tr>
         <tr>
             <td>Цена закупки</td>
             <td>{$curr_purchase_price}</td>
-            <td class="del"><a href="{$root_url}{$ctrlName}/modify_price/pid/{$id}/type/purchase_price/id/{$curr_purchase_price_id}/"><img src="/public/cms/img/icons/edit.png" alt=""></a></td>
+            <td class="del"><a href="{$root_url}{$ctrlName}/modify_price/pid/{$id}/type/purchase_price/id/{$curr_purchase_price_id}/"><img src="{$BASE_URL}cms/img/icons/edit.png" alt=""></a></td>
         </tr>
         <tr>
             <td>Закупочная цена в валюте поставщика</td>
             <td>{$curr_purchase_price_supplier}</td>
-            <td class="del"><a href="{$root_url}{$ctrlName}/modify_price/pid/{$id}/type/purchase_price_supplier/id/{$curr_purchase_price_supplier_id}/"><img src="/public/cms/img/icons/edit.png" alt=""></a></td>
+            <td class="del"><a href="{$root_url}{$ctrlName}/modify_price/pid/{$id}/type/purchase_price_supplier/id/{$curr_purchase_price_supplier_id}/"><img src="{$BASE_URL}cms/img/icons/edit.png" alt=""></a></td>
         </tr>
     </table>
     </div>

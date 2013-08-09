@@ -9,10 +9,10 @@
 class PressController extends Site_Controller
 {
     public function actionDefault(){
-        zf::addCSS('reset', PUBLIC_PATH.'/site/css/reset.css');
-        zf::addCSS('style', PUBLIC_PATH.'/site/css/style.css');
-        zf::addCSS('style.timeline', PUBLIC_PATH.'/site/css/style.timeline.css');
-        zf::addCSS('style.template', PUBLIC_PATH.'/site/css/style.template.css');
+        zf::addCSS('reset', PUBLIC_PATH . 'site/css/reset.css');
+        zf::addCSS('style', PUBLIC_PATH . 'site/css/style.css');
+        zf::addCSS('style.timeline', PUBLIC_PATH . 'site/css/style.timeline.css');
+        zf::addCSS('style.template', PUBLIC_PATH . 'site/css/style.template.css');
         if($this->app->request->id){
            return $this->Show();
         }

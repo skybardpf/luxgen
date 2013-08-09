@@ -4,7 +4,7 @@
     <div id="geographer">
         <form name="geographer">
             <br /><br />
-            Известное пространство <a href="/admin/geographer/add_data/"><img src="/public/cms/img/icons/add.png" alt=""></a>
+            Известное пространство <a href="/admin/geographer/add_data/"><img src="{$BASE_URL}cms/img/icons/add.png" alt=""></a>
             <br /><br />
             {assign var="key_prev" value=0}
             {foreach from=$forms_elements.geographer item=element key=key}
@@ -28,9 +28,9 @@
                     {if $element.value}
                         {assign var="key_prev" value=$element.value}
                         <div style="position:relative; top:-2em; left:100%; padding-top:.5em;">
-                            <a href="/admin/geographer/add_data/id/{$element.value}/pid/{$key}"><img src="/public/cms/img/icons/add.png" alt=""></a>
-                            <a href="/admin/geographer/del_data/id/{$element.value}"><img src="/public/cms/img/icons/delete.png" alt=""></a>
-                            <a href="/admin/geographer/mod_geo/id/{$element.value}/type/data"><img src="/public/cms/img/icons/edit.png" alt=""></a>
+                            <a href="/admin/geographer/add_data/id/{$element.value}/pid/{$key}"><img src="{$BASE_URL}cms/img/icons/add.png" alt=""></a>
+                            <a href="/admin/geographer/del_data/id/{$element.value}"><img src="{$BASE_URL}cms/img/icons/delete.png" alt=""></a>
+                            <a href="/admin/geographer/mod_geo/id/{$element.value}/type/data"><img src="{$BASE_URL}cms/img/icons/edit.png" alt=""></a>
                         </div>
                     {/if}
                     </div>
@@ -52,9 +52,9 @@
                                 {if $additionalElement.value}
                                     {assign var="key_prev" value=$additionalElement.value}
                                 <div style="position:relative; top:-1.5em; left:85%; height:2em;">
-                                        <a href="/admin/geographer/add_data/id/{$additionalElement.value}/pid/{$additionalKey}"><img src="/public/cms/img/icons/add.png" alt=""></a>
-                                        <a href="/admin/geographer/del_data/id/{$additionalElement.value}"><img src="/public/cms/img/icons/delete.png" alt=""></a>
-                                        <a href="/admin/geographer/mod_geo/id/{$additionalElement.value}/type/data"><img src="/public/cms/img/icons/edit.png" alt=""></a>
+                                        <a href="/admin/geographer/add_data/id/{$additionalElement.value}/pid/{$additionalKey}"><img src="{$BASE_URL}cms/img/icons/add.png" alt=""></a>
+                                        <a href="/admin/geographer/del_data/id/{$additionalElement.value}"><img src="{$BASE_URL}cms/img/icons/delete.png" alt=""></a>
+                                        <a href="/admin/geographer/mod_geo/id/{$additionalElement.value}/type/data"><img src="{$BASE_URL}cms/img/icons/edit.png" alt=""></a>
                                 </div>
                                 {/if}
                             </div><br />

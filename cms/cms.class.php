@@ -12,10 +12,10 @@ class CMS extends zfApp
 	{
 		$fileName                 = func_get_arg(0);
 		$conf                     = parent::loadConf($fileName);
-		$mAppConf                 = parent::loadConf('site/conf/app.conf.yml');
-		$mAppConf                 = parent::loadConf('site/conf/app.conf.yml');
+//		$mAppConf                 = parent::loadConf(ROOT_PATH . 'site/conf/app.conf.yml');
+		$mAppConf                 = parent::loadConf(ROOT_PATH . 'site/conf/app.conf.yml');
 		if (file_exists(ROOT_PATH.'site/conf/cms/add_conf.yml') && is_file(ROOT_PATH.'site/conf/cms/add_conf.yml')) {
-			$addConf              = parent::loadConf('site/conf/cms/add_conf.yml');
+			$addConf = parent::loadConf(ROOT_PATH . 'site/conf/cms/add_conf.yml');
 		}
         if (!empty($mAppConf['yandexmap'])) $conf['yandexmap'] = $mAppConf['yandexmap'];
 		if (!empty($mAppConf['googlemap'])) $conf['googlemap'] = $mAppConf['googlemap'];
@@ -50,7 +50,7 @@ class CMS extends zfApp
 	
 	public function run()
 	{
-		$this->page->addPluginsDir('cms/smarty_plugins/');
+		$this->page->addPluginsDir(ROOT_PATH . 'cms/smarty_plugins/');
 		$this->page->copyrights   = $this->conf['copyrights'];
 		return parent::run();
 	}
@@ -77,12 +77,12 @@ class CMS extends zfApp
 	
 	public function getModelConfFileName($modName, $ctrlName)
 	{
-        return "site/conf/$ctrlName/$modName.mod.yml";
+        return ROOT_PATH . "site/conf/$ctrlName/$modName.mod.yml";
 	}
 	
 	public function getCtrlConfFileName($ctrlName)
 	{
-        return "site/conf/$ctrlName/$ctrlName.ctrl.yml";
+        return ROOT_PATH . "site/conf/$ctrlName/$ctrlName.ctrl.yml";
 	}
 	
 }

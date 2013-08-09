@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/public/site/css/style.mediaBox.template.css">
+<link rel="stylesheet" href="{$BASE_URL}site/css/style.mediaBox.template.css">
 <div class="Wrap">
     <header class="Header">
         <ul class="both">

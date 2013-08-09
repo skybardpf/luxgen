@@ -19,7 +19,8 @@
 class zf extends ConfLoader
 {
 	public $var_keys = array('id', 'pid', 'item', 'page', 'pos', 'application', 'iid', 'captcha', 'ajax');
-	static protected $instance = null;
+//	static protected $instance = null; // old
+	public static $instance = null;
 	static public $request  = null;
 	static public $session  = null;
 	static public $db;

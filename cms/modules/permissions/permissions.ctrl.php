@@ -6,7 +6,7 @@ class PermissionsController extends CMS_Controller
     
     public function actionManage()
     {
-        zf::addJS('permissions', PUBLIC_PATH.'/cms/js/permissions.js');
+        zf::addJS('permissions', PUBLIC_PATH.'cms/js/permissions.js');
         $fields = $this->model()->getFields($this->ctrls[$this->app->request->ctrl]);
         $this->loadForm(
             'modify',

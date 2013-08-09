@@ -424,7 +424,7 @@ class AdvancedController extends Controller
         $this->loadForm('modify', $fields, $data, $this->formAction);
         $isValid = false;
         if (!(($_POST || $_FILES) && empty($_POST['dont_save']) && ($isValid = $this->form('modify')->validate($model))) && !$is_locked && $moder_fields) {
-            zf::addJS('moder_script', PUBLIC_PATH.'/cms/js/moder_script.js');
+            zf::addJS('moder_script', PUBLIC_PATH.'cms/js/moder_script.js');
             $this->page->moder_script_is_on = true;
             $this->page->moder_lock_url = $this->page->root_url.$_SERVER['REQUEST_URI'];
             $model->Update(

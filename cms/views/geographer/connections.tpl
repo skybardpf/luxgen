@@ -4,5 +4,5 @@
 {/if}
 {foreach from=$conn item=item key=key}
     <a href="/admin/geographer/mod_geo/id/{$key}/type/data">{$item}</a>
-    <a href="/admin/geographer/del_data/id/{$key}" title="удалить данные"><img src="/public/cms/img/icons/delete.png" alt=""></a><br/>
+    <a href="/admin/geographer/del_data/id/{$key}" title="удалить данные"><img src="{$BASE_URL}cms/img/icons/delete.png" alt=""></a><br/>
 {/foreach}

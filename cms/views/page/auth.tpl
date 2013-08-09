@@ -32,7 +32,7 @@
                         {label name='pass'}
                         {input name='pass'}<br />
                         <!--<div class="submit">
-                            <input type="image" src="/public/cms/img/enter.gif" alt="Войти" class="submit"/>
+                            <input type="image" src="{$BASE_URL}cms/img/enter.gif" alt="Войти" class="submit"/>
                         </div>-->
                         <button type="submit" >Войти</button>
                         </div>

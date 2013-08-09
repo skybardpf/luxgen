@@ -8,7 +8,7 @@
                         	<span id="warehouse_income">{if $warehouse_income}"{$warehouse_income}"{/if}</span>
                         </td>
                         <td class="addfilmformtop_in center">
-                        	<img src="/public/cms/img/Arrow_new.png">
+                        	<img src="{$BASE_URL}cms/img/Arrow_new.png">
                         </td>
                         <td class="addfilmformtop_in">
                         	<span id="warehouse_target">{if $warehouse_target}"{$warehouse_target}"{/if}</span>

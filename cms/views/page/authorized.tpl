@@ -1,7 +1,7 @@
 <tr id="header">
     <td colspan="3">
         <div id="logo"{if !isset($copyrights.logo)} class="artektiv"{/if}>
-            <a href="{$root_url}">{if !isset($copyrights.logo)}<img src="/public/cms/img/logo.png" style="float:left;">{elseif $copyrights.logo}<img src="{$copyrights.logo}" style="float: left;">{else}<h1 style="float:left; margin:6px 0 0 5px; color: #c11f49;">{$copyrights.title}</h1>{/if}</a>{if $pageTitleLast} <h1 style="float:left; margin:6px 0 0 5px;">/</h1>{/if}
+            <a href="{$root_url}">{if !isset($copyrights.logo)}<img src="{$BASE_URL}cms/img/logo.png" style="float:left;">{elseif $copyrights.logo}<img src="{$copyrights.logo}" style="float: left;">{else}<h1 style="float:left; margin:6px 0 0 5px; color: #c11f49;">{$copyrights.title}</h1>{/if}</a>{if $pageTitleLast} <h1 style="float:left; margin:6px 0 0 5px;">/</h1>{/if}
         </div>
         <div id="project_title">
             <h1>{$pageTitleLast|default:'&nbsp;'}</h1>
@@ -51,18 +51,18 @@ $(document).ready(function() {
     <td colspan="3" style="padding:0;">
         <table style="width:100%;">
             <tr>
-                <td><!--[if IE]><img src="/public/cms/img/top-menu-divider.png" class="right" style="margin-left:12px;"><![endif]--></td>
+                <td><!--[if IE]><img src="{$BASE_URL}cms/img/top-menu-divider.png" class="right" style="margin-left:12px;"><![endif]--></td>
                 {foreach from=$main_menu item=menu key=key}
                 {if $menu.link}
                 {can ctrl=$menu.link action="access"}
                     <td>
-                    	<!--[if IE]><img src="/public/cms/img/top-menu-divider.png" class="left"><![endif]-->
+                    	<!--[if IE]><img src="{$BASE_URL}cms/img/top-menu-divider.png" class="left"><![endif]-->
                         {if $menu.link}
                         	<a href="{$root_url}{$menu.link}/" {if $menu.target}target="{$menu.target}" {/if}>{$menu.title}</a>
                         {else}
                         	<span style="font-size:14px; cursor:default;">{$menu.title}</span>
                         {/if}
-                    	<!--[if IE]><img src="/public/cms/img/top-menu-divider.png" class="right"><![endif]-->
+                    	<!--[if IE]><img src="{$BASE_URL}cms/img/top-menu-divider.png" class="right"><![endif]-->
                         {if $menu.submenu}
                         <div>
                         <ul>
@@ -82,9 +82,9 @@ $(document).ready(function() {
                 {/can}
                 {else}
                 	<td>
-                    	<!--[if IE]><img src="/public/cms/img/top-menu-divider.png" class="left"><![endif]-->
+                    	<!--[if IE]><img src="{$BASE_URL}cms/img/top-menu-divider.png" class="left"><![endif]-->
                         	<span style="font-size:14px; cursor:default;">{$menu.title}</span>
-                    	<!--[if IE]><img src="/public/cms/img/top-menu-divider.png" class="right"><![endif]-->
+                    	<!--[if IE]><img src="{$BASE_URL}cms/img/top-menu-divider.png" class="right"><![endif]-->
                         {if $menu.submenu}
                         <div>
                         <ul>
@@ -107,9 +107,9 @@ $(document).ready(function() {
 				{if $menu.link}
                 {can ctrl=$menu.link action="access"}
                     <td>
-                    	<!--[if IE]><img src="/public/cms/img/top-menu-divider.png" class="left"><![endif]-->
+                    	<!--[if IE]><img src="{$BASE_URL}cms/img/top-menu-divider.png" class="left"><![endif]-->
                         <a href="{$root_url}{$menu.link}/">{$menu.title}</a>
-                    	<!--[if IE]><img src="/public/cms/img/top-menu-divider.png" class="right"><![endif]-->
+                    	<!--[if IE]><img src="{$BASE_URL}cms/img/top-menu-divider.png" class="right"><![endif]-->
                         {if $menu.submenu}
                         <div>
                         <ul {if $smarty.foreach.menu.last} class="last"{/if}>
@@ -129,9 +129,9 @@ $(document).ready(function() {
                 {/can}
 				{else}
 					<td{if $menu.color} class="red"{/if}>
-                    	<!--[if IE]><img src="/public/cms/img/top-menu-divider.png" class="left"><![endif]-->
+                    	<!--[if IE]><img src="{$BASE_URL}cms/img/top-menu-divider.png" class="left"><![endif]-->
                         <span style="font-size:14px; cursor:default;">{$menu.title}</span>
-                    	<!--[if IE]><img src="/public/cms/img/top-menu-divider.png" class="right"><![endif]-->
+                    	<!--[if IE]><img src="{$BASE_URL}cms/img/top-menu-divider.png" class="right"><![endif]-->
                         {if $menu.submenu}
                         <div>
                         <ul {if $smarty.foreach.menu.last} class="last"{/if}>
@@ -150,7 +150,7 @@ $(document).ready(function() {
                     </td>
 				{/if}
                 {/foreach}
-                <td style="width:100%;"><!--[if IE]><img src="/public/cms/img/top-menu-divider.png" class="left"><![endif]--></td>
+                <td style="width:100%;"><!--[if IE]><img src="{$BASE_URL}cms/img/top-menu-divider.png" class="left"><![endif]--></td>
             </tr>
         </table>
     </td>

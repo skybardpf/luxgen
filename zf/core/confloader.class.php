@@ -56,7 +56,7 @@ class ConfLoader
 		}
 		$prefix   = (isset($this->db) && is_callable(array($this->db, 'getPrefix')) ? $this->db->getPrefix() : '');
 		$prefix  .= (!empty(zf::$instance) && !empty(zf::$instance->app->run_at)) ? zf::$instance->app->run_at : '';
-		$compiled = ROOT_PATH.'.zf_compiled/'.md5($prefix.$fileName.filemtime($fileName)).'.conf.php';
+        $compiled = ROOT_PATH.'.zf_compiled/'.md5($prefix.$fileName.filemtime($fileName)).'.conf.php';
 
 		if (file_exists($compiled) && !defined('NO_COMPILE')) {
 			$this->has_been_compiled = 0;

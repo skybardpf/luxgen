@@ -134,7 +134,7 @@ class Controller extends ConfLoader
         			unset($js[$name]);
         		}
         	}
-        	$alljs['name'] = PUBLIC_PATH.'/site/js/'.md5(implode(';', $alljs['names'])).'.js';
+        	$alljs['name'] = PUBLIC_PATH.'site/js/'.md5(implode(';', $alljs['names'])).'.js';
         	if (!is_file('.'.$alljs['name'])) {
 				foreach ($alljs['urls'] as $path) {
 	        		if ($path[0] == '/' and is_file('.'.$path)) {

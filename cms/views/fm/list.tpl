@@ -39,8 +39,8 @@
         
         <td class="pos">
             {if $usePos}
-                <a href="{if $posUp}{$posUp}{else}{$sLink}pos/up/id/{$row.id}/{/if}"><img src="/public/cms/img/icons/uparrow-green.png" /></a>
-                <a href="{if $posDown}{$posDown}{else}{$sLink}pos/down/id/{$row.id}/{/if}"><img src="/public/cms/img/icons/downarrow-green.png" /></a>
+                <a href="{if $posUp}{$posUp}{else}{$sLink}pos/up/id/{$row.id}/{/if}"><img src="{$BASE_URL}cms/img/icons/uparrow-green.png" /></a>
+                <a href="{if $posDown}{$posDown}{else}{$sLink}pos/down/id/{$row.id}/{/if}"><img src="{$BASE_URL}cms/img/icons/downarrow-green.png" /></a>
             {/if}
         </td>
         {foreach from=$titles item=columnTitle key=key name=items}
@@ -50,7 +50,7 @@
 						href="{$root_url}{$list_actions.inline.$key.put.link|replace:"[id]":$row.id|replace:"[pid]":$request.pid|replace:'[model]':$request.model}/">
 						{if $list_actions.inline.$key.put.icon}
 							<img alt="{$list_actions.inline.$key.put.title}"
-								src="/public/cms/img/icons/{$list_actions.inline.$key.put.icon}.png"
+								src="{$BASE_URL}cms/img/icons/{$list_actions.inline.$key.put.icon}.png"
 								style="float: left; margin-right: 4px;"/>
 						{else}
 							{$list_actions.inline.$key.put.title}
@@ -110,7 +110,7 @@
                     </a>
                 {/if}
                 {if $list_actions.inline.$key.put.pos eq "after"}
-                    <a title="{$list_actions.inline.$key.put.title}" href="{$root_url}{$list_actions.inline.$key.put.link|replace:"[id]":$row.id|replace:"[pid]":$request.pid|replace:'[model]':$request.model}/">{if $list_actions.inline.$key.put.icon}<img alt="{$list_actions.inline.$key.put.title}" src="/public/cms/img/icons/{$list_actions.inline.$key.put.icon}.png" />{else}{$list_actions.inline.$key.put.title}{/if}</a>
+                    <a title="{$list_actions.inline.$key.put.title}" href="{$root_url}{$list_actions.inline.$key.put.link|replace:"[id]":$row.id|replace:"[pid]":$request.pid|replace:'[model]':$request.model}/">{if $list_actions.inline.$key.put.icon}<img alt="{$list_actions.inline.$key.put.title}" src="{$BASE_URL}cms/img/icons/{$list_actions.inline.$key.put.icon}.png" />{else}{$list_actions.inline.$key.put.title}{/if}</a>
                 {/if}
             </td>
         {/foreach}
@@ -120,7 +120,7 @@
                 {foreach from=$rightFromTable key=rKey item=rItem}
                     {if (strpos($rKey, 'delete') !== 0 OR $row.undeletable ne 'yes')}
                         {check_cond action=$rItem item=$row}
-                        <a href="{$root_url}{$rItem.link|replace:"[id]":$row.id|replace:"[pid]":$request.pid|replace:'[model]':$request.model}/" title="{$rItem.title}"><img src="/public/cms/img/icons/{$rItem.icon}.png" alt="{$rItem.title}" /></a>
+                        <a href="{$root_url}{$rItem.link|replace:"[id]":$row.id|replace:"[pid]":$request.pid|replace:'[model]':$request.model}/" title="{$rItem.title}"><img src="{$BASE_URL}cms/img/icons/{$rItem.icon}.png" alt="{$rItem.title}" /></a>
                         {/check_cond}
                     {/if}
                 {/foreach}

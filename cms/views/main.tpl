@@ -4,9 +4,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>{$title|default:'CMS'}</title>
 <!-- CSS -->
-<link rel="stylesheet" type="text/css" href="/public/cms/css/style2.css" />
-<!--[if IE]><link href="/public/cms/css/ie1.css" rel="stylesheet" type="text/css" /><![endif]-->
-<link href="/public/cms/css/print.css" rel="stylesheet" type="text/css" media="print" />
+<link rel="stylesheet" type="text/css" href="{$BASE_URL}cms/css/style2.css" />
+<!--[if IE]><link href="{$BASE_URL}cms/css/ie1.css" rel="stylesheet" type="text/css" /><![endif]-->
+<link href="{$BASE_URL}cms/css/print.css" rel="stylesheet" type="text/css" media="print" />
 {foreach from=$pageCSS item=item}
 <link href='{$item}' rel='stylesheet' type='text/css'>
 {/foreach}
@@ -35,7 +35,7 @@ var zf_request = {$request|@json_encode};
 
 <body>
 
-<div id="loading_bckg" style="display: none;"><img src="/public/zf/img/loading.gif"></div>
+<div id="loading_bckg" style="display: none;"><img src="{$BASE_URL}zf/img/loading.gif"></div>
 {if $moder_script_is_on}
 <script type="text/javascript">
     moder_url = '{$moder_lock_url}';

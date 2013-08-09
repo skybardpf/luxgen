@@ -43,7 +43,7 @@ class SmartyPage extends BasePage implements PageInterface
 	
 	public function addPluginsDir($dir)
 	{
-		$this->smarty->plugins_dir[] = ROOT_PATH.$dir;
+		$this->smarty->plugins_dir[] = $dir;
 	}
 	
 	/**

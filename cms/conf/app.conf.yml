@@ -53,6 +53,6 @@ types:
   html:
     features: ['Styles', 'Paragraph', 'FullScreen', '|', 'Undo', 'Redo', 'Bold', 'Italic', 'Underline', '|', 'Hyperlink', 'Bookmark', '|', 'Image', '|', 'Paste', 'PasteText', 'PasteWord', '|', 'Numbering', 'Bullets', 'Indent', 'Outdent', '|', 'Table', 'Guidelines', '|', '|', 'XHTMLSource']
     attrs:
-      css: /public/site/css/wysiwyg.css
+      css: '/site/css/wysiwyg.css'
     addons:
-      AssetManager:"modalDialogShow('/public/zf/wysiwyg/assetmanager/assetmanager.php?apppath=cms',640,445);"
+      AssetManager:"modalDialogShow(/zf/wysiwyg/assetmanager/assetmanager.php?apppath=cms,640,445);"

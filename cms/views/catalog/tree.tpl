@@ -8,14 +8,14 @@
 	<div class="treeelement" style="padding-left: {math equation='x*7' x=$node.level}px;">
         {if $node.level == 2}
             <a href="{$root_url}catalog/beggining/pos/up/id/{$node.id}/" title="Вверх" style="margin-left: 0px">
-                <img align=left alt="Вверх" src="/public/cms/img/icons/arrow_up-active_beggining.png">
+                <img align=left alt="Вверх" src="{$BASE_URL}cms/img/icons/arrow_up-active_beggining.png">
             </a>
         {/if}
 		<a href="{$root_url}catalog/shift/pos/up/id/{$node.id}/" title="Вверх">
-			<img align=left alt="Вверх" src="/public/cms/img/icons/arrow_up-active.png">
+			<img align=left alt="Вверх" src="{$BASE_URL}cms/img/icons/arrow_up-active.png">
 		</a>
 		<a href="{$root_url}catalog/shift/pos/down/id/{$node.id}/" title="Вниз">
-			<img align=left alt="Вниз" src="/public/cms/img/icons/arrow_down-active.png">
+			<img align=left alt="Вниз" src="{$BASE_URL}cms/img/icons/arrow_down-active.png">
 		</a>
 		&nbsp;
 		{if $node.id == $request.pid}
